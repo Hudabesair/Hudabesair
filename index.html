@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hûdâ Beşâir</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="guvercin" id="guvercin">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path class="kanat-sol" d="M50 50 Q30 30 15 35 Q25 45 40 50 Z" fill="#ffffff"/>
+    <path class="kanat-sag" d="M50 50 Q70 30 85 35 Q75 45 60 50 Z" fill="#f0f0f0"/>
+    <ellipse cx="50" cy="55" rx="12" ry="8" fill="#ffffff"/>
+    <circle cx="60" cy="48" r="6" fill="#ffffff"/>
+    <path d="M65 48 L72 50 L65 52 Z" fill="#ffd966"/>
+    <circle cx="61" cy="47" r="1.2" fill="#333"/>
+    <path d="M38 55 Q32 60 35 68 Q40 62 42 58 Z" fill="#f0f0f0"/>
+  </svg>
+</div>
+
+<div class="container">
+  <header>
+    <h1>HÛDÂ BEŞÂİR</h1>
+    <p>Hidayet Müjdecisi</p>
+  </header>
+  <div class="menu">
+    <button id="btn-home" class="active" onclick="showPage('home')">Anasayfa</button>
+    <button id="btn-sureler" onclick="showPage('sureler')">Sureler</button>
+    <button id="btn-zikirler" onclick="showPage('zikirler')">Zikirler</button>
+    <button id="btn-sayac" onclick="showPage('sayac')">📿 Zikir Sayacı</button>
+    <button id="btn-esma" onclick="showPage
+     ('esma')">🕌 Esma-ül Hüsna</button>
+<button id="btn-favoriler" onclick="showPage('favoriler')">⭐ Favorilerim</button>
+<button class="paylas-btn" onclick="paylasimAc()" title="Paylaş">🔗 Paylaş</button>
+  </div>
+  <div id="page-sureler" class="page">
+    <div class="sure-list" id="sureList"></div>
+  </div>
+
+  <div id="page-detail" class="page">
+    <button class="back-btn" onclick="showPage('sureler')">← Geri</button>
+    <div class="sure-content" id="sureContent"></div>
+  </div>
+
+  <div id="page-zikirler" class="page">
+    <div class="sure-list" id="zikirList"></div>
+  </div>
+<div class="home-card">
+  <div class="bismillah">﷽</div>
+  <h2>Hoş Geldiniz</h2>
+  <p>
+    Bu mübarek sayfaya adım attığınız için <strong>hoş geldiniz, sefâlar getirdiniz</strong>.
+    <br><br>
+    Burada Kur'ân-ı Kerîm'den kısa sûrelerin Türkçe okunuşunu ve meâlini,
+    Peygamber Efendimiz'e salavatları, duaları, zikirleri,
+    <strong>📿 Zikir Sayacı</strong>'nı ve <strong>🕌 Esmâ-ül Hüsna</strong>'yı bulabilirsiniz.
+    <br><br>
+    Yukarıdaki butonlardan birine tıklayarak başlayabilirsiniz.
+  </p>
+
+  <div class="karsilama-dua">
+    <h3>🤲 Karşılama Duâsı</h3>
+    <p class="dua-arapca">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p>
+    <p class="dua-okunus"><em>Rabbenâ âtinâ fid-dünyâ haseneten ve fil âhirati haseneten ve kınâ azâben nâr.</em></p>
+    <p class="dua-mean"><strong>Anlamı:</strong> Rabbimiz! Bize dünyada da iyilik ver, âhirette de iyilik ver ve bizi cehennem azabından koru. <span style="color:#a8a88a;">(Bakara, 201)</span></p>
+  </div>
+</div>
+  <div id="page-zikirDetay" class="page">
+    <button class="back-btn" onclick="showPage('zikirler')">← Geri</button>
+    <div class="sure-content" id="zikirContent"></div>
+  </div>
+<!-- ESMA-ÜL HÜSNA LİSTESİ -->
+<!-- ⭐ FAVORİLER LİSTESİ -->
+<div id="page-favoriler" class="page">
+  <div class="sure-list" id="favoriList"></div>
+  <div id="favoriBos" style="display:none; text-align:center; padding:40px 20px; color:#c9c9a8;">
+    <p style="font-size:1.1rem; margin-bottom:10px;">⭐ Henüz favori eklenmedi</p>
+    <p style="font-size:0.9rem;">Sûre ve zikirlerin yanındaki yıldıza basarak favori ekleyebilirsiniz.</p>
+  </div>
+</div>
+<div id="page-esma" class="page">
+  <div class="sure-list" id="esmaList"></div>
+</div>
+
+<!-- ESMA-ÜL HÜSNA DETAY -->
+<div id="page-esmaDetay" class="page">
+  <button class="back-btn" onclick="showPage('esma')">← Geri</button>
+  <div class="sure-content" id="esmaContent"></div>
+</div>
+  <!-- 📿 ZİKİR SAYACI SAYFASI -->
+  <div id="page-sayac" class="page">
+    <div class="sure-content">
+      <h2 class="sure-title">📿 Zikir Sayacı</h2>
+
+      <div class="sayac-secim">
+        <label>Zikir Seç:</label>
+        <select id="sayacZikirSecim" onchange="sayacZikirDegistir()"></select>
+      </div>
+
+      <div class="sayac-ekran">
+        <div class="sayac-isim" id="sayacIsim">Lâ ilâhe illallâh</div>
+        <div class="sayac-rakam" id="sayacRakam">0</div>
+        <button class="sayac-btn" onclick="sayacArttir()">ZİKRET</button>
+        <div class="sayac-hedef" id="sayacHedef">Hedef: 100</div>
+      </div>
+
+      <div class="sayac-kontroller">
+        <button class="back-btn" onclick="sayacSifirla()">🔄 Sıfırla</button>
+        <button class="back-btn" onclick="sayacGeriAl()">↩️ Geri Al</button>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  Hûdâ Beşâir &copy; 2026 — Hayırla kalın 🤲
+</footer>
+</div>
+<!-- 🔗 PAYLAŞIM MENÜSÜ -->
+<div class="paylas-menu" id="paylasMenu">
+  <div class="paylas-baslik">🔗 Bu sayfayı paylaş</div>
+
+  <a class="paylas-secenek" href="#" onclick="paylasWhatsApp(); return false;">
+    <span class="paylas-icon">💬</span> WhatsApp
+  </a>
+
+  <a class="paylas-secenek" href="#" onclick="paylasTelegram(); return false;">
+    <span class="paylas-icon">✈️</span> Telegram
+  </a>
+
+  <a class="paylas-secenek" href="#" onclick="paylasTwitter(); return false;">
+    <span class="paylas-icon">🐦</span> X (Twitter)
+  </a>
+
+  <a class="paylas-secenek" href="#" onclick="paylasFacebook(); return false;">
+    <span class="paylas-icon">📘</span> Facebook
+  </a>
+
+  <a class="paylas-secenek" href="#" onclick="paylasKopyala(); return false;">
+    <span class="paylas-icon">📋</span> Bağlantıyı Kopyala
+  </a>
+
+  <button class="paylas-kapat" onclick="paylasimKapat()">✕ Kapat</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

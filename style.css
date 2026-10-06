@@ -1,0 +1,519 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212,175,55,0.15), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(212,175,55,0.12), transparent 40%),
+    linear-gradient(135deg, #0b3d2e 0%, #062b1f 50%, #04180f 100%);
+  color: #f5f5dc;
+  padding: 20px;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.container { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+
+header {
+  text-align: center;
+  padding: 30px 10px 20px;
+  border-bottom: 2px solid rgba(212,175,55,0.4);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #d4af37;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px rgba(212,175,55,0.5);
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 10px;
+  color: #c9c9a8;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  letter-spacing: 1px;
+}
+
+.menu { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 30px; }
+
+.menu button {
+  background: linear-gradient(135deg, #0e5a3d, #0a3f2a);
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 14px 24px;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-family: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu button:hover, .menu button.active {
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  color: #062b1f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(212,175,55,0.5);
+}
+
+.menu button:focus { outline: none; }
+
+.page { display: none; }
+.page.active { display: block; animation: fade 0.5s ease; }
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.home-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 16px;
+  padding: 40px 25px;
+  text-align: center;
+}
+
+.home-card h2 { color: #d4af37; font-size: clamp(1.3rem, 4vw, 1.8rem); margin-bottom: 15px; }
+.home-card p { color: #d8d8c0; line-height: 1.8; font-size: clamp(0.9rem, 2.5vw, 1rem); }
+
+.bismillah { font-size: clamp(1.2rem, 4vw, 1.6rem); color: #d4af37; margin: 20px 0; }
+
+.sure-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.sure-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(212,175,55,0.3);
+  color: #f5f5dc;
+  padding: 14px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sure-item:hover {
+  background: rgba(212,175,55,0.15);
+  border-color: #d4af37;
+  transform: translateX(5px);
+}
+
+.sure-item .num {
+  background: #d4af37;
+  color: #062b1f;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.sure-content {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.back-btn {
+  background: transparent;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  transition: all 0.25s;
+  font-family: inherit;
+  outline: none;
+}
+
+.back-btn:hover { background: #d4af37; color: #062b1f; }
+
+.sure-title {
+  text-align: center;
+  color: #d4af37;
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(212,175,55,0.3);
+}
+
+.section {
+  margin-bottom: 25px;
+  padding: 18px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 12px;
+  border-left: 4px solid #d4af37;
+}
+
+.section h3 {
+  color: #d4af37;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.reading {
+  font-size: clamp(0.95rem, 2.8vw, 1.1rem);
+  line-height: 1.9;
+  color: #f0e6c8;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.meaning {
+  font-size: clamp(0.95rem, 2.8vw, 1.05rem);
+  line-height: 1.9;
+  color: #e0e0c8;
+}
+
+.meaning p { margin-bottom: 10px; }
+.ayet-num { color: #d4af37; font-weight: 600; font-style: normal; }
+
+#zikirContent p { margin-bottom: 12px; line-height: 1.85; }
+#zikirContent strong { color: #d4af37; }
+#zikirContent em { color: #c9c9a8; font-size: 0.92em; }
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: rgba(212,175,55,0.6);
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(212,175,55,0.2);
+}
+
+/* 🕊️ GÜVERCİN */
+.guvercin {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+.guvercin.ucus { animation: guvercinUcus 2.5s ease-out forwards; }
+
+@keyframes guvercinUcus {
+  0%   { opacity: 0; bottom: -100px; left: 50%; transform: translateX(-50%) scale(0.6) rotate(0deg); }
+  15%  { opacity: 1; transform: translateX(-50%) scale(1) rotate(-8deg); }
+  50%  { opacity: 1; bottom: 50%; left: 60%; transform: translateX(-50%) scale(1.1) rotate(5deg); }
+  85%  { opacity: 1; transform: translateX(-50%) scale(1) rotate(-5deg); }
+  100% { opacity: 0; bottom: 110%; left: 75%; transform: translateX(-50%) scale(0.7) rotate(10deg); }
+}
+
+.guvercin .kanat-sol { transform-origin: right center; animation: kanatCirp 0.3s ease-in-out infinite; }
+.guvercin .kanat-sag { transform-origin: left center; animation: kanatCirp 0.3s ease-in-out infinite; animation-delay: 0.15s; }
+
+@keyframes kanatCirp {
+  0%, 100% { transform: scaleY(1) rotate(0deg); }
+  50%      { transform: scaleY(0.6) rotate(-15deg); }
+}
+
+.guvercin::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.4), transparent 70%);
+  transform: translate(-50%, -50%);
+  animation: parilti 0.8s ease-in-out infinite;
+}
+
+@keyframes parilti {
+  0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+  50%      { opacity: 0.6; transform: translate(-50%, -50%) scale(1.3); }
+}
+
+.loading { text-align: center; color: #d4af37; padding: 30px; font-size: 1rem; }
+
+/* 📿 ZİKİR SAYACI */
+.sayac-secim {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sayac-secim label {
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.sayac-secim select {
+  flex: 1;
+  min-width: 200px;
+  background: rgba(0,0,0,0.4);
+  color: #f5f5dc;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.sayac-ekran {
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 16px;
+  border: 2px solid rgba(212,175,55,0.4);
+  margin-bottom: 20px;
+}
+
+.sayac-isim {
+  color: #d4af37;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.sayac-rakam {
+  font-size: clamp(4rem, 15vw, 6rem);
+  color: #d4af37;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 20px;
+  text-shadow: 0 0 30px rgba(212,175,55,0.5);
+}
+
+.sayac-btn {
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  color: #062b1f;
+  border: none;
+  padding: 20px 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 6px 20px rgba(212,175,55,0.4);
+  transition: all 0.2s;
+  margin-bottom: 15px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sayac-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(212,175,55,0.6); }
+.sayac-btn:active { transform: translateY(0) scale(0.98); }
+
+.sayac-hedef {
+  color: #c9c9a8;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.sayac-kontroller {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sayac-kontroller .back-btn { margin-bottom: 0; }
+
+@media (max-width: 480px) {
+  .menu button { padding: 12px 16px; font-size: 0.85rem; }
+  .sure-content { padding: 18px; }
+  .section { padding: 14px; }
+  .guvercin { width: 60px; height: 60px; }
+  .sayac-btn { padding: 16px 40px; font-size: 1.1rem; }
+}
+/* ============================================
+   🔗 PAYLAŞIM BUTONU
+   ============================================ */
+.paylas-btn {
+  background: linear-gradient(135deg, #0e5a3d, #0a3f2a);
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 14px 24px;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-family: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.paylas-btn:hover {
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  color: #062b1f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(212,175,55,0.5);
+}
+
+.paylas-btn:active { transform: translateY(0) scale(0.98); }
+
+.paylas-btn:hover {
+  transform: scale(1.1) rotate(-10deg);
+  box-shadow: 0 6px 20px rgba(212,175,55,0.7);
+}
+
+.paylas-btn:active { transform: scale(0.95); }
+
+.paylas-menu {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.paylas-menu.acik { display: flex; }
+
+.paylas-menu > div,
+.paylas-menu > a,
+.paylas-menu > button {
+  position: relative;
+}
+
+.paylas-menu {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.paylas-baslik {
+  color: #d4af37;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.paylas-secenek {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(212,175,55,0.4);
+  color: #f5f5dc;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.paylas-secenek:hover {
+  background: rgba(212,175,55,0.2);
+  border-color: #d4af37;
+  transform: translateX(5px);
+}
+
+.paylas-icon {
+  font-size: 1.3rem;
+  width: 30px;
+  text-align: center;
+}
+
+.paylas-kapat {
+  margin-top: 15px;
+  background: transparent;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: inherit;
+  transition: all 0.25s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.paylas-kapat:hover { background: #d4af37; color: #062b1f; }
+
+/* Toast (kopyalandı bildirimi) */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #d4af37;
+  color: #062b1f;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  z-index: 10001;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.toast.goster {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+/* 🔗 PAYLAŞ BUTONU */
+.paylas-btn {
+  background: linear-gradient(135deg, #0e5a3d, #0a3f2a);
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 14px 24px;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-family: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.paylas-btn:hover {
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  color: #062b1f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(212,175,55,0.5);
+}
