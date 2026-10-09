@@ -4,7 +4,17 @@
 
 var kisaSureler = [
   { id: 1, isim: "Fâtiha Sûresi" },
+  { id: 93, isim: "Duhâ Sûresi" },
+  { id: 94, isim: "İnşirâh Sûresi" },
+  { id: 95, isim: "Tîn Sûresi" },
+  { id: 96, isim: "Alak Sûresi" },
+  { id: 97, isim: "Kadir Sûresi" },
+  { id: 99, isim: "Zilzâl Sûresi" },
+  { id: 100, isim: "Âdiyât Sûresi" },
+  { id: 101, isim: "Kāria Sûresi" },
+  { id: 102, isim: "Tekâsür Sûresi" },
   { id: 103, isim: "Asr Sûresi" },
+  { id: 104, isim: "Hümeze Sûresi" },
   { id: 105, isim: "Fîl Sûresi" },
   { id: 106, isim: "Kureyş Sûresi" },
   { id: 107, isim: "Mâûn Sûresi" },
@@ -19,7 +29,17 @@ var kisaSureler = [
 
 var okunuslar = {
   1: "Bismillâhirrahmânirrahîm. Elhamdülillâhi rabbil âlemîn. Errahmânirrahîm. Mâliki yevmiddîn. İyyâke na'büdü ve iyyâke neste'în. İhdinas-sırâtal müstakîm. Sırâtallezîne en'amte aleyhim, gayril mağdûbi aleyhim ve led-dâllîn. Âmîn.",
+  93: "Ved duhâ. Vel leyli izâ secâ. Mâ veddeake rabbüke ve mâ kalâ. Ve lel âhiratü hayrun leke minel ûlâ. Ve le sevfe yu'tîke rabbüke fe terdâ. Elem yecidke yetîmen fe âvâ. Ve vecedeke dâllen fe hedâ. Ve vecedeke âilen fe ağnâ. Fe emmel yetîme felâ takhar. Ve emmes sâile felâ tenhar. Ve emmâ bi ni'meti rabbike fe haddis.",
+  94: "Elem neşrah leke sadrak. Ve vada'nâ anke vizrak. Ellezî enkada zahrak. Ve refa'nâ leke zikrak. Fe inne maal usri yüsrâ. İnne maal usri yüsrâ. Fe izâ feragte fensab. Ve ilâ rabbike ferğab.",
+  95: "Vet tîni vez zeytûn. Ve tûri sînîn. Ve hâzel beledil emîn. Lekad halaknel insâne fî ahseni takvîm. Sümme radednâhü esfele sâfilîn. İllellezîne âmenû ve amilüs sâlihâti fe lehüm ecrun gayru memnûn.",
+  96: "Ikra' bismi rabbikellezî halak. Halakal insâne min alak. Ikra' ve rabbükel ekram. Ellezî alleme bil kalem. Allemel insâne mâ lem ya'lem. Kellâ inne insâne le yatgâ. En raâhüstag nâ. İnne ilâ rabbiker ruc'â. E raeyte in kâne alel hüdâ. Ev emera bil takvâ. E raeyte in kezzebe ve tevellâ. E lem ya'lem bi ennallâhe yerâ. Kellâ le in lem yentehi le nesfean bin nâsiyeh. Nâsiyetin kâzibetin hâtıeh. Fe l yed'u nâdiyh. Se ned'uz zebâniyeh. Kellâ lâ tütı'hü vescüd vakterib.",
+  97: "İnnâ enzelnâhü fî leyletil kadr. Ve mâ edrâke mâ leyletül kadr. Leyletül kadri hayrun min elfi şehr. Tenezzelül melâiketü ver rûhu fîhâ bi izni rabbihim min külli emr. Selâmun hiye hattâ matla'il fecr.",
+  99: "İzâ zülziletil ardu zilzâlehâ. Ve ahracetil ardu eskâlehâ. Ve kâlel insânü mâ lehâ. Yevmeizin tühaddisü ahbârahâ. Bi enne rabbeke evhâ lehâ. Yevmeizin yasdurun nâsu eştâten li yürav a'mâlehüm. Fe men ya'mel miskâle zerratin hayran yerah. Ve men ya'mel miskâle zerratin şerran yerah.",
+  100: "Vel âdiyâti dabhâ. Fel mûriyâti kadhâ. Fel muğîrâti subhâ. Fe eserne bihî nak'â. Fe vesatne bihî cem'â. İnnel insâne li rabbihî le kenûd. Ve innehû alâ zâlike le şehîd. Ve innehû li hubbil hayri le şedîd. E felâ ya'lemü izâ bu'sira mâ fil kubûr. Ve hussıle mâ fis sudûr. İnne rabbehüm bihim yevmeizin le habîr.",
+  101: "El kāria. Mel kāria. Ve mâ edrâke mel kāria. Yevme yekûnün nâsi kel ferâşil mebsûs. Ve tekûnül cibâlü kel ıhnil menfûş. Fe emmâ men sekulet mevâzînüh. Fe hüve fî îşetin râdıyeh. Ve emmâ men haffet mevâzînüh. Fe ümmühû hâviyeh. Ve mâ edrâke mâ hiyeh. Nârün hâmiyeh.",
+  102: "Elhâkümüt tekâsür. Hattâ zürtümül mekâbir. Kellâ sevfe ta'lemûn. Sümme kellâ sevfe ta'lemûn. Kellâ lev ta'lemûne ilmel yakîn. Le teravünnel cahîm. Sümme le teravünnehâ aynel yakîn. Sümme le tüs'elünne yevmeizin anin naîm.",
   103: "Vel asr. İnnel insâne le fî husr. İllellezîne âmenû ve amilüs sâlihâti ve tevâsav bil hakkı ve tevâsav bis sabr.",
+  104: "Veylün li külli hümezetin lümezeh. Ellezî cemea mâlen ve addedeh. Yahsebü enne mâlehû ahledeh. Kellâ le yünbezenne fil hutameh. Ve mâ edrâke mel hutameh. Nârullâhil mûkadeh. Elletî tettaliu alel ef'ideh. İnnehâ aleyhim mü'sadeh. Fî amedin mümeddedeh.",
   105: "Elem tera keyfe fe'ale rabbüke bi ashâbil fîl. Elem yec'al keydehüm fî tadlîl. Ve ersele aleyhim tayran ebâbîl. Termîhim bi hıcâratin min siccîl. Fe ce'alehüm ke asfin me'kûl.",
   106: "Li îlâfi Kureyş. Îlâfihim rihleteş şitâi ves sayf. Fel ya'büdü rabbe hâzel beyt. Ellezî et'amehüm min cû'in ve âmenehüm min havf.",
   107: "E raeytellezî yükezzibü bid dîn. Fe zâlikellezî yedu'ul yetîm. Ve lâ yehuddu alâ taâmil miskîn. Fe veylün lil musallîn. Ellezîne hüm an salâtihim sâhûn. Ellezîne hüm yürâûn. Ve yemne'ûnel mâûn.",
@@ -38,7 +58,7 @@ var zikirler = [
   { id: 3, isim: "🕌 Namaz Sonrası Zikirler", icerik: "<p><strong>1. İstiğfar (3 kere):</strong><br>Estağfirullâhe'l-azîm.<br><em>(Yüce Allah'tan bağışlanma dilerim.)</em></p><p><strong>2. Ayetel Kürsî</strong></p><p><strong>3. Sübhanallah (33 kere):</strong><br>Sübhânallâh.<br><em>(Allah'ı tenzih ederim.)</em></p><p><strong>4. Elhamdülillah (33 kere):</strong><br>Elhamdülillâh.<br><em>(Hamd Allah'a mahsustur.)</em></p><p><strong>5. Allahu Ekber (33 kere):</strong><br>Allâhü ekber.<br><em>(Allah en büyüktür.)</em></p><p><strong>6. Tehlil:</strong><br>Lâ ilâhe illallâhü vahdehû lâ şerîke leh. Lehül mülkü ve lehül hamdü ve hüve alâ külli şey'in kadîr.<br><em>(Allah'tan başka ilâh yoktur. O birdir, ortağı yoktur. Mülk O'nundur, hamd O'na mahsustur. O her şeye kadirdir.)</em></p>" },
   { id: 4, isim: "🌹 Peygamberimize Salavat", icerik: "<p><strong>1. Salavat:</strong><br>Allâhümme salli alâ Muhammedin ve alâ âli Muhammed.<br><em>(Allah'ım! Muhammed'e ve Muhammed'in âline rahmet et.)</em></p><p><strong>2. Salli Duası:</strong><br>Allâhümme salli alâ Muhammedin ve alâ âli Muhammed. Kemâ salleyte alâ İbrâhîme ve alâ âli İbrâhîm. İnneke hamîdün mecîd.<br><em>(Allah'ım! Muhammed'e ve Muhammed'in âline rahmet et. İbrâhim'e ve İbrâhim'in âline rahmet ettiğin gibi. Şüphesiz Sen övülmeye lâyıksın, şan ve şeref sahibisin.)</em></p><p><strong>3. Barik Duası:</strong><br>Allâhümme bârik alâ Muhammedin ve alâ âli Muhammed. Kemâ bârekte alâ İbrâhîme ve alâ âli İbrâhîm. İnneke hamîdün mecîd.<br><em>(Allah'ım! Muhammed'e ve Muhammed'in âline bereket ver. İbrâhim'e ve İbrâhim'in âline bereket verdiğin gibi. Şüphesiz Sen övülmeye lâyıksın, şan ve şeref sahibisin.)</em></p><p><strong>4. En Kısa Salavat:</strong><br>Allâhümme salli alâ seyyidinâ Muhammed.<br><em>(Allah'ım! Efendimiz Muhammed'e rahmet et.)</em></p><p><strong>5. Salevât-ı Şerîfe:</strong><br>Allâhümme salli ve sellim alâ seyyidinâ Muhammedin ve alâ âlihî ve sahbihî ecmaîn.<br><em>(Allah'ım! Efendimiz Muhammed'e, onun âline ve bütün ashâbına rahmet ve selâm et.)</em></p>" },
   { id: 5, isim: "💚 İstiğfar ve Tevbe", icerik: "<p><strong>1. Estağfirullah:</strong><br>Estağfirullâhe'l-azîm.<br><em>(Yüce Allah'tan bağışlanma dilerim.)</em></p><p><strong>2. Seyyidül İstiğfar:</strong><br>Allâhümme ente rabbî lâ ilâhe illâ ente. Halaktenî ve ene abdüke ve ene alâ ahdike ve va'dike mesteta'tü. Eûzü bike min şerri mâ sana'tü. Ebûü leke bi ni'metike aleyye ve ebûü bi zenbî fağfirlî fe innehû lâ yağfiruz zünûbe illâ ente.<br><em>(Allah'ım! Sen benim Rabbimsin, Senden başka ilâh yoktur. Beni Sen yarattın, ben Senin kulunum. Gücüm yettiğince Sana verdiğim sözde durmaya çalışıyorum. İşlediğim kötülüklerin şerrinden Sana sığınırım. Üzerimdeki nimetini de, işlediğim günahları da itiraf ediyorum. Beni bağışla. Şüphesiz günahları Senden başka bağışlayacak yoktur.)</em></p><p><strong>3. Tövbe Duası:</strong><br>Rabbenâ zalemnâ enfüsenâ ve in lem tağfir lenâ ve terhamnâ le nekûnenne minel hâsirîn.<br><em>(Rabbimiz! Biz kendimize zulmettik. Eğer bizi bağışlamaz ve bize acımazsan mutlaka ziyana uğrayanlardan oluruz.)</em></p>" },
-  { id: 6, isim: "🤲 Hastalık ve Şifa Duası", icerik: "<p><strong>1. Şifa Duası:</strong><br>Allâhümme rabben nâsi ezhibil be'se işfi enteş şâfî lâ şifâe illâ şifâük. Şifâen lâ yügâdiru sekamâ.<br><em>(Allah'ım! İnsanların Rabbi! Sıkıntıyı gider, şifa ver. Sen şifa verensin. Senin şifandan başka şifa yoktur. Hiçbir hastalık bırakmayan bir şifa ver.)</em></p><p><strong>2. Fâtiha:</strong> 7 kere oku, hastaya üfle.</p><p><strong>3. İhlâs, Felak, Nâs:</strong> 3 kere oku, hastaya üfle.</p><p><strong>4. Ayetel Kürsî</strong></p><p><strong>5. Şifa İçin Zikir:</strong><br>Yâ Şâfî, Yâ Kâfî, Yâ Muâfî.<br><em>(Ey şifa veren, ey yeten, ey afiyet veren Allah'ım!)</em></p>" },
+    { id: 6, isim: "🤲 Hastalık ve Şifa Duası", icerik: "<p><strong>1. Şifa Duası:</strong><br>Allâhümme rabben nâsi ezhibil be'se işfi enteş şâfî lâ şifâe illâ şifâük. Şifâen lâ yügâdiru sekamâ.<br><em>(Allah'ım! İnsanların Rabbi! Sıkıntıyı gider, şifa ver. Sen şifa verensin. Senin şifandan başka şifa yoktur. Hiçbir hastalık bırakmayan bir şifa ver.)</em></p><p><strong>2. Fâtiha:</strong> 7 kere oku, hastaya üfle.</p><p><strong>3. İhlâs, Felak, Nâs:</strong> 3 kere oku, hastaya üfle.</p><p><strong>4. Ayetel Kürsî</strong></p><p><strong>5. Şifa İçin Zikir:</strong><br>Yâ Şâfî, Yâ Kâfî, Yâ Muâfî.<br><em>(Ey şifa veren, ey yeten, ey afiyet veren Allah'ım!)</em></p>" },
   { id: 7, isim: "🛡️ Bela ve Nazara Karşı", icerik: "<p><strong>1. Nazar Duası:</strong><br>Eûzü bi kelimâtillâhit tâmmeti min şerri mâ halak.<br><em>(Yarattıklarının şerrinden Allah'ın eksiksiz kelimelerine sığınırım.)</em></p><p><strong>2. Felak ve Nâs:</strong> 3 kere oku, üfle.</p><p><strong>3. Ayetel Kürsî</strong></p><p><strong>4. Nazar İçin:</strong><br>Allâhümme bârik fîhî ve lâ tedarruhû.<br><em>(Allah'ım! Ona bereket ver ve ona zarar verme.)</em></p><p><strong>5. Kalem Sûresi 51-52. Ayetler:</strong> Nazara karşı okunur.</p>" },
   { id: 8, isim: "👨‍👩‍👧 Aile ve Çocuklar İçin", icerik: "<p><strong>1. Aile İçin Dua:</strong><br>Rabbenâ heb lenâ min ezvâcinâ ve zürriyyâtinâ kurrate a'yünin vec'alnâ lil müttekîne imâmâ.<br><em>(Rabbimiz! Bize eşlerimizden ve çocuklarımızdan gözümüzü aydınlatacak kimseler ver ve bizi takvâ sahiplerine önder eyle.)</em></p><p><strong>2. Çocuk İçin Dua:</strong><br>Rabbi heb lî min ledünke zürriyyeten tayyibeten inneke semîud duâ.<br><em>(Rabbim! Bana katından temiz bir nesil ver. Şüphesiz Sen duayı işitensin.)</em></p><p><strong>3. Eş İçin Dua:</strong><br>Allâhümme ellif beyne kulûbinâ ve aslih zâte beyninâ.<br><em>(Allah'ım! Kalplerimizi kaynaştır ve aramızı düzelt.)</em></p>" },
   { id: 9, isim: "🕊️ Rahmetli Olanlar İçin", icerik: "<p><strong>1. Vefat Eden İçin:</strong><br>Allâhümmağfir lehû verhamhü ve âfihî va'fü anhü.<br><em>(Allah'ım! Onu bağışla, ona merhamet et, ona afiyet ver ve onu affet.)</em></p><p><strong>2. Kabir Ziyareti Duası:</strong><br>Esselâmü aleyküm yâ ehled diyâri minel mü'minîne vel müslimîn. Ve innâ inşâallâhü biküm lâhikûn. Nes'elüllâhe lenâ ve lekümül âfiyete.<br><em>(Ey mü'min ve müslüman diyarının halkı! Selâm sizin üzerinize olsun. İnşallah biz de size katılacağız. Allah'tan bizim için de sizin için de afiyet dileriz.)</em></p><p><strong>3. Ölüye Dua:</strong><br>Allâhümmağfir lehû verhamhü ve nevvir kabrehû ve vessi' medhalehû.<br><em>(Allah'ım! Onu bağışla, ona merhamet et, kabrini nurlandır ve girdiği yeri genişlet.)</em></p><p><strong>4. Yâsîn Sûresi:</strong> Vefat edenin arkasından okunur.</p>" },
@@ -113,7 +133,8 @@ function listeyiOlustur() {
     var s = kisaSureler[i];
     var btn = document.createElement('button');
     btn.className = 'sure-item';
-     var spanNum = document.createElement('span');
+
+    var spanNum = document.createElement('span');
     spanNum.className = 'num';
     spanNum.textContent = (i + 1);
     btn.appendChild(spanNum);
@@ -128,8 +149,7 @@ function listeyiOlustur() {
 
     liste.appendChild(btn);
   }
-}
-
+   }
 function sureAc(sira) {
   var isim = "";
   for (var i = 0; i < kisaSureler.length; i++) {
@@ -252,7 +272,7 @@ function sayacBaslat() {
   for (var i = 0; i < sayacZikirleri.length; i++) {
     var opt = document.createElement('option');
     opt.value = i;
-      opt.textContent = sayacZikirleri[i].isim + " (" + sayacZikirleri[i].hedef + ")";
+    opt.textContent = sayacZikirleri[i].isim + " (" + sayacZikirleri[i].hedef + ")";
     secim.appendChild(opt);
   }
 
@@ -294,7 +314,6 @@ function sayacGuncelle() {
   if (rakamEl) rakamEl.textContent = sayacDeger;
   if (hedefEl) hedefEl.textContent = "Hedef: " + z.hedef + "  •  Kalan: " + Math.max(0, z.hedef - sayacDeger);
 }
-
 function guvercinUcur() {
   var g = document.getElementById('guvercin');
   if (!g) return;
@@ -460,7 +479,7 @@ var esmaListesi = [
   { id: 98, isim: "Er-Reşîd", anlam: "Doğru yolu gösteren." },
   { id: 99, isim: "Es-Sabûr", anlam: "Çok sabırlı olan." }
 ];
-     function esmaListesiOlustur() {
+function esmaListesiOlustur() {
   var liste = document.getElementById('esmaList');
   if (!liste) return;
   liste.innerHTML = '';
@@ -592,8 +611,7 @@ function toastGoster(mesaj) {
   document.body.appendChild(toast);
 
   setTimeout(function() { toast.classList.add('goster'); }, 50);
-
-  setTimeout(function() {
+     setTimeout(function() {
     toast.classList.remove('goster');
     setTimeout(function() { toast.remove(); }, 400);
   }, 2200);
@@ -633,7 +651,8 @@ function favoriMi(tur, id) {
     if (fav[tur][i] == id) return true;
   }
   return false;
-                                      }
+}
+
 function favoriDegistir(tur, id, isim, buton) {
   var fav = favorileriAl();
   if (!fav[tur]) fav[tur] = [];
@@ -747,5 +766,4 @@ function favoriListesiOlustur() {
     liste.style.display = 'grid';
     if (bosMesaj) bosMesaj.style.display = 'none';
   }
-       }
-     
+}
