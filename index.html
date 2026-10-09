@@ -34,7 +34,8 @@
     <button id="btn-esma" onclick="showPage
      ('esma')">🕌 Esma-ül Hüsna</button>
 <button id="btn-favoriler" onclick="showPage('favoriler')">⭐ Favorilerim</button>
-<button class="paylas-btn" onclick="paylasimAc()" title="Paylaş">🔗 Paylaş</button>
+<button class="paylas-btn" onclick="paylasimAc()" title="Paylaş">🔗 Paylaş<button id="btn-sartlar" onclick="showPage('sartlar')">📚 İslam'ın Şartları</button>
+</button>
   </div>
   <div id="page-sureler" class="page">
     <div class="sure-list" id="sureList"></div>
@@ -74,6 +75,46 @@
   </div>
 <!-- ESMA-ÜL HÜSNA LİSTESİ -->
 <!-- ⭐ FAVORİLER LİSTESİ -->
+<!-- 📚 İSLAM'IN VE İMANIN ŞARTLARI -->
+<div id="page-sartlar" class="page">
+  <div class="sure-content">
+    <h2 class="sure-title">📚 İslam'ın ve İmanın Şartları</h2>
+
+    <!-- İMANIN ŞARTLARI -->
+    <div class="section">
+      <h3>🌟 İmanın Şartları (6)</h3>
+      <div class="meaning">
+        <p><strong>1. Allah'a iman:</strong> Allah'ın varlığına, birliğine, eşi ve benzeri olmadığına inanmak.</p>
+        <p><strong>2. Meleklere iman:</strong> Allah'ın nurdan yarattığı meleklerin varlığına inanmak.</p>
+        <p><strong>3. Kitaplara iman:</strong> Allah'ın peygamberlerine gönderdiği kutsal kitaplara inanmak (Kur'an, Tevrat, İncil, Zebur, Suhuf).</p>
+        <p><strong>4. Peygamberlere iman:</strong> Allah'ın seçtiği peygamberlerin hepsine inanmak. İlk peygamber Hz. Âdem, son peygamber Hz. Muhammed (s.a.v.)'dir.</p>
+        <p><strong>5. Ahiret gününe iman:</strong> Ölümden sonra dirilişin, hesap gününün, cennet ve cehennemin varlığına inanmak.</p>
+        <p><strong>6. Kadere iman:</strong> Hayır ve şerrin Allah'ın bilgisi ve takdiriyle olduğuna inanmak.</p>
+      </div>
+    </div>
+
+    <!-- İSLAM'IN ŞARTLARI -->
+    <div class="section">
+      <h3>🕌 İslam'ın Şartları (5)</h3>
+      <div class="meaning">
+        <p><strong>1. Kelime-i Şehadet getirmek:</strong> "Eşhedü en lâ ilâhe illallâh ve eşhedü enne Muhammeden abdühû ve rasûlüh." demek. Yani Allah'tan başka ilâh olmadığına ve Hz. Muhammed'in O'nun kulu ve resûlü olduğuna şahitlik etmek.</p>
+        <p><strong>2. Namaz kılmak:</strong> Günde 5 vakit namaz kılmak (Sabah, Öğle, İkindi, Akşam, Yatsı).</p>
+        <p><strong>3. Oruç tutmak:</strong> Ramazan ayında oruç tutmak.</p>
+        <p><strong>4. Zekât vermek:</strong> Belirli bir zenginliğe ulaşan Müslümanların, mallarının kırkta birini (1/40) ihtiyaç sahiplerine vermesi.</p>
+        <p><strong>5. Hacca gitmek:</strong> Gücü yeten Müslümanların ömründe bir kere Kâbe'yi ziyaret etmesi.</p>
+      </div>
+    </div>
+
+    <div class="section" style="background:rgba(212,175,55,0.1); border-left:4px solid #d4af37;">
+      <h3>💚 Özet</h3>
+      <div class="meaning">
+        <p><strong>İmanın şartları:</strong> Kalple tasdik etmek, dil ile söylemek.</p>
+        <p><strong>İslam'ın şartları:</strong> Bedenle ve malla yapılan ibadetler.</p>
+        <p><em>İman, İslam'ın temelidir. İman olmadan İslam olmaz.</em></p>
+      </div>
+    </div>
+  </div>
+</div>
 <div id="page-favoriler" class="page">
   <div class="sure-list" id="favoriList"></div>
   <div id="favoriBos" style="display:none; text-align:center; padding:40px 20px; color:#c9c9a8;">
@@ -148,4 +189,5 @@
 </div>
 <script src="script.js"></script>
 </body>
-</html>
+  </html>
+  
