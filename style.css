@@ -517,3 +517,19 @@ footer {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(212,175,55,0.5);
   }
+/* 🎨 SAYFA YÜKSEKLİĞİ DÜZELTME */
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  min-height: 100vh;
+}
