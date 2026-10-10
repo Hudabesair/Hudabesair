@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hûdâ Beşâir</title>
-  <link rel="icon" type="image/png" href="favicon.png">
 <link rel="stylesheet" href="style.css">
   <meta name="google-site-verification" content="b1vFP2EHoSe-_iyciClI9a0K6KHq5vnuUR9UBhJtiw8" />
 </head>
@@ -37,6 +36,7 @@
 <button id="btn-favoriler" onclick="showPage('favoriler')">⭐ Favorilerim</button>
 <button class="paylas-btn" onclick="paylasimAc()" title="Paylaş">🔗 Paylaş<button id="btn-sartlar" onclick="showPage('sartlar')">📚 İslam'ın Şartları</button>
 </button>
+<button id="btn-hadisler" onclick="showPage('hadisler')">📖 Hadisler</button>
   </div>
   <div id="page-sureler" class="page">
     <div class="sure-list" id="sureList"></div>
@@ -116,6 +116,16 @@
     </div>
   </div>
 </div>
+<!-- 📖 HADİSLER SAYFASI -->
+<div id="page-hadisler" class="page">
+  <div class="sure-list" id="hadisList"></div>
+</div>
+
+<!-- 📖 HADİS DETAY SAYFASI -->
+<div id="page-hadisDetay" class="page">
+  <button class="back-btn" onclick="showPage('hadisler')">← Geri</button>
+  <div class="sure-content" id="hadisContent"></div>
+</div>
 <div id="page-favoriler" class="page">
   <div class="sure-list" id="favoriList"></div>
   <div id="favoriBos" style="display:none; text-align:center; padding:40px 20px; color:#c9c9a8;">
@@ -190,5 +200,4 @@
 </div>
 <script src="script.js"></script>
 </body>
-  </html>
-  
+</html>
