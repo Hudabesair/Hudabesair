@@ -58,7 +58,7 @@ var zikirler = [
   { id: 3, isim: "🕌 Namaz Sonrası Zikirler", icerik: "<p><strong>1. İstiğfar (3 kere):</strong><br>Estağfirullâhe'l-azîm.<br><em>(Yüce Allah'tan bağışlanma dilerim.)</em></p><p><strong>2. Ayetel Kürsî</strong></p><p><strong>3. Sübhanallah (33 kere):</strong><br>Sübhânallâh.<br><em>(Allah'ı tenzih ederim.)</em></p><p><strong>4. Elhamdülillah (33 kere):</strong><br>Elhamdülillâh.<br><em>(Hamd Allah'a mahsustur.)</em></p><p><strong>5. Allahu Ekber (33 kere):</strong><br>Allâhü ekber.<br><em>(Allah en büyüktür.)</em></p><p><strong>6. Tehlil:</strong><br>Lâ ilâhe illallâhü vahdehû lâ şerîke leh. Lehül mülkü ve lehül hamdü ve hüve alâ külli şey'in kadîr.<br><em>(Allah'tan başka ilâh yoktur. O birdir, ortağı yoktur. Mülk O'nundur, hamd O'na mahsustur. O her şeye kadirdir.)</em></p>" },
   { id: 4, isim: "🌹 Peygamberimize Salavat", icerik: "<p><strong>1. Salavat:</strong><br>Allâhümme salli alâ Muhammedin ve alâ âli Muhammed.<br><em>(Allah'ım! Muhammed'e ve Muhammed'in âline rahmet et.)</em></p><p><strong>2. Salli Duası:</strong><br>Allâhümme salli alâ Muhammedin ve alâ âli Muhammed. Kemâ salleyte alâ İbrâhîme ve alâ âli İbrâhîm. İnneke hamîdün mecîd.<br><em>(Allah'ım! Muhammed'e ve Muhammed'in âline rahmet et. İbrâhim'e ve İbrâhim'in âline rahmet ettiğin gibi. Şüphesiz Sen övülmeye lâyıksın, şan ve şeref sahibisin.)</em></p><p><strong>3. Barik Duası:</strong><br>Allâhümme bârik alâ Muhammedin ve alâ âli Muhammed. Kemâ bârekte alâ İbrâhîme ve alâ âli İbrâhîm. İnneke hamîdün mecîd.<br><em>(Allah'ım! Muhammed'e ve Muhammed'in âline bereket ver. İbrâhim'e ve İbrâhim'in âline bereket verdiğin gibi. Şüphesiz Sen övülmeye lâyıksın, şan ve şeref sahibisin.)</em></p><p><strong>4. En Kısa Salavat:</strong><br>Allâhümme salli alâ seyyidinâ Muhammed.<br><em>(Allah'ım! Efendimiz Muhammed'e rahmet et.)</em></p><p><strong>5. Salevât-ı Şerîfe:</strong><br>Allâhümme salli ve sellim alâ seyyidinâ Muhammedin ve alâ âlihî ve sahbihî ecmaîn.<br><em>(Allah'ım! Efendimiz Muhammed'e, onun âline ve bütün ashâbına rahmet ve selâm et.)</em></p>" },
   { id: 5, isim: "💚 İstiğfar ve Tevbe", icerik: "<p><strong>1. Estağfirullah:</strong><br>Estağfirullâhe'l-azîm.<br><em>(Yüce Allah'tan bağışlanma dilerim.)</em></p><p><strong>2. Seyyidül İstiğfar:</strong><br>Allâhümme ente rabbî lâ ilâhe illâ ente. Halaktenî ve ene abdüke ve ene alâ ahdike ve va'dike mesteta'tü. Eûzü bike min şerri mâ sana'tü. Ebûü leke bi ni'metike aleyye ve ebûü bi zenbî fağfirlî fe innehû lâ yağfiruz zünûbe illâ ente.<br><em>(Allah'ım! Sen benim Rabbimsin, Senden başka ilâh yoktur. Beni Sen yarattın, ben Senin kulunum. Gücüm yettiğince Sana verdiğim sözde durmaya çalışıyorum. İşlediğim kötülüklerin şerrinden Sana sığınırım. Üzerimdeki nimetini de, işlediğim günahları da itiraf ediyorum. Beni bağışla. Şüphesiz günahları Senden başka bağışlayacak yoktur.)</em></p><p><strong>3. Tövbe Duası:</strong><br>Rabbenâ zalemnâ enfüsenâ ve in lem tağfir lenâ ve terhamnâ le nekûnenne minel hâsirîn.<br><em>(Rabbimiz! Biz kendimize zulmettik. Eğer bizi bağışlamaz ve bize acımazsan mutlaka ziyana uğrayanlardan oluruz.)</em></p>" },
-    { id: 6, isim: "🤲 Hastalık ve Şifa Duası", icerik: "<p><strong>1. Şifa Duası:</strong><br>Allâhümme rabben nâsi ezhibil be'se işfi enteş şâfî lâ şifâe illâ şifâük. Şifâen lâ yügâdiru sekamâ.<br><em>(Allah'ım! İnsanların Rabbi! Sıkıntıyı gider, şifa ver. Sen şifa verensin. Senin şifandan başka şifa yoktur. Hiçbir hastalık bırakmayan bir şifa ver.)</em></p><p><strong>2. Fâtiha:</strong> 7 kere oku, hastaya üfle.</p><p><strong>3. İhlâs, Felak, Nâs:</strong> 3 kere oku, hastaya üfle.</p><p><strong>4. Ayetel Kürsî</strong></p><p><strong>5. Şifa İçin Zikir:</strong><br>Yâ Şâfî, Yâ Kâfî, Yâ Muâfî.<br><em>(Ey şifa veren, ey yeten, ey afiyet veren Allah'ım!)</em></p>" },
+  { id: 6, isim: "🤲 Hastalık ve Şifa Duası", icerik: "<p><strong>1. Şifa Duası:</strong><br>Allâhümme rabben nâsi ezhibil be'se işfi enteş şâfî lâ şifâe illâ şifâük. Şifâen lâ yügâdiru sekamâ.<br><em>(Allah'ım! İnsanların Rabbi! Sıkıntıyı gider, şifa ver. Sen şifa verensin. Senin şifandan başka şifa yoktur. Hiçbir hastalık bırakmayan bir şifa ver.)</em></p><p><strong>2. Fâtiha:</strong> 7 kere oku, hastaya üfle.</p><p><strong>3. İhlâs, Felak, Nâs:</strong> 3 kere oku, hastaya üfle.</p><p><strong>4. Ayetel Kürsî</strong></p><p><strong>5. Şifa İçin Zikir:</strong><br>Yâ Şâfî, Yâ Kâfî, Yâ Muâfî.<br><em>(Ey şifa veren, ey yeten, ey afiyet veren Allah'ım!)</em></p>" },
   { id: 7, isim: "🛡️ Bela ve Nazara Karşı", icerik: "<p><strong>1. Nazar Duası:</strong><br>Eûzü bi kelimâtillâhit tâmmeti min şerri mâ halak.<br><em>(Yarattıklarının şerrinden Allah'ın eksiksiz kelimelerine sığınırım.)</em></p><p><strong>2. Felak ve Nâs:</strong> 3 kere oku, üfle.</p><p><strong>3. Ayetel Kürsî</strong></p><p><strong>4. Nazar İçin:</strong><br>Allâhümme bârik fîhî ve lâ tedarruhû.<br><em>(Allah'ım! Ona bereket ver ve ona zarar verme.)</em></p><p><strong>5. Kalem Sûresi 51-52. Ayetler:</strong> Nazara karşı okunur.</p>" },
   { id: 8, isim: "👨‍👩‍👧 Aile ve Çocuklar İçin", icerik: "<p><strong>1. Aile İçin Dua:</strong><br>Rabbenâ heb lenâ min ezvâcinâ ve zürriyyâtinâ kurrate a'yünin vec'alnâ lil müttekîne imâmâ.<br><em>(Rabbimiz! Bize eşlerimizden ve çocuklarımızdan gözümüzü aydınlatacak kimseler ver ve bizi takvâ sahiplerine önder eyle.)</em></p><p><strong>2. Çocuk İçin Dua:</strong><br>Rabbi heb lî min ledünke zürriyyeten tayyibeten inneke semîud duâ.<br><em>(Rabbim! Bana katından temiz bir nesil ver. Şüphesiz Sen duayı işitensin.)</em></p><p><strong>3. Eş İçin Dua:</strong><br>Allâhümme ellif beyne kulûbinâ ve aslih zâte beyninâ.<br><em>(Allah'ım! Kalplerimizi kaynaştır ve aramızı düzelt.)</em></p>" },
   { id: 9, isim: "🕊️ Rahmetli Olanlar İçin", icerik: "<p><strong>1. Vefat Eden İçin:</strong><br>Allâhümmağfir lehû verhamhü ve âfihî va'fü anhü.<br><em>(Allah'ım! Onu bağışla, ona merhamet et, ona afiyet ver ve onu affet.)</em></p><p><strong>2. Kabir Ziyareti Duası:</strong><br>Esselâmü aleyküm yâ ehled diyâri minel mü'minîne vel müslimîn. Ve innâ inşâallâhü biküm lâhikûn. Nes'elüllâhe lenâ ve lekümül âfiyete.<br><em>(Ey mü'min ve müslüman diyarının halkı! Selâm sizin üzerinize olsun. İnşallah biz de size katılacağız. Allah'tan bizim için de sizin için de afiyet dileriz.)</em></p><p><strong>3. Ölüye Dua:</strong><br>Allâhümmağfir lehû verhamhü ve nevvir kabrehû ve vessi' medhalehû.<br><em>(Allah'ım! Onu bağışla, ona merhamet et, kabrini nurlandır ve girdiği yeri genişlet.)</em></p><p><strong>4. Yâsîn Sûresi:</strong> Vefat edenin arkasından okunur.</p>" },
@@ -122,6 +122,7 @@ if (isim === 'favoriler') favoriListesiOlustur();
 if (isim === 'sartlar') document.getElementById('btn-sartlar').classList.add('active');
   window.scrollTo(0, 0);
   guvercinUcur();
+  if (isim === 'hadisler' || isim === 'hadisDetay') document.getElementById('btn-hadisler').classList.add('active');
 }
 
 function listeyiOlustur() {
@@ -149,7 +150,7 @@ function listeyiOlustur() {
 
     liste.appendChild(btn);
   }
-   }
+  }
 function sureAc(sira) {
   var isim = "";
   for (var i = 0; i < kisaSureler.length; i++) {
@@ -314,6 +315,7 @@ function sayacGuncelle() {
   if (rakamEl) rakamEl.textContent = sayacDeger;
   if (hedefEl) hedefEl.textContent = "Hedef: " + z.hedef + "  •  Kalan: " + Math.max(0, z.hedef - sayacDeger);
 }
+
 function guvercinUcur() {
   var g = document.getElementById('guvercin');
   if (!g) return;
@@ -321,7 +323,7 @@ function guvercinUcur() {
   void g.offsetWidth;
   g.classList.add('ucus');
   setTimeout(function() { g.classList.remove('ucus'); }, 2600);
-}
+     }
 /* ============================================
    ÖZEL MEAL VERİLERİ
    (API'de hatalı olan sûreler için)
@@ -373,7 +375,312 @@ window.onload = function() {
   listeyiOlustur();
   zikirListesiOlustur();
   esmaListesiOlustur();
+  favoriListesiOlustur();
+  hadisListesiOlustur();
 };
+/* ============================================
+   📖 40 HADİS (Kütüb-i Sitte'den)
+   ============================================ */
+var hadisler = [
+  {
+    id: 1,
+    okunus: "İnnemel a'mâlü bin niyyât. Ve innemâ li küllimriin mâ nevâ.",
+    anlam: "Ameller niyetlere göredir. Herkese ancak niyet ettiği şey vardır.",
+    kaynak: "Buhârî, Müslim"
+  },
+  {
+    id: 2,
+    okunus: "El müslimü men selimel müslimûne min lisânihî ve yedih.",
+    anlam: "Müslüman, dilinden ve elinden Müslümanların emin olduğu kimsedir.",
+    kaynak: "Buhârî, Müslim"
+  },
+  {
+    id: 3,
+    okunus: "Lâ yü'minü ehadüküm hattâ yühibbe li ahîhi mâ yühibbü li nefsih.",
+    anlam: "Sizden biriniz kendisi için sevdiğini kardeşi için de sevmedikçe (gerçek) iman etmiş olmaz.",
+    kaynak: "Buhârî, Müslim"
+  },
+  {
+    id: 4,
+    okunus: "Men kâne yü'minü billâhi vel yevmil âhiri fel yükrim câreh.",
+    anlam: "Kim Allah'a ve âhiret gününe inanıyorsa, komşusuna ikram etsin.",
+    kaynak: "Buhârî, Müslim"
+  },
+  {
+    id: 5,
+    okunus: "Yessirû ve lâ tu'assirû. Beşşirû ve lâ tüneffirû.",
+    anlam: "Kolaylaştırın, zorlaştırmayın. Müjdeleyin, nefret ettirmeyin.",
+    kaynak: "Buhârî, Müslim"
+  },
+  {
+    id: 6,
+    okunus: "Ed dînü nasîha. Kulnâ: Li men? Kâle: Lillâhi ve li kitâbihî ve li rasûlihî ve li eimmetil müslimîne ve âmmetihim.",
+    anlam: "Din nasihattir (samimiyettir). 'Kime karşı?' diye sorduk. 'Allah'a, Kitabına, Rasûlüne, Müslümanların idarecilerine ve bütün Müslümanlara' buyurdu.",
+    kaynak: "Müslim"
+  },
+  {
+    id: 7,
+    okunus: "Men lâ yerhamin nâse lâ yerhamhullâh.",
+    anlam: "İnsanlara merhamet etmeyene Allah da merhamet etmez.",
+    kaynak: "Buhârî, Müslim"
+  },
+  {
+    id: 8,
+    okunus: "Lâ yedhulül cennete kâtilün. Ve lâ yedhulül cennete nemmâm.",
+    anlam: "Cennete katil (öldüren) girmez. Cennete söz taşıyan (koğuculuk yapan) da girmez.",
+    kaynak: "Müslim"
+  },
+  {
+    id: 9,
+    okunus: "İttekuş şühha. Fe inneş şühha ehlekel men kâne kableküm.",
+    anlam: "Cimrilikten sakının. Çünkü cimrilik sizden öncekileri helâk etmiştir.",
+    kaynak: "Müslim"
+  },
+  {
+    id: 10,
+    okunus: "El cennetü tahte ezlâfil ümmehât.",
+    anlam: "Cennet annelerin ayakları altındadır.",
+    kaynak: "Nesâî, Ahmed bin Hanbel"
+  },
+  {
+  id: 11,
+  okunus: "Men kâne yü'minü billâhi vel yevmil âhiri fel yekul hayran ev li yashut.",
+  anlam: "Kim Allah'a ve âhiret gününe inanıyorsa ya hayır söylesin ya da sussun.",
+  kaynak: "Buhârî, Müslim"
+},
+{
+  id: 12,
+  okunus: "Men nefese an mü'minin kürbeten min kürabid dünyâ nefesallâhü anhü kürbeten min kürabi yevmil kıyâme.",
+  anlam: "Kim bir mü'minin dünya sıkıntılarından birini giderirse, Allah da onun kıyamet günü sıkıntılarından birini giderir.",
+  kaynak: "Müslim"
+},
+{
+  id: 13,
+  okunus: "Men setera mü'minen seterallâhü fîd dünyâ vel âhıra.",
+  anlam: "Kim bir mü'minin ayıbını örterse, Allah da onun dünya ve âhiretteki ayıbını örter.",
+  kaynak: "Müslim"
+},
+{
+  id: 14,
+  okunus: "Allâhü fî aynil abdî mâ kâne abdün fî ayni ahîh.",
+  anlam: "Kul, kardeşinin yardımında olduğu sürece Allah da kulun yardımındadır.",
+  kaynak: "Müslim"
+},
+{
+  id: 15,
+  okunus: "Men nehece tarîkan yeltenisü fîhi ilmen nehecellâhü lehû tarîkan ilel cenneh.",
+  anlam: "Kim bir ilim öğrenmek için yola çıkarsa, Allah ona cennete giden bir yol kolaylaştırır.",
+  kaynak: "Müslim"
+},
+{
+  id: 16,
+  okunus: "Men kâle lâ ilâhe illallâhü muhlis an kalbihî dehale l cenneh.",
+  anlam: "Kim kalpten ihlasla 'Lâ ilâhe illallâh' derse cennete girer.",
+  kaynak: "Buhârî, Müslim"
+},
+{
+  id: 17,
+  okunus: "El kelimetüt tayyibetü sadakah.",
+  anlam: "Güzel söz sadakadır.",
+  kaynak: "Buhârî, Müslim"
+},
+{
+  id: 18,
+  okunus: "Küllü ma'rûfin sadakah.",
+  anlam: "Her iyilik sadakadır.",
+  kaynak: "Buhârî"
+},
+{
+  id: 19,
+  okunus: "Men dellilâ hayrin fe lehû mislü ecri fâilih.",
+  anlam: "Kim bir hayra vesile olursa, ona o hayrı yapanın sevabı kadar sevap vardır.",
+  kaynak: "Müslim"
+},
+{
+  id: 20,
+  okunus: "Lâ yeşkürullâhe men lâ yeşkürün nâs.",
+  anlam: "İnsanlara teşekkür etmeyen, Allah'a da şükretmez.",
+  kaynak: "Ebû Dâvûd, Tirmizî"
+},
+{
+  id: 21,
+  okunus: "El mü'minü lil mü'mini kel bunyâni y eşüddü şükkehû ba'dahû ba'dâ.",
+  anlam: "Mü'min, mü'min için birbirini destekleyen bir bina gibidir.",
+  kaynak: "Buhârî, Müslim"
+},
+{
+  id: 22,
+  okunus: "Men lâ yü'minü bi hakkıl mü'mini felâ yü'minü billâhi.",
+  anlam: "Kim mü'minin hakkına riayet etmezse, Allah'a iman etmiş olmaz.",
+  kaynak: "Tirmizî"
+},
+{
+  id: 23,
+  okunus: "Lâ yü'minü abdün hattâ yü'minü li cârihî mâ yü'minü li nefsih.",
+  anlam: "Kişi, komşusu için kendisi için istediğini istemedikçe iman etmiş olmaz.",
+  kaynak: "Buhârî"
+},
+{
+  id: 24,
+  okunus: "El hayyâü şü'betün minel îmân.",
+  anlam: "Utanmak (hayâ), imanın bir şubesidir.",
+  kaynak: "Buhârî, Müslim"
+},
+{
+  id: 25,
+  okunus: "Men kâle lâ ilâhe illallâhü ve kefera bimâ yü'bedü min dûnillâhi harume mâlühû ve demühû.",
+  anlam: "Kim 'Lâ ilâhe illallâh' der ve Allah'tan başka tapılanları inkâr ederse, malı ve kanı haram olur.",
+  kaynak: "Müslim"
+},
+{
+  id: 26,
+  okunus: "İnnel ılme yü'tâhü li yüntefe'a bih.",
+  anlam: "İlim, faydalanılmak için verilir.",
+  kaynak: "Buhârî"
+},
+{
+  id: 27,
+  okunus: "Men talebe ılmen li yücâriye bihıl ulemâe ve li yümâriye bihıs süfehâe ve li yestecilbe bihî vücûhen nâsi edhalehullâhün nâr.",
+  anlam: "Kim ilmi, âlimlere karşı gelmek, cahillerle tartışmak ve insanların yüzünü kendisine çevirmek için öğrenirse, Allah onu cehenneme koyar.",
+  kaynak: "Tirmizî, İbn Mâce"
+},
+{
+  id: 28,
+  okunus: "El cennetü dârül mü'minîn.",
+  anlam: "Cennet, mü'minlerin yurdudur.",
+  kaynak: "Buhârî"
+},
+{
+  id: 29,
+  okunus: "Lâ tatrukün nâse alel ebvâbi. Fe inne fîhim men lâ yecidü mâ yüf'ilü bih.",
+  anlam: "İnsanların kapılarını çalmayın. Çünkü içlerinde yapacak bir şey bulamayanlar vardır.",
+  kaynak: "Buhârî"
+},
+{
+  id: 30,
+  okunus: "El müslimûne şürâtü...",
+  anlam: "Müslümanlar, birbirinin aynasıdır.",
+  kaynak: "Ebû Dâvûd"
+},
+{
+  id: 31,
+  okunus: "İnne fîl cesedi mudgaten izâ salühat salühal cesedü küllüh. E lâ ve hiye l kalb.",
+  anlam: "Bedende bir et parçası vardır. O iyi olursa bütün beden iyi olur. İyi bilin ki o, kalptir.",
+  kaynak: "Buhârî, Müslim"
+},
+{
+  id: 32,
+  okunus: "El birru hüsnül huluk.",
+  anlam: "İyilik, güzel ahlaktır.",
+  kaynak: "Müslim"
+},
+{
+  id: 33,
+  okunus: "Men lâ yerhamü lâ yürham.",
+  anlam: "Merhamet etmeyene merhamet edilmez.",
+  kaynak: "Buhârî, Müslim"
+},
+{
+  id: 34,
+  okunus: "El kibrü besarun li hakk.",
+  anlam: "Kibir, hakkı kabul etmemektir.",
+  kaynak: "Müslim"
+},
+{
+  id: 35,
+  okunus: "İtteku nâre ve lev bi şıkkı temrah.",
+  anlam: "Yarım hurmayla da olsa cehennem ateşinden korunun.",
+  kaynak: "Buhârî, Müslim"
+},
+{
+  id: 36,
+  okunus: "Men kâne âhıru kelâmihî lâ ilâhe illallâhü dehale l cenneh.",
+  anlam: "Son sözü 'Lâ ilâhe illallâh' olan kimse cennete girer.",
+  kaynak: "Ebû Dâvûd"
+},
+{
+  id: 37,
+  okunus: "Lâ teğdab.",
+  anlam: "Öfkelenme!",
+  kaynak: "Buhârî"
+},
+{
+  id: 38,
+  okunus: "El yemînü l yemîn.",
+  anlam: "Yemin, ancak Allah adına yapılır.",
+  kaynak: "Nesâî"
+},
+{
+  id: 39,
+  okunus: "Sılaür rahmi ve hüsnül huluk.",
+  anlam: "Akrabalık bağını korumak ve güzel ahlak.",
+  kaynak: "Tirmizî"
+},
+{
+  id: 40,
+  okunus: "Ed dünyâ sicnül mü'mini ve cennetül kâfir.",
+  anlam: "Dünya, mü'minin zindanı, kâfirin cennetidir.",
+  kaynak: "Müslim"
+},
+];
+/* 📖 HADİSLER LİSTESİ */
+function hadisListesiOlustur() {
+  var liste = document.getElementById('hadisList');
+  if (!liste) return;
+  liste.innerHTML = '';
+
+  for (var i = 0; i < hadisler.length; i++) {
+    var h = hadisler[i];
+    var btn = document.createElement('button');
+    btn.className = 'sure-item';
+
+    var spanNum = document.createElement('span');
+    spanNum.className = 'num';
+    spanNum.textContent = h.id;
+    btn.appendChild(spanNum);
+
+    var spanIsim = document.createElement('span');
+    var kisaAnlam = h.anlam.length > 55 ? h.anlam.substring(0, 55) + "..." : h.anlam;
+    spanIsim.textContent = kisaAnlam;
+    btn.appendChild(spanIsim);
+
+    btn.onclick = (function(hadis) {
+      return function() { hadisAc(hadis.id); };
+    })(h);
+
+    liste.appendChild(btn);
+  }
+}
+
+/* 📖 HADİS AÇ */
+function hadisAc(id) {
+  var h = null;
+  for (var i = 0; i < hadisler.length; i++) {
+    if (hadisler[i].id === id) { h = hadisler[i]; break; }
+  }
+  if (!h) return;
+
+  var html = '';
+  html += '<h2 class="sure-title">📖 ' + h.id + '. Hadis</h2>';
+
+  html += '<div class="section">';
+  html += '<h3>🔤 Okunuş</h3>';
+  html += '<div class="reading">' + h.okunus + '</div>';
+  html += '</div>';
+
+  html += '<div class="section">';
+  html += '<h3>💡 Anlam</h3>';
+  html += '<div class="meaning">' + h.anlam + '</div>';
+  html += '</div>';
+
+  html += '<div class="section" style="border-left-color:#a8a88a;">';
+  html += '<h3>📚 Kaynak</h3>';
+  html += '<div class="meaning" style="color:#a8a88a;">' + h.kaynak + '</div>';
+  html += '</div>';
+
+  document.getElementById('hadisContent').innerHTML = html;
+  showPage('hadisDetay');
+}
 /* ============================================
    🕌 ESMA-ÜL HÜSNA - 99 İsim
    ============================================ */
@@ -611,7 +918,8 @@ function toastGoster(mesaj) {
   document.body.appendChild(toast);
 
   setTimeout(function() { toast.classList.add('goster'); }, 50);
-     setTimeout(function() {
+
+  setTimeout(function() {
     toast.classList.remove('goster');
     setTimeout(function() { toast.remove(); }, 400);
   }, 2200);
