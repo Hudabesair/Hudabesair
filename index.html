@@ -148,11 +148,12 @@
     <div class="sure-content">
       <h2 class="sure-title">📿 Zikir Sayacı</h2>
 
-      <div class="sayac-secim">
-        <label>Zikir Seç:</label>
-        <select id="sayacZikirSecim" onchange="sayacZikirDegistir()"></select>
-      </div>
-
+    <div class="sayac-secim">
+  <label>Zikir Seç:</label>
+  <button id="sayacZikirButon" class="sayac-secim-buton" onclick="sayacZikirPencereAc()">
+    Lâ ilâhe illallâh <span class="ok">▼</span>
+  </button>
+</div>
       <div class="sayac-ekran">
         <div class="sayac-isim" id="sayacIsim">Lâ ilâhe illallâh</div>
         <div class="sayac-rakam" id="sayacRakam">0</div>
@@ -199,7 +200,16 @@
 
   <button class="paylas-kapat" onclick="paylasimKapat()">✕ Kapat</button>
 </div>
+<!-- 📿 ZİKİR SEÇİM PENCERESİ -->
+<div id="sayacZikirPencere" class="sayac-pencere">
+  <div class="sayac-pencere-icerik">
+    <div class="sayac-pencere-baslik">
+      <span>📿 Zikir Seç</span>
+      <button class="sayac-pencere-kapat" onclick="sayacZikirPencereKapat()">✕</button>
+    </div>
+    <div id="sayacZikirPencereListe" class="sayac-pencere-liste"></div>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
   </html>
-  
