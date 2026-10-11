@@ -26,7 +26,6 @@ var kisaSureler = [
   { id: 113, isim: "Felak Sûresi" },
   { id: 114, isim: "Nâs Sûresi" }
 ];
-
 var okunuslar = {
   1: "Bismillâhirrahmânirrahîm. Elhamdülillâhi rabbil âlemîn. Errahmânirrahîm. Mâliki yevmiddîn. İyyâke na'büdü ve iyyâke neste'în. İhdinas-sırâtal müstakîm. Sırâtallezîne en'amte aleyhim, gayril mağdûbi aleyhim ve led-dâllîn. Âmîn.",
   93: "Ved duhâ. Vel leyli izâ secâ. Mâ veddeake rabbüke ve mâ kalâ. Ve lel âhiratü hayrun leke minel ûlâ. Ve le sevfe yu'tîke rabbüke fe terdâ. Elem yecidke yetîmen fe âvâ. Ve vecedeke dâllen fe hedâ. Ve vecedeke âilen fe ağnâ. Fe emmel yetîme felâ takhar. Ve emmes sâile felâ tenhar. Ve emmâ bi ni'meti rabbike fe haddis.",
@@ -51,7 +50,6 @@ var okunuslar = {
   113: "Kul e'ûzü bi rabbil felak. Min şerri mâ halak. Ve min şerri gâsikın izâ vekab. Ve min şerrin neffâsâti fil ukad. Ve min şerri hâsidin izâ hased.",
   114: "Kul e'ûzü bi rabbin nâs. Melikin nâs. İlâhin nâs. Min şerril vesvâsil hannâs. Ellezî yüvesvisü fî sudûrin nâs. Minel cinneti ven nâs."
 };
-
 var zikirler = [
   { id: 1, isim: "🌅 Sabah Zikirleri", icerik: "<p><strong>1. Sabah Kalkınca:</strong><br>Elhamdülillâhillezî ahyânâ ba'de mâ emâtenâ ve ileyhin nüşûr.<br><em>(Bizi öldürdükten sonra dirilten Allah'a hamdolsun. Dönüş yalnız O'nadır.)</em></p><p><strong>2. Sabah Namazından Sonra:</strong><br>Sübhânallâhi ve bihamdihî, sübhânallâhil azîm.<br><em>(Allah'ı tesbih ve hamd ederim. Yüce Allah'ı tesbih ederim.)</em></p><p><strong>3. Ayetel Kürsî:</strong> Sabah okuyan akşama kadar korunur.</p><p><strong>4. İhlâs, Felak, Nâs:</strong> 3 kere okuyan her şeyden korunur.</p>" },
   { id: 2, isim: "🌙 Akşam Zikirleri", icerik: "<p><strong>1. Akşam Olunca:</strong><br>Allâhümme bike emseynâ ve bike asbahnâ ve bike nahyâ ve bike nemûtü ve ileykel masîr.<br><em>(Allah'ım! Seninle akşama erdik, Seninle sabaha erdik. Seninle yaşar, Seninle ölürüz. Dönüş yalnız Sanadır.)</em></p><p><strong>2. Akşam Namazından Sonra:</strong><br>Sübhânallâhi ve bihamdihî, sübhânallâhil azîm.<br><em>(Allah'ı tesbih ve hamd ederim. Yüce Allah'ı tesbih ederim.)</em></p><p><strong>3. Ayetel Kürsî:</strong> Akşam okuyan sabaha kadar korunur.</p>" },
@@ -75,28 +73,30 @@ var zikirler = [
   { id: 20, isim: "🌙 Yatmadan Önce Zikirler", icerik: "<p><strong>1. Yatarken:</strong><br>Bismikellâhümme emûtü ve ahyâ.<br><em>(Allah'ım! Senin adınla ölür ve dirilirim.)</em></p><p><strong>2. Ayetel Kürsî</strong></p><p><strong>3. İhlâs, Felak, Nâs:</strong> 3 kere oku, üfle.</p><p><strong>4. Sübhanallah (33), Elhamdülillah (33), Allahu Ekber (34)</strong></p><p><strong>5. Mülk Sûresi:</strong> Kabir azabından korur.</p><p><strong>6. Secde Sûresi:</strong> Yatmadan önce okunması faziletlidir.</p>" }
 ];
 var sayacZikirleri = [
-  { isim: "Lâ ilâhe illallâh", hedef: 100 },
-  { isim: "Sübhânallâh", hedef: 33 },
-  { isim: "Elhamdülillâh", hedef: 33 },
-  { isim: "Allâhü ekber", hedef: 34 },
-  { isim: "Estağfirullâh", hedef: 100 },
-  { isim: "Allâhümme salli alâ Muhammed", hedef: 100 },
-  { isim: "Lâ havle ve lâ kuvvete illâ billâh", hedef: 100 },
-  { isim: "Sübhânallâhi ve bihamdihî", hedef: 100 },
-  { isim: "Yâ Latîf", hedef: 100 },
-  { isim: "Yâ Vedûd", hedef: 100 },
-  { isim: "Yâ Fettâh", hedef: 100 },
-  { isim: "Yâ Rezzâk", hedef: 100 },
-  { isim: "Yâ Şâfî", hedef: 100 },
-  { isim: "Yâ Kâfî", hedef: 100 },
-  { isim: "Yâ Hâfız", hedef: 100 },
-  { isim: "Yâ Müheymin", hedef: 100 },
-  { isim: "Yâ Hakem", hedef: 100 },
-  { isim: "Yâ Adl", hedef: 100 },
-  { isim: "Yâ Ganî", hedef: 100 },
-  { isim: "Yâ Muâfî", hedef: 100 }
+  { isim: "Lâ ilâhe illallâh", anlam: "Allah'tan başka ilâh yoktur." },
+  { isim: "Sübhânallâh", anlam: "Allah'ı tenzih ederim (her türlü eksiklikten uzaktır)." },
+  { isim: "Elhamdülillâh", anlam: "Hamd Allah'a mahsustur." },
+  { isim: "Allâhü ekber", anlam: "Allah en büyüktür." },
+  { isim: "Estağfirullâh", anlam: "Allah'tan bağışlanma dilerim." },
+  { isim: "Allâhümme salli alâ Muhammed", anlam: "Allah'ım! Muhammed'e rahmet et." },
+  { isim: "Lâ havle ve lâ kuvvet İllâ billâh", anlam: "Güç ve kuvvet ancak Allah'tandır." },
+  { isim: "Sübhânallâhi ve bihamdihî", anlam: "Allah'ı tesbih ve hamd ederim." },
+  { isim: "Yâ Latîf", anlam: "Ey lütfeden, ey en ince işlerin içini bilen Allah'ım!" },
+  { isim: "Yâ Vedûd", anlam: "Ey çok seven ve çok sevilen Allah'ım!" },
+  { isim: "Yâ Fettâh", anlam: "Ey kapalı kapıları açan, zorlukları kolaylaştıran Allah'ım!" },
+  { isim: "Yâ Rezzâk", anlam: "Ey bütün canlıların rızkını veren Allah'ım!" },
+  { isim: "Yâ Şâfî", anlam: "Ey hastalara şifa veren Allah'ım!" },
+  { isim: "Yâ Kâfî", anlam: "Ey her şeye yeten, kullarının ihtiyaçlarını karşılayan Allah'ım!" },
+  { isim: "Yâ Hâfız", anlam: "Ey koruyan, gözeten Allah'ım!" },
+  { isim: "Yâ Müheymin", anlam: "Ey her şeyi gözetleyen, koruyup kollayan Allah'ım!" },
+  { isim: "Yâ Hakem", anlam: "Ey hükmeden, hakkı yerine getiren Allah'ım!" },
+  { isim: "Yâ Adl", anlam: "Ey mutlak adaletli olan Allah'ım!" },
+  { isim: "Yâ Ganî", anlam: "Ey zengin, hiçbir şeye ihtiyacı olmayan Allah'ım!" },
+  { isim: "Yâ Muâfî", anlam: "Ey afiyet veren, hastalıklardan koruyan Allah'ım!" },
+  { isim: "Leyse lehamın dünillahi kaşifeh", anlam: "Allah'tan başka onun sıkıntısını giderecek yoktur." },
+{ isim: "Sübhânallâhi vel hamdülillâhi ve lâ ilâhe illallâhü vallâhü ekber", anlam: "Allah'ı tenzih ederim, hamd Allah'a mahsustur, Allah'tan başka ilâh yoktur, Allah en büyüktür." },
+{ isim: "Allâhümme Rabben-nâs, ezhibi'l-be's, işfi ente'ş-Şâfî, lâ şifâe illâ şifâük, şifâen lâ yugâdiru sekamâ", anlam: "Allah'ım! Ey insanların Rabbi! Sıkıntıyı gider, şifa ver! Sen şifa verensin, Senin şifandan başka şifa yoktur. Hiçbir hastalık bırakmayan bir şifa ver." }
 ];
-
 var onbellek = {};  // Kullanılmıyor ama dursun
 var sayacDeger = 0;
 var sayacAktifZikir = 0;
@@ -150,7 +150,8 @@ function listeyiOlustur() {
 
     liste.appendChild(btn);
   }
-  }
+}
+
 function sureAc(sira) {
   var isim = "";
   for (var i = 0; i < kisaSureler.length; i++) {
@@ -243,9 +244,8 @@ function zikirListesiOlustur() {
 
     liste.appendChild(btn);
   }
-}
-
-function zikirAc(id) {
+     }
+      function zikirAc(id) {
   var z = null;
   for (var i = 0; i < zikirler.length; i++) {
     if (zikirler[i].id === id) { z = zikirler[i]; break; }
@@ -261,35 +261,57 @@ function zikirAc(id) {
   document.getElementById('zikirContent').innerHTML = html;
   showPage('zikirDetay');
 }
-
 function sayacBaslat() {
   if (sayacBaslatildi) return;
   sayacBaslatildi = true;
 
-  var secim = document.getElementById('sayacZikirSecim');
-  if (!secim) return;
-
-  secim.innerHTML = '';
-  for (var i = 0; i < sayacZikirleri.length; i++) {
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.textContent = sayacZikirleri[i].isim + " (" + sayacZikirleri[i].hedef + ")";
-    secim.appendChild(opt);
-  }
-
   sayacAktifZikir = 0;
   sayacDeger = 0;
   sayacGuncelle();
+  sayacButonGuncelle();
 }
 
-function sayacZikirDegistir() {
-  var secim = document.getElementById('sayacZikirSecim');
-  if (!secim) return;
-  sayacAktifZikir = parseInt(secim.value);
-  sayacDeger = 0;
-  sayacGuncelle();
+/* Buton yazısını güncelle */
+function sayacButonGuncelle() {
+  var buton = document.getElementById('sayacZikirButon');
+  if (!buton) return;
+  var z = sayacZikirleri[sayacAktifZikir];
+  if (!z) return;
+  buton.innerHTML = z.isim + ' <span class="ok">▼</span>';
 }
 
+/* Pencereyi aç */
+function sayacZikirPencereAc() {
+  var pencere = document.getElementById('sayacZikirPencere');
+  var liste = document.getElementById('sayacZikirPencereListe');
+  if (!pencere || !liste) return;
+
+  liste.innerHTML = '';
+  for (var i = 0; i < sayacZikirleri.length; i++) {
+    (function(index) {
+      var btn = document.createElement('button');
+      btn.className = 'sayac-pencere-item';
+      if (index === sayacAktifZikir) btn.classList.add('aktif');
+      btn.textContent = sayacZikirleri[index].isim;
+      btn.onclick = function() {
+        sayacAktifZikir = index;
+        sayacDeger = 0;
+        sayacButonGuncelle();
+        sayacGuncelle();
+        sayacZikirPencereKapat();
+      };
+      liste.appendChild(btn);
+    })(i);
+  }
+
+  pencere.classList.add('acik');
+}
+
+/* Pencereyi kapat */
+function sayacZikirPencereKapat() {
+  var pencere = document.getElementById('sayacZikirPencere');
+  if (pencere) pencere.classList.remove('acik');
+}
 function sayacArttir() {
   sayacDeger++;
   sayacGuncelle();
@@ -313,9 +335,10 @@ function sayacGuncelle() {
   var hedefEl = document.getElementById('sayacHedef');
   if (isimEl) isimEl.textContent = z.isim;
   if (rakamEl) rakamEl.textContent = sayacDeger;
-  if (hedefEl) hedefEl.textContent = "Hedef: " + z.hedef + "  •  Kalan: " + Math.max(0, z.hedef - sayacDeger);
+  if (hedefEl) {
+    hedefEl.innerHTML = "<span style='color:#c9c9a8; font-style:italic; font-size:0.95rem; display:block; margin-bottom:10px;'>" + (z.anlam || "") + "</span><span style='font-size:0.85rem;'>İstediğiniz kadar zikredebilirsiniz 🤲</span>";
+  }
 }
-
 function guvercinUcur() {
   var g = document.getElementById('guvercin');
   if (!g) return;
@@ -323,7 +346,7 @@ function guvercinUcur() {
   void g.offsetWidth;
   g.classList.add('ucus');
   setTimeout(function() { g.classList.remove('ucus'); }, 2600);
-     }
+}
 /* ============================================
    ÖZEL MEAL VERİLERİ
    (API'de hatalı olan sûreler için)
@@ -442,8 +465,7 @@ var hadisler = [
     anlam: "Cennet annelerin ayakları altındadır.",
     kaynak: "Nesâî, Ahmed bin Hanbel"
   },
-  {
-  id: 11,
+   id: 11,
   okunus: "Men kâne yü'minü billâhi vel yevmil âhiri fel yekul hayran ev li yashut.",
   anlam: "Kim Allah'a ve âhiret gününe inanıyorsa ya hayır söylesin ya da sussun.",
   kaynak: "Buhârî, Müslim"
@@ -503,7 +525,7 @@ var hadisler = [
   kaynak: "Ebû Dâvûd, Tirmizî"
 },
 {
-  id: 21,
+      id: 21,
   okunus: "El mü'minü lil mü'mini kel bunyâni y eşüddü şükkehû ba'dahû ba'dâ.",
   anlam: "Mü'min, mü'min için birbirini destekleyen bir bina gibidir.",
   kaynak: "Buhârî, Müslim"
@@ -623,7 +645,7 @@ var hadisler = [
   kaynak: "Müslim"
 },
 ];
-/* 📖 HADİSLER LİSTESİ */
+     /* 📖 HADİSLER LİSTESİ */
 function hadisListesiOlustur() {
   var liste = document.getElementById('hadisList');
   if (!liste) return;
@@ -786,7 +808,7 @@ var esmaListesi = [
   { id: 98, isim: "Er-Reşîd", anlam: "Doğru yolu gösteren." },
   { id: 99, isim: "Es-Sabûr", anlam: "Çok sabırlı olan." }
 ];
-function esmaListesiOlustur() {
+   function esmaListesiOlustur() {
   var liste = document.getElementById('esmaList');
   if (!liste) return;
   liste.innerHTML = '';
@@ -923,8 +945,7 @@ function toastGoster(mesaj) {
     toast.classList.remove('goster');
     setTimeout(function() { toast.remove(); }, 400);
   }, 2200);
-}
-
+     }
 /* Menüye tıklayınca kapatma (arka plana tıklayınca) */
 document.addEventListener('click', function(e) {
   var menu = document.getElementById('paylasMenu');
