@@ -135,6 +135,7 @@ header p {
   border-radius: 16px;
   padding: 25px;
 }
+
 .back-btn {
   background: transparent;
   color: #d4af37;
@@ -246,7 +247,8 @@ footer {
   background: radial-gradient(circle, rgba(255,255,255,0.4), transparent 70%);
   transform: translate(-50%, -50%);
   animation: parilti 0.8s ease-in-out infinite;
-    }
+}
+
 @keyframes parilti {
   0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
   50%      { opacity: 0.6; transform: translate(-50%, -50%) scale(1.3); }
@@ -438,7 +440,8 @@ footer {
   cursor: pointer;
   transition: all 0.25s ease;
   -webkit-tap-highlight-color: transparent;
-  }
+}
+
 .paylas-secenek:hover {
   background: rgba(212,175,55,0.2);
   border-color: #d4af37;
@@ -541,3 +544,145 @@ body {
   overscroll-behavior-y: none;
   -webkit-overflow-scrolling: touch;
 }
+/* 📿 ZİKİR SAYACI SEÇİM LİSTESİ (DROPDOWN) */
+.sayac-secim select option {
+  background: #0b3d2e;
+  color: #f5f5dc;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+/* 📿 ZİKİR SEÇİM BUTONU */
+.sayac-secim-buton {
+  background: linear-gradient(135deg, #0e5a3d, #0a3f2a);
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sayac-secim-buton:hover {
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  color: #062b1f;
+}
+
+.sayac-secim-buton .ok {
+  color: #d4af37;
+  font-size: 0.8rem;
+}
+
+.sayac-secim-buton:hover .ok {
+  color: #062b1f;
+}
+
+/* 📿 ZİKİR SEÇİM PENCERESİ */
+.sayac-pencere {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.sayac-pencere.acik {
+  display: flex;
+}
+
+.sayac-pencere-icerik {
+  background: linear-gradient(135deg, #0b3d2e, #062b1f);
+  border: 2px solid #d4af37;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+}
+
+.sayac-pencere-baslik {
+  background: linear-gradient(135deg, #0e5a3d, #0a3f2a);
+  color: #d4af37;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #d4af37;
+  letter-spacing: 1px;
+}
+
+.sayac-pencere-kapat {
+  background: transparent;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+  font-family: inherit;
+}
+
+.sayac-pencere-kapat:hover {
+  background: #d4af37;
+  color: #062b1f;
+}
+
+.sayac-pencere-liste {
+  overflow-y: auto;
+  padding: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.sayac-pencere-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(212,175,55,0.3);
+  color: #f5f5dc;
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+}
+
+.sayac-pencere-item:hover {
+  background: rgba(212,175,55,0.15);
+  border-color: #d4af37;
+  transform: translateX(5px);
+}
+
+.sayac-pencere-item.aktif {
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  color: #062b1f;
+  border-color: #d4af37;
+  font-weight: 700;
+                    }
