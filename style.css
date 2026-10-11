@@ -114,7 +114,6 @@ header p {
   border-color: #d4af37;
   transform: translateX(5px);
 }
-
 .sure-item .num {
   background: #d4af37;
   color: #062b1f;
@@ -310,7 +309,6 @@ footer {
   margin-bottom: 20px;
   text-shadow: 0 0 30px rgba(212,175,55,0.5);
 }
-
 .sayac-btn {
   background: linear-gradient(135deg, #d4af37, #b8941f);
   color: #062b1f;
@@ -685,4 +683,4 @@ body {
   color: #062b1f;
   border-color: #d4af37;
   font-weight: 700;
-                    }
+}
