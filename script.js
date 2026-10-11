@@ -124,7 +124,6 @@ if (isim === 'sartlar') document.getElementById('btn-sartlar').classList.add('ac
   guvercinUcur();
   if (isim === 'hadisler' || isim === 'hadisDetay') document.getElementById('btn-hadisler').classList.add('active');
 }
-
 function listeyiOlustur() {
   var liste = document.getElementById('sureList');
   if (!liste) return;
@@ -139,8 +138,7 @@ function listeyiOlustur() {
     spanNum.className = 'num';
     spanNum.textContent = (i + 1);
     btn.appendChild(spanNum);
-
-    var spanIsim = document.createElement('span');
+     var spanIsim = document.createElement('span');
     spanIsim.textContent = s.isim;
     btn.appendChild(spanIsim);
 
@@ -166,8 +164,7 @@ function sureAc(sira) {
   showPage('detail');
 
   var mealUrl = 'https://cdn.jsdelivr.net/npm/quran-cloud@1.0.0/dist/chapters/tr/' + sira + '.json';
-
-  fetch(mealUrl)
+   fetch(mealUrl)
     .then(function(c) {
       if (!c.ok) throw new Error('Meal alınamadı');
       return c.json();
@@ -233,8 +230,7 @@ function zikirListesiOlustur() {
     spanNum.className = 'num';
     spanNum.textContent = z.id;
     btn.appendChild(spanNum);
-
-    var spanIsim = document.createElement('span');
+     var spanIsim = document.createElement('span');
     spanIsim.textContent = z.isim;
     btn.appendChild(spanIsim);
 
@@ -244,8 +240,9 @@ function zikirListesiOlustur() {
 
     liste.appendChild(btn);
   }
-     }
-      function zikirAc(id) {
+}
+
+function zikirAc(id) {
   var z = null;
   for (var i = 0; i < zikirler.length; i++) {
     if (zikirler[i].id === id) { z = zikirler[i]; break; }
@@ -465,7 +462,8 @@ var hadisler = [
     anlam: "Cennet annelerin ayakları altındadır.",
     kaynak: "Nesâî, Ahmed bin Hanbel"
   },
-   id: 11,
+  {
+  id: 11,
   okunus: "Men kâne yü'minü billâhi vel yevmil âhiri fel yekul hayran ev li yashut.",
   anlam: "Kim Allah'a ve âhiret gününe inanıyorsa ya hayır söylesin ya da sussun.",
   kaynak: "Buhârî, Müslim"
@@ -525,7 +523,7 @@ var hadisler = [
   kaynak: "Ebû Dâvûd, Tirmizî"
 },
 {
-      id: 21,
+  id: 21,
   okunus: "El mü'minü lil mü'mini kel bunyâni y eşüddü şükkehû ba'dahû ba'dâ.",
   anlam: "Mü'min, mü'min için birbirini destekleyen bir bina gibidir.",
   kaynak: "Buhârî, Müslim"
@@ -645,7 +643,7 @@ var hadisler = [
   kaynak: "Müslim"
 },
 ];
-     /* 📖 HADİSLER LİSTESİ */
+/* 📖 HADİSLER LİSTESİ */
 function hadisListesiOlustur() {
   var liste = document.getElementById('hadisList');
   if (!liste) return;
@@ -808,7 +806,7 @@ var esmaListesi = [
   { id: 98, isim: "Er-Reşîd", anlam: "Doğru yolu gösteren." },
   { id: 99, isim: "Es-Sabûr", anlam: "Çok sabırlı olan." }
 ];
-   function esmaListesiOlustur() {
+function esmaListesiOlustur() {
   var liste = document.getElementById('esmaList');
   if (!liste) return;
   liste.innerHTML = '';
@@ -945,7 +943,7 @@ function toastGoster(mesaj) {
     toast.classList.remove('goster');
     setTimeout(function() { toast.remove(); }, 400);
   }, 2200);
-     }
+}
 /* Menüye tıklayınca kapatma (arka plana tıklayınca) */
 document.addEventListener('click', function(e) {
   var menu = document.getElementById('paylasMenu');
