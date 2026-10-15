@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#062b1f">
+<title>Hûdâ Beşâir</title>
+<link rel="stylesheet" href="style.css">
+  <meta name="google-site-verification" content="b1vFP2EHoSe-_iyciClI9a0K6KHq5vnuUR9UBhJtiw8" />
+</head>
+<body>
+
+<div class="guvercin" id="guvercin">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path class="kanat-sol" d="M50 50 Q30 30 15 35 Q25 45 40 50 Z" fill="#ffffff"/>
+    <path class="kanat-sag" d="M50 50 Q70 30 85 35 Q75 45 60 50 Z" fill="#f0f0f0"/>
+    <ellipse cx="50" cy="55" rx="12" ry="8" fill="#ffffff"/>
+    <circle cx="60" cy="48" r="6" fill="#ffffff"/>
+    <path d="M65 48 L72 50 L65 52 Z" fill="#ffd966"/>
+    <circle cx="61" cy="47" r="1.2" fill="#333"/>
+    <path d="M38 55 Q32 60 35 68 Q40 62 42 58 Z" fill="#f0f0f0"/>
+  </svg>
+</div>
+
+<div class="container">
+  <header>
+    <h1>HÛDÂ BEŞÂİR</h1>
+    <p>Hidayet Müjdecisi</p>
+  </header>
+  <div class="menu">
+    <button id="btn-home" class="active" onclick="showPage('home')">Anasayfa</button>
+    <button id="btn-sureler" onclick="showPage('sureler')">Sureler</button>
+    <button id="btn-zikirler" onclick="showPage('zikirler')">Zikirler</button>
+    <button id="btn-sayac" onclick="showPage('sayac')">📿 Zikir Sayacı</button>
+    <button id="btn-esma" onclick="showPage
+     ('esma')">🕌 Esma-ül Hüsna</button>
+<button id="btn-favoriler" onclick="showPage('favoriler')">⭐ Favorilerim</button>
+<button class="paylas-btn" onclick="paylasimAc()" title="Paylaş">🔗 Paylaş</button>
+<button id="btn-sartlar" onclick="showPage('sartlar')">📚 İslam'ın Şartları</button>
+<button id="btn-hadisler" onclick="showPage('hadisler')">📖 Hadisler</button>
+<button id="btn-abdest" onclick="showPage('abdest')">💧 Abdest</button>
+<button id="btn-namaz" onclick="showPage('namaz')">🕌 Namaz</button>
+<button id="btn-siyer" onclick="showPage('siyer')">📖 Hz. Muhammed (s.a.v.)</button>
+  </div>
+  <div id="page-sureler" class="page">
+    <div class="sure-list" id="sureList"></div>
+  </div>
+
+  <div id="page-detail" class="page">
+    <button class="back-btn" onclick="showPage('sureler')">← Geri</button>
+    <div class="sure-content" id="sureContent"></div>
+  </div>
+
+  <div id="page-zikirler" class="page">
+    <div class="sure-list" id="zikirList"></div>
+  </div>
+<div class="home-card">
+  <div class="bismillah">﷽</div>
+  <h2>Hoş Geldiniz</h2>
+  <p>
+    Bu mübarek sayfaya adım attığınız için <strong>hoş geldiniz, sefâlar getirdiniz</strong>.
+    <br><br>
+    Burada Kur'ân-ı Kerîm'den kısa sûrelerin Türkçe okunuşunu ve meâlini,
+    Peygamber Efendimiz'e salavatları, duaları, zikirleri,
+    <strong>📿 Zikir Sayacı</strong>'nı ve <strong>🕌 Esmâ-ül Hüsna</strong>'yı bulabilirsiniz.
+    <br><br>
+    Yukarıdaki butonlardan birine tıklayarak başlayabilirsiniz.
+  </p>
+
+  <div class="karsilama-dua">
+    <h3>🤲 Karşılama Duâsı</h3>
+    <p class="dua-arapca">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</p>
+    <p class="dua-okunus"><em>Rabbenâ âtinâ fid-dünyâ haseneten ve fil âhirati haseneten ve kınâ azâben nâr.</em></p>
+    <p class="dua-mean"><strong>Anlamı:</strong> Rabbimiz! Bize dünyada da iyilik ver, âhirette de iyilik ver ve bizi cehennem azabından koru. <span style="color:#a8a88a;">(Bakara, 201)</span></p>
+  </div>
+</div>
+  <div id="page-zikirDetay" class="page">
+    <button class="back-btn" onclick="showPage('zikirler')">← Geri</button>
+    <div class="sure-content" id="zikirContent"></div>
+  </div>
+<!-- ESMA-ÜL HÜSNA LİSTESİ -->
+<!-- ⭐ FAVORİLER LİSTESİ -->
+<!-- 📚 İSLAM'IN VE İMANIN ŞARTLARI -->
+<div id="page-sartlar" class="page">
+  <div class="sure-content">
+    <h2 class="sure-title">📚 İslam'ın ve İmanın Şartları</h2>
+
+    <!-- İMANIN ŞARTLARI -->
+    <div class="section">
+      <h3>🌟 İmanın Şartları (6)</h3>
+      <div class="meaning">
+        <p><strong>1. Allah'a iman:</strong> Allah'ın varlığına, birliğine, eşi ve benzeri olmadığına inanmak.</p>
+        <p><strong>2. Meleklere iman:</strong> Allah'ın nurdan yarattığı meleklerin varlığına inanmak.</p>
+        <p><strong>3. Kitaplara iman:</strong> Allah'ın peygamberlerine gönderdiği kutsal kitaplara inanmak (Kur'an, Tevrat, İncil, Zebur, Suhuf).</p>
+        <p><strong>4. Peygamberlere iman:</strong> Allah'ın seçtiği peygamberlerin hepsine inanmak. İlk peygamber Hz. Âdem, son peygamber Hz. Muhammed (s.a.v.)'dir.</p>
+        <p><strong>5. Ahiret gününe iman:</strong> Ölümden sonra dirilişin, hesap gününün, cennet ve cehennemin varlığına inanmak.</p>
+        <p><strong>6. Kadere iman:</strong> Hayır ve şerrin Allah'ın bilgisi ve takdiriyle olduğuna inanmak.</p>
+      </div>
+    </div>
+
+    <!-- İSLAM'IN ŞARTLARI -->
+    <div class="section">
+      <h3>🕌 İslam'ın Şartları (5)</h3>
+      <div class="meaning">
+        <p><strong>1. Kelime-i Şehadet getirmek:</strong> "Eşhedü en lâ ilâhe illallâh ve eşhedü enne Muhammeden abdühû ve rasûlüh." demek. Yani Allah'tan başka ilâh olmadığına ve Hz. Muhammed'in O'nun kulu ve resûlü olduğuna şahitlik etmek.</p>
+        <p><strong>2. Namaz kılmak:</strong> Günde 5 vakit namaz kılmak (Sabah, Öğle, İkindi, Akşam, Yatsı).</p>
+        <p><strong>3. Oruç tutmak:</strong> Ramazan ayında oruç tutmak.</p>
+        <p><strong>4. Zekât vermek:</strong> Belirli bir zenginliğe ulaşan Müslümanların, mallarının kırkta birini (1/40) ihtiyaç sahiplerine vermesi.</p>
+        <p><strong>5. Hacca gitmek:</strong> Gücü yeten Müslümanların ömründe bir kere Kâbe'yi ziyaret etmesi.</p>
+      </div>
+    </div>
+
+    <div class="section" style="background:rgba(212,175,55,0.1); border-left:4px solid #d4af37;">
+      <h3>💚 Özet</h3>
+      <div class="meaning">
+        <p><strong>İmanın şartları:</strong> Kalple tasdik etmek, dil ile söylemek.</p>
+        <p><strong>İslam'ın şartları:</strong> Bedenle ve malla yapılan ibadetler.</p>
+        <p><em>İman, İslam'ın temelidir. İman olmadan İslam olmaz.</em></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 📖 HADİSLER SAYFASI -->
+<div id="page-hadisler" class="page">
+  <div class="sure-list" id="hadisList"></div>
+</div>
+
+<!-- 📖 HADİS DETAY SAYFASI -->
+<div id="page-hadisDetay" class="page">
+  <button class="back-btn" onclick="showPage('hadisler')">← Geri</button>
+  <div class="sure-content" id="hadisContent"></div>
+</div>
+<!-- 💧 ABDEST REHBERİ SAYFASI -->
+<div id="page-abdest" class="page">
+  <div class="sure-content">
+    <h2 class="sure-title">💧 Abdest Rehberi</h2>
+
+    <!-- 1. ABDEST NEDİR? -->
+    <div class="section">
+      <h3>📖 1. Abdest Nedir?</h3>
+      <div class="meaning">
+        <p>Abdest, belirli organları usulüne uygun olarak yıkamak ve mesh etmek suretiyle yapılan bir temizliktir. <strong>Namazın ön şartıdır.</strong> Abdestsiz namaz kılınmaz.</p>
+        <p><strong>Abdestin önemi:</strong></p>
+        <p>• Namaz kılmadan önce abdest almak farzdır.</p>
+        <p>• Kur'an-ı Kerim'e dokunmak için abdestli olmak gerekir.</p>
+        <p>• Kâbe'yi tavaf etmek için abdestli olmak gerekir.</p>
+        <p>• Manevi temizlik sağlar.</p>
+      </div>
+    </div>
+
+    <!-- 2. ABDESTİN FARZLARI -->
+    <div class="section">
+      <h3>⭐ 2. Abdestin Farzları (4)</h3>
+      <div class="meaning">
+        <p>Abdestin farzları, abdestin geçerli olması için mutlaka yapılması gereken şeylerdir. Bunlardan biri yapılmazsa abdest geçersiz olur.</p>
+        <p><strong>1. Yüzü yıkamak:</strong> Alından çene altına, bir kulak yumuşağından diğerine kadar olan kısmı yıkamak.</p>
+        <p><strong>2. Elleri dirseklerle birlikte yıkamak:</strong> Parmak uçlarından dirseklere kadar (dirsekler dahil) yıkamak.</p>
+        <p><strong>3. Başın dörtte birini mesh etmek:</strong> Islak elle başın üst kısmına dokunmak.</p>
+        <p><strong>4. Ayakları topuklarla birlikte yıkamak:</strong> Parmak uçlarından topuklara kadar (topuklar dahil) yıkamak.</p>
+      </div>
+    </div>
+
+    <!-- 3. ABDESTİN SÜNNETLERİ -->
+    <div class="section">
+      <h3>📋 3. Abdestin Sünnetleri</h3>
+      <div class="meaning">
+        <p>Abdestin sünnetleri, Peygamber Efendimizin (s.a.v.) abdest alırken yaptığı ve yapılmasını tavsiye ettiği şeylerdir. Yapılırsa sevap kazanılır, yapılmazsa abdest yine geçerli olur.</p>
+        <p>• Niyet etmek</p>
+        <p>• Besmele çekmek (Bismillâh)</p>
+        <p>• Elleri bileklere kadar üç kere yıkamak</p>
+        <p>• Ağza üç kere su vermek (mazmaza)</p>
+        <p>• Burna üç kere su vermek (istinşak)</p>
+        <p>• Başın tamamını mesh etmek</p>
+        <p>• Kulakları mesh etmek</p>
+        <p>• Boynu mesh etmek</p>
+        <p>• Her organı üç kere yıkamak</p>
+        <p>• Organları ara vermeden yıkamak</p>
+        <p>• Sağdan başlamak (sağ el, sağ ayak)</p>
+        <p>• Parmakları hilallemek (parmak aralarını temizlemek)</p>
+      </div>
+    </div>
+
+    <!-- 4. ABDEST NASIL ALINIR? -->
+    <div class="section">
+      <h3>🚰 4. Abdest Nasıl Alınır? (Adım Adım)</h3>
+      <div class="meaning">
+        <p><strong>1. Niyet et:</strong> Kalpten abdest almaya niyet et.</p>
+        <p><strong>2. Besmele çek:</strong> "Bismillâhirrahmânirrahîm" de.</p>
+        <p><strong>3. Elleri yıka:</strong> Bileklere kadar üç kere yıka.</p>
+        <p><strong>4. Ağza su ver:</strong> Sağ avuçla ağzına üç kere su al, çalkala (mazmaza).</p>
+        <p><strong>5. Burna su ver:</strong> Sağ avuçla burnuna üç kere su çek, temizle (istinşak).</p>
+        <p><strong>6. Yüzü yıka:</strong> Alından çene altına, kulaktan kulağa üç kere yıka.</p>
+        <p><strong>7. Sağ kolu yıka:</strong> Parmak uçlarından dirseğe kadar (dirsek dahil) üç kere yıka.</p>
+        <p><strong>8. Sol kolu yıka:</strong> Parmak uçlarından dirseğe kadar (dirsek dahil) üç kere yıka.</p>
+        <p><strong>9. Başı mesh et:</strong> Islak elle başının tamamını bir kere mesh et.</p>
+        <p><strong>10. Kulakları mesh et:</strong> İşaret parmaklarıyla içini, baş parmaklarla arkasını mesh et.</p>
+        <p><strong>11. Boynu mesh et:</strong> Elin arkasıyla boynunu mesh et.</p>
+        <p><strong>12. Sağ ayağı yıka:</strong> Parmak uçlarından topuğa kadar (topuk dahil) üç kere yıka.</p>
+        <p><strong>13. Sol ayağı yıka:</strong> Parmak uçlarından topuğa kadar (topuk dahil) üç kere yıka.</p>
+      </div>
+    </div>
+
+    <!-- 5. ABDESTİ BOZAN ŞEYLER -->
+    <div class="section">
+      <h3>⚠️ 5. Abdesti Bozan Şeyler</h3>
+      <div class="meaning">
+        <p>Bu durumlardan biri olursa abdest bozulur ve yeniden abdest almak gerekir:</p>
+        <p>• Tuvalet ihtiyacını gidermek (küçük/büyük)</p>
+        <p>• Yellenmek</p>
+        <p>• Vücudun herhangi bir yerinden kan, irin veya sarı su akması</p>
+        <p>• Ağız dolusu kusmak</p>
+        <p>• Uyumak (dayanmadan, yatarak veya yaslanarak)</p>
+        <p>• Aklın gitmesi (bayılma, delilik, sarhoşluk)</p>
+        <p>• Namazda sesli gülmek</p>
+        <p>• Cinsel ilişki veya cinsel temas</p>
+        <p>• Vücudun herhangi bir yerinden kan çıkması (Hanefî mezhebine göre)</p>
+      </div>
+    </div>
+
+    <!-- 6. ABDEST DUASI -->
+    <div class="section">
+      <h3>🤲 6. Abdest Duası</h3>
+      <div class="meaning">
+        <p><strong>Abdest bitince önce Kelime-i Şehadet okunur:</strong></p>
+        <p>"Eşhedü en lâ ilâhe illallâhü vahdehû lâ şerîke leh. Ve eşhedü enne Muhammeden abdühû ve rasûlüh."</p>
+        <p><em>Anlamı: Allah'tan başka ilâh olmadığına, O'nun bir olduğuna ve ortağı bulunmadığına şahitlik ederim. Muhammed'in (s.a.v.) O'nun kulu ve resûlü olduğuna da şahitlik ederim.</em></p>
+        <p><strong>Sonra şu dua okunur:</strong></p>
+        <p>"Allâhümmec'alnî minet tevvâbîne vec'alnî minel müte tahhirîn."</p>
+        <p><em>Anlamı: Allah'ım! Beni tövbe edenlerden ve temizlenenlerden kıl.</em></p>
+      </div>
+    </div>
+
+    <!-- 7. GUSÜL ABDESTİ -->
+    <div class="section">
+      <h3>🛁 7. Gusül Abdesti (Boy Abdesti)</h3>
+      <div class="meaning">
+        <p><strong>Gusül nedir?</strong></p>
+        <p>Gusül, bütün vücudu hiç kuru yer kalmayacak şekilde yıkamaktır. Buna "boy abdesti" de denir.</p>
+        <p><strong>Guslün farzları (3):</strong></p>
+        <p>1. Ağza su vermek (mazmaza)</p>
+        <p>2. Burna su vermek (istinşak)</p>
+        <p>3. Bütün vücudu yıkamak</p>
+        <p><strong>Guslü gerektiren haller:</strong></p>
+        <p>• Cinsel ilişki</p>
+        <p>• İhtilam olmak (rüyada hallenmek)</p>
+        <p>• Hayız (kadınların adet hali)</p>
+        <p>• Nifas (doğum sonrası kanama)</p>
+        <p><strong>Gusül nasıl alınır?</strong></p>
+        <p>1. Niyet et, Besmele çek.</p>
+        <p>2. Elleri yıka, avret yerini temizle.</p>
+        <p>3. Abdest al (namaz abdesti gibi).</p>
+        <p>4. Başına üç kere su dök, saç diplerine ulaştır.</p>
+        <p>5. Sağ omuza üç kere su dök, vücudu ov.</p>
+        <p>6. Sol omuza üç kere su dök, vücudu ov.</p>
+        <p>7. Bütün vücudu yıka, hiç kuru yer bırakma.</p>
+      </div>
+    </div>
+
+    <!-- 8. TEYEMMÜM -->
+    <div class="section">
+      <h3>🏜️ 8. Teyemmüm</h3>
+      <div class="meaning">
+        <p><strong>Teyemmüm nedir?</strong></p>
+        <p>Su bulunmadığında veya suyu kullanma imkanı olmadığında, temiz toprak (veya toprak cinsinden bir yüzey) ile yapılan manevi temizliktir.</p>
+        <p><strong>Teyemmüm ne zaman yapılır?</strong></p>
+        <p>• Su bulunmadığında</p>
+        <p>• Su bulunup da kullanma imkanı olmadığında (hastalık, yolculuk vs.)</p>
+        <p>• Suyun kullanılması sağlığa zararlı olduğunda</p>
+        <p><strong>Teyemmüm nasıl yapılır?</strong></p>
+        <p>1. Niyet et.</p>
+        <p>2. Besmele çek.</p>
+        <p>3. Elleri temiz toprağa vur (bir kere).</p>
+        <p>4. Elleri birbirine vur, fazla toprağı silkele.</p>
+        <p>5. Yüzü mesh et (alından çene altına).</p>
+        <p>6. Tekrar elleri toprağa vur.</p>
+        <p>7. Sağ kolu dirsekle birlikte mesh et.</p>
+        <p>8. Sol kolu dirsekle birlikte mesh et.</p>
+        <p><strong>Teyemmümü bozan şeyler:</strong> Abdesti bozan şeyler teyemmümü de bozar. Ayrıca su bulununca teyemmüm bozulur.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- 🕌 NAMAZ REHBERİ SAYFASI -->
+<div id="page-namaz" class="page">
+  <div class="sure-content">
+    <h2 class="sure-title">🕌 Namaz Rehberi</h2>
+
+    <!-- 1. NAMAZ NEDİR? -->
+    <div class="section">
+      <h3>📖 1. Namaz Nedir?</h3>
+      <div class="meaning">
+        <p>Namaz, İslam'ın beş şartından biri olup, günde beş vakit kılınması farz olan bir ibadettir. Namaz, kulun Allah ile buluşmasıdır. Peygamber Efendimiz (s.a.v.) "Namaz, dinin direğidir" buyurmuştur.</p>
+        <p><strong>Namazın Önemi:</strong></p>
+        <p>• İslam'ın 5 şartından biridir.</p>
+        <p>• Kıyamet günü ilk sorgulanacak ibadettir.</p>
+        <p>• İnsanı kötülüklerden alıkoyar.</p>
+        <p>• Kalbe huzur verir.</p>
+      </div>
+    </div>
+
+    <!-- 2. NAMAZIN FARZLARI -->
+    <div class="section">
+      <h3>⭐ 2. Namazın Farzları (12)</h3>
+      <div class="meaning">
+        <p><strong>Namazın dışındaki farzlar (7):</strong></p>
+        <p>1. Hadesten tahâret (abdest almak, gerekirse gusül)</p>
+        <p>2. Necâsetten tahâret (beden, elbise ve yerin temiz olması)</p>
+        <p>3. Setr-i avret (örtülmesi gereken yerleri örtmek)</p>
+        <p>4. İstikbâl-i kıble (Kâbe'ye yönelmek)</p>
+        <p>5. Vakit (namaz vaktinin girmesi)</p>
+        <p>6. Niyet (hangi namazı kılacağını kalpten belirlemek)</p>
+        <p>7. İftitah tekbiri (namaza "Allâhü ekber" diyerek başlamak)</p>
+        <p><strong>Namazın içindeki farzlar (5):</strong></p>
+        <p>8. Kıyam (ayakta durmak)</p>
+        <p>9. Kıraat (Kur'an okumak)</p>
+        <p>10. Rükû (eğilmek)</p>
+        <p>11. Secde (yere kapanmak)</p>
+        <p>12. Ka'de-i âhire (son oturuş)</p>
+      </div>
+    </div>
+
+    <!-- 3. 5 VAKİT NAMAZ REKATLARI -->
+    <div class="section">
+      <h3>📊 3. 5 Vakit Namaz Rekâtları</h3>
+      <div class="meaning">
+        <p><strong>SABAH NAMAZI:</strong> 2 sünnet + 2 farz = <strong>4 rekât</strong></p>
+        <p><strong>ÖĞLE NAMAZI:</strong> 4 ilk sünnet + 4 farz + 2 son sünnet = <strong>10 rekât</strong></p>
+        <p><strong>İKİNDİ NAMAZI:</strong> 4 sünnet + 4 farz = <strong>8 rekât</strong></p>
+       <p><strong>AKŞAM NAMAZI:</strong> 3 farz + 2 son sünnet = <strong>5 rekât</strong></p>
+        <p><strong>YATSI NAMAZI:</strong> 4 ilk sünnet + 4 farz + 2 son sünnet + 3 vitir = <strong>13 rekât</strong></p>
+        <p><strong>Günlük Toplam:</strong> 40 rekât</p>
+      </div>
+    </div>
+
+    <!-- 4. SABAH NAMAZI -->
+    <div class="section">
+      <h3>🌅 4. Sabah Namazı (4 Rekât)</h3>
+      <div class="meaning">
+        <p><strong>SABAH NAMAZININ KILINIŞI:</strong></p>
+        <p><strong>2 REKÂT SÜNNET:</strong></p>
+        <p>1. Rekât: Niyet + "Allâhü ekber" → Subhaneke → Fâtiha → Bir sûre (örn. İhlâs) → Rükû → Secde → Kalk</p>
+        <p>2. Rekât: Fâtiha → Bir sûre → Rükû → Secde → Oturuş → Ettehiyyatü → Selam</p>
+        <p><strong>2 REKÂT FARZ:</strong></p>
+        <p>1. Rekât: Niyet + "Allâhü ekber" → Subhaneke → Fâtiha → Bir sûre → Rükû → Secde → Kalk</p>
+        <p>2. Rekât: Fâtiha → Bir sûre → Rükû → Secde → Oturuş → Ettehiyyatü → Salli-Barik → Rabbena duaları → Selam</p>
+        <p><strong>Not:</strong> Sabah namazının sünneti ile farzı arasında sadece "kıyam" (ayağa kalkma) vardır. Ayrıca kamet getirilir.</p>
+      </div>
+    </div>
+
+    <!-- 5. ÖĞLE NAMAZI -->
+    <div class="section">
+      <h3>☀️ 5. Öğle Namazı (10 Rekât)</h3>
+      <div class="meaning">
+        <p><strong>ÖĞLE NAMAZININ KILINIŞI:</strong></p>
+        <p><strong>4 REKÂT İLK SÜNNET:</strong></p>
+        <p>1. Rekât: Niyet + "Allâhü ekber" → Subhaneke → Fâtiha → Bir sûre → Rükû → Secde → Kalk</p>
+        <p>2. Rekât: Fâtiha → Bir sûre → Rükû → Secde → Oturuş → Ettehiyyatü → Kalk</p>
+        <p>3. Rekât: Fâtiha → Bir sûre → Rükû → Secde → Kalk (3. ve 4. rekâtlarda sadece Fâtiha okunur, sure okunmaz)</p>
+        <p>4. Rekât: Fâtiha → Rükû → Secde → Oturuş → Ettehiyyatü → Selam</p>
+        <p><strong>4 REKÂT FARZ:</strong> (Sünnet gibi kılınır, sadece niyet farklıdır)</p>
+        <p><strong>2 REKÂT SON SÜNNET:</strong> (Sabah namazının sünneti gibi kılınır)</p>
+        <p><strong>Not:</strong> Öğle namazının farzında ilk oturuşta sadece Ettehiyyatü okunur.</p>
+      </div>
+    </div>
+
+    <!-- 6. İKİNDİ NAMAZI -->
+    <div class="section">
+      <h3>🌤️ 6. İkindi Namazı (8 Rekât)</h3>
+      <div class="meaning">
+        <p><strong>İKİNDİ NAMAZININ KILINIŞI:</strong></p>
+        <p><strong>4 REKÂT SÜNNET:</strong> (Öğle namazının ilk sünneti gibi)</p>
+        <p><strong>4 REKÂT FARZ:</strong> (Öğle namazının farzı gibi)</p>
+        <p><strong>Not:</strong> İkindinin sünneti, ilk oturuşta Ettehiyyatü okunur. Farzı da aynı şekildedir.</p>
+      </div>
+    </div>
+
+    <!-- 7. AKŞAM NAMAZI -->
+    <div class="section">
+      <h3>🌆 7. Akşam Namazı (5 Rekât)</h3>
+      <div class="meaning">
+        <p><strong>AKŞAM NAMAZININ KILINIŞI:</strong></p>
+        <p><strong>3 REKÂT FARZ:</strong></p>
+        <p>1. Rekât: Niyet + "Allâhü ekber" → Subhaneke → Fâtiha → Bir sûre → Rükû → Secde → Kalk</p>
+        <p>2. Rekât: Fâtiha → Bir sûre → Rükû → Secde → Oturuş → Ettehiyyatü → Kalk</p>
+        <p>3. Rekât: Fâtiha → Rükû → Secde → Oturuş → Ettehiyyatü → Salli-Barik → Rabbena duaları → Selam</p>
+        <p><strong>2 REKÂT SÜNNET:</strong> (Sabah namazının sünneti gibi kılınır)</p>
+      </div>
+    </div>
+
+    <!-- 8. YATSI NAMAZI -->
+    <div class="section">
+      <h3>🌙 8. Yatsı Namazı (13 Rekât)</h3>
+      <div class="meaning">
+        <p><strong>YATSI NAMAZININ KILINIŞI:</strong></p>
+        <p><strong>4 REKÂT İLK SÜNNET:</strong> (Öğle namazının ilk sünneti gibi)</p>
+        <p><strong>4 REKÂT FARZ:</strong> (Öğle namazının farzı gibi)</p>
+        <p><strong>2 REKÂT SON SÜNNET:</strong> (Sabah namazının sünneti gibi)</p>
+        <p><strong>3 REKÂT VİTİR:</strong></p>
+        <p>1. Rekât: Niyet + "Allâhü ekber" → Subhaneke → Fâtiha → Bir sûre → Rükû → Secde → Kalk</p>
+        <p>2. Rekât: Fâtiha → Bir sûre → Rükû → Secde → Kalk</p>
+        <p>3. Rekât: Fâtiha → Bir sûre → Rükû → Secde → Oturuş → Ettehiyyatü → Selam</p>
+        <p><strong>Not:</strong> Vitir namazı vaciptir. Vitirde Kunut duaları okunur.</p>
+      </div>
+    </div>
+<!-- NAMAZLARDA NİYET -->
+<div class="section">
+  <h3>🤲 8.5. Namazlarda Niyet Nasıl Edilir?</h3>
+  <div class="meaning">
+    <p><strong>Sabah Namazı Sünneti:</strong> "Niyet ettim Allah rızası için, sabah namazının sünnetini kılmaya."</p>
+    <p><strong>Sabah Namazı Farzı:</strong> "Niyet ettim Allah rızası için, sabah namazının farzını kılmaya."</p>
+    <p><strong>Öğle Namazı İlk Sünneti:</strong> "Niyet ettim Allah rızası için, öğle namazının ilk sünnetini kılmaya."</p>
+    <p><strong>Öğle Namazı Farzı:</strong> "Niyet ettim Allah rızası için, öğle namazının farzını kılmaya."</p>
+    <p><strong>Öğle Namazı Son Sünneti:</strong> "Niyet ettim Allah rızası için, öğle namazının son sünnetini kılmaya."</p>
+    <p><strong>İkindi Namazı Sünneti:</strong> "Niyet ettim Allah rızası için, ikindi namazının sünnetini kılmaya."</p>
+    <p><strong>İkindi Namazı Farzı:</strong> "Niyet ettim Allah rızası için, ikindi namazının farzını kılmaya."</p>
+    <p><strong>Akşam Namazı Farzı:</strong> "Niyet ettim Allah rızası için, akşam namazının farzını kılmaya."</p>
+    <p><strong>Akşam Namazı Son Sünneti:</strong> "Niyet ettim Allah rızası için, akşam namazının son sünnetini kılmaya."</p>
+    <p><strong>Yatsı Namazı İlk Sünneti:</strong> "Niyet ettim Allah rızası için, yatsı namazının ilk sünnetini kılmaya."</p>
+    <p><strong>Yatsı Namazı Farzı:</strong> "Niyet ettim Allah rızası için, yatsı namazının farzını kılmaya."</p>
+    <p><strong>Yatsı Namazı Son Sünneti:</strong> "Niyet ettim Allah rızası için, yatsı namazının son sünnetini kılmaya."</p>
+    <p><strong>Vitir Namazı:</strong> "Niyet ettim Allah rızası için, yatsı namazının vitir namazını kılmaya."</p>
+    <p><strong>Not:</strong> Niyet kalpten yapılır. Dil ile söylenmesi sünnettir, farz değildir.</p>
+  </div>
+</div>
+    <!-- 9. NAMAZDA OKUNAN DUALAR -->
+    <div class="section">
+      <h3>🤲 9. Namazda Okunan Dualar</h3>
+      <div class="meaning">
+        <p><strong>1. Sübhâneke:</strong></p>
+        <p>"Sübhânekellâhümme ve bihamdike ve tebârakesmüke ve teâlâ cedddüke ve lâ ilâhe gayrük."</p>
+        <p><em>Anlamı: Allah'ım! Sen her türlü noksanlıktan uzaksın. Sana hamd olsun. Senin adın mübarektir. Senin şanın yücedir. Senden başka ilâh yoktur.</em></p>
+        <p><strong>2. Fâtiha Sûresi:</strong> (Her rekâtta okunur)</p>
+        <p><strong>3. Zamm-ı Sûre:</strong> (Fâtiha'dan sonra okunan sûre)</p>
+        <p><strong>4. Ettehiyyatü:</strong> (Her oturuşta okunur)</p>
+        <p><strong>5. Salli-Barik:</strong> (Son oturuşta okunur)</p>
+        <p><strong>6. Rabbena Âtinâ:</strong></p>
+        <p>"Rabbenâ âtinâ fid-dünyâ haseneten ve fil âhirati haseneten ve kınâ azâben nâr."</p>
+        <p><em>Anlamı: Rabbimiz! Bize dünyada da iyilik ver, ahirette de iyilik ver. Bizi cehennem azabından koru.</em></p>
+        <p><strong>7. Rabbenağfir Lî:</strong></p>
+        <p>"Rabbenâğfirlî ve li vâlideyye ve lil mü'minîne yevme yekûmül hisâb."</p>
+        <p><em>Anlamı: Rabbimiz! Hesap günü geldiğinde beni, anne-babamı ve bütün mü'minleri bağışla.</em></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- 📖 HZ. MUHAMMED (S.A.V.) SAYFASI -->
+<div id="page-siyer" class="page">
+  <div class="sure-content">
+    <h2 class="sure-title">📖 Hz. Muhammed (s.a.v.)</h2>
+
+    <!-- 1. KRONOLOJİ -->
+    <div class="section">
+<h3>📅 1. Peygamber Efendimizin Hayatı</h3>
+      <div class="meaning">
+        <p><strong>571:</strong> Doğumu (Mekke)</p>
+        <p><strong>575:</strong> Annesi Âmine'nin vefatı</p>
+        <p><strong>577:</strong> Dedesinin vefatı, amcası Ebû Tâlib'in himayesine girmesi</p>
+        <p><strong>595:</strong> Hz. Hatice ile evlenmesi</p>
+        <p><strong>605:</strong> Kâbe'nin tamiri sırasında Hacerü'l-Esved'in yerine konulması</p>
+        <p><strong>610:</strong> Hira Mağarası'nda ilk vahyi alması (Alak Sûresi'nin ilk 5 ayeti)</p>
+        <p><strong>613:</strong> Açık davete başlaması</p>
+        <p><strong>615-616:</strong> Müslümanların Habeşistan'a ilk hicreti</p>
+        <p><strong>619:</strong> Hüzün Yılı (Ebû Tâlib ve Hz. Hatice'nin vefatı)</p>
+        <p><strong>621:</strong> İsra ve Mirac hadisesi</p>
+        <p><strong>622:</strong> Mekke'den Medine'ye hicret</p>
+        <p><strong>624:</strong> Bedir Savaşı</p>
+        <p><strong>625:</strong> Uhud Savaşı</p>
+        <p><strong>627:</strong> Hendek Savaşı</p>
+        <p><strong>628:</strong> Hudeybiye Antlaşması</p>
+        <p><strong>629:</strong> Hayber'in Fethi</p>
+        <p><strong>630:</strong> Mekke'nin Fethi</p>
+        <p><strong>632:</strong> Veda Haccı ve vefatı (Medine, 63 yaşında)</p>
+      </div>
+    </div>
+
+  <!-- 2. DOĞUMU VE ÇOCUKLUĞU -->
+<div class="section">
+  <h3>👶 2. Doğumu ve Çocukluğu (571-577)</h3>
+  <div class="meaning">
+    <p><strong>📌 Doğumu (571):</strong></p>
+    <p>Peygamber Efendimiz Hz. Muhammed (s.a.v.), 571 yılında Mekke'de dünyaya geldi. Babası Abdullah, o doğmadan önce vefat etmişti. Annesi Âmine, dedesi Abdülmuttalib ve sütannesi Halime onun ilk bakıcılarıydı.</p>
+    <p>Doğduğu sırada Mekke'de putperestlik yaygındı. Ancak o, babasının adı olan "Abdullah" (Allah'ın kulu) ismini taşıyordu. Dedesi ona "Muhammed" (çok övülen) ismini verdi.</p>
+    <p><strong>📌 Sütannede Kalması (571-575):</strong></p>
+    <p>Mekke geleneğine göre yeni doğan bebekler, çölde temiz havada büyümeleri için sütannelere verilirdi. Hz. Muhammed (s.a.v.) de sütannesi Halime'nin yanında büyüdü. Süt kardeşleri vardı.</p>
+    <p>Bu dönemde, sütannesinin evinde bereketin arttığı, hayvanlarının çoğaldığı rivayet edilir (Buhârî, Müslim).</p>
+    <p><strong>📌 Annesinin Vefatı (575):</strong></p>
+    <p>Henüz 6 yaşındayken annesi Hz. Âmine, Medine'de vefat etti. Bu, onun hayatındaki ilk büyük acıydı. Annesinin vefatından sonra dedesi Abdülmuttalib'in himayesine girdi.</p>
+    <p><strong>📌 Dedesinin Himayesi (575-577):</strong></p>
+    <p>Dedesi Abdülmuttalib, Mekke'nin saygın lideriydi. Torununa çok düşkündü. Onu yanından ayırmaz, Kâbe'nin yanındaki toplantılara bile götürürdü. Bu dönemde Hz. Muhammed (s.a.v.), Mekke'nin ileri gelenleriyle tanıştı.</p>
+    <p><strong>📌 Dedesinin Vefatı (577):</strong></p>
+    <p>Hz. Muhammed (s.a.v.) 8 yaşındayken dedesi de vefat etti. Artık himayesiz kalmıştı. Bu sırada amcası Ebû Tâlib, onu himayesine aldı.</p>
+    <p><strong>📌 Amcası Ebû Tâlib'in Himayesi (577'den itibaren):</strong></p>
+    <p>Ebû Tâlib, onu öz evladı gibi büyüttü. Hz. Muhammed (s.a.v.), amcasının yanında ticaret öğrendi. Gençliğinde ticaret kervanlarına katıldı, Şam'a ve Yemen'e gitti. Bu dönemde dürüstlüğü ve güvenilirliği ile tanındı.</p>
+    <p>Amcası Ebû Tâlib, Peygamberliğinden sonra da onu korudu. Ancak Müslüman olmadı. (Bazı rivayetlerde son anında iman ettiği söylenir.)</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Hz. Muhammed (s.a.v.), küçük yaşta hem babasını, hem annesini, hem de dedesini kaybetti. Bu zorluklar, onun sabrını ve olgunluğunu artırdı. Genç yaşta "El-Emîn" (güvenilir) lakabını aldı.</p>
+  </div>
+</div>
+<!-- 3. GENÇLİĞİ VE TİCARET HAYATI -->
+<div class="section">
+  <h3>🧑 3. Gençliği ve Ticaret Hayatı (577-595)</h3>
+  <div class="meaning">
+    <p><strong>📌 Gençlik Yılları:</strong></p>
+    <p>Hz. Muhammed (s.a.v.), amcası Ebû Tâlib'in himayesinde büyüdü. Gençliğinde çobanlık yaptı. Bu dönemde sabrı, dürüstlüğü ve çalışkanlığı ile tanındı.</p>
+    <p>Kendisi şöyle buyurmuştur: "Her peygamber koyun gütmüştür." (Buhârî)</p>
+    <p><strong>📌 Ticaret Hayatı:</strong></p>
+    <p>Gençliğinde amcası ile birlikte ticaret kervanlarına katıldı. Şam'a, Yemen'e ve Busra'ya gitti. Ticarette her zaman dürüst davrandı. Kimseyi aldatmadı, yalan söylemedi.</p>
+    <p>Bu dönemde Mekkeliler ona "El-Emîn" (güvenilir) lakabını verdiler. Herkes ona güvenirdi. Sözü senetti.</p>
+    <p><strong>📌 Hılfu'l-Fudûl (Erdemliler Birliği):</strong></p>
+    <p>Hz. Muhammed (s.a.v.) 20 yaşlarındayken, Mekke'de haksızlığa uğrayanların hakkını korumak için kurulan "Hılfu'l-Fudûl" (Erdemliler Birliği) adlı topluluğa katıldı.</p>
+    <p>Bu birlik, Mekke'de zulme uğrayanların yanında yer alırdı. Peygamberimiz, peygamberlikten sonra bile bu birlikten övgüyle bahsetmiştir: "Bugün böyle bir birliğe çağrılsam yine katılırım." (Buhârî)</p>
+    <p><strong>📌 Kâbe'nin Tamiri (605):</strong></p>
+    <p>Hz. Muhammed (s.a.v.) 35 yaşındayken, Mekke'de Kâbe tamir edildi. Sıra Hacerü'l-Esved'in yerine konulmasına geldiğinde, Kureyş kabilesi arasında tartışma çıktı. Her kabile bu şerefi kendisi istiyordu.</p>
+    <p>Sonunda, "Mekke'ye ilk giren kişi hakem olsun" dediler. İlk giren Hz. Muhammed (s.a.v.) oldu. Herkes "El-Emîn geldi, razı olduk" dedi.</p>
+    <p>Hz. Muhammed (s.a.v.), bir örtü üzerine Hacerü'l-Esved'i koydu. Her kabilenin reisi örtünün bir ucundan tuttu ve taş yerine konuldu. Böylece bir kan davası önlendi.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Hz. Muhammed (s.a.v.), gençliğinde putlara tapmadı, içki içmedi, kumar oynamadı. Mekkelilerin yaptığı hiçbir kötülüğe bulaşmadı. Hep dürüst, hep güvenilir, hep saygılıydı.</p>
+  </div>
+</div>
+
+<!-- 4. HZ. HATİCE İLE EVLİLİĞİ -->
+<div class="section">
+  <h3>💍 4. Hz. Hatice ile Evliliği (595)</h3>
+  <div class="meaning">
+    <p><strong>📌 Hz. Hatice Kimdir?</strong></p>
+    <p>Hz. Hatice (r.a.), Mekke'nin en saygın ve zengin kadınlarından biriydi. Ticaretle uğraşırdı. Kendisine "Tâhire" (temiz) denirdi. Soyu Kureyş'in en asil ailelerinden birine dayanırdı.</p>
+    <p>Daha önce iki evlilik yapmış, eşlerini kaybetmişti. Çocukları vardı. Ama artık ticaretini kendisi yönetiyor, güvendiği kişilere kervanlarını emanet ediyordu.</p>
+    <p><strong>📌 Tanışmaları:</strong></p>
+    <p>Hz. Hatice (r.a.), Hz. Muhammed'in (s.a.v.) dürüstlüğünü ve güvenilirliğini duymuştu. Ona bir ticaret kervanını teslim etti. Hz. Muhammed (s.a.v.), Şam'a gidip kervanı büyük bir kârla geri getirdi.</p>
+    <p>Hz. Hatice'nin hizmetkârı Meysere, yolculuk boyunca onun dürüstlüğüne, güzel ahlakına ve ticaretteki başarısına şahit oldu. Dönünce Hz. Hatice'ye anlattı.</p>
+    <p>Hz. Hatice (r.a.), bu güvenilir ve güzel ahlaklı gençle evlenmek istedi. Bu teklifi Hz. Muhammed'e (s.a.v.) iletti. O da kabul etti.</p>
+    <p><strong>📌 Evlilikleri (595):</strong></p>
+    <p>Hz. Muhammed (s.a.v.) 25, Hz. Hatice (r.a.) 40 yaşındaydı. Evlilikleri 25 yıl sürdü. Hz. Hatice, Hz. Muhammed'in (s.a.v.) ilk ve tek eşiydi. O vefat edene kadar başka evlilik yapmadı.</p>
+    <p>Bu evlilik, İslam tarihinin en güzel ve en bereketli evliliklerinden biridir. Sevgi, saygı ve sadakat üzerine kuruldu.</p>
+    <p><strong>📌 Çocukları:</strong></p>
+    <p>Hz. Muhammed (s.a.v.) ile Hz. Hatice'nin (r.a.) 6 çocuğu oldu:</p>
+    <p>1. <strong>Kâsım</strong> (erkek, küçük yaşta vefat etti)</p>
+    <p>2. <strong>Abdullah</strong> (Tayyib veya Tâhir de denir, küçük yaşta vefat etti)</p>
+    <p>3. <strong>Zeynep</strong> (kız)</p>
+    <p>4. <strong>Rukiyye</strong> (kız)</p>
+    <p>5. <strong>Ümmü Külsûm</strong> (kız)</p>
+    <p>6. <strong>Fâtıma</strong> (kız, Peygamberimizin soyu ondan devam etti)</p>
+    <p><strong>📌 Hz. Hatice'nin Fazileti:</strong></p>
+    <p>Hz. Hatice (r.a.), İslam'ı kabul eden ilk kişidir. İlk Müslümandır. Peygamberimize ilk destek olan, ilk inanan kişidir.</p>
+    <p>Peygamberimiz onu hep şöyle anardı: "O, bana iman ettiği zaman herkes inkâr ediyordu. O, beni doğruladığı zaman herkes yalanlıyordu. O, bana destek verdiği zaman herkes beni yalnız bırakıyordu." (Ahmed bin Hanbel)</p>
+    <p>Peygamberimiz, onun vefatından sonra bile onu hayırla anar, onun için dua ederdi.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Hz. Hatice (r.a.), sadece Peygamberimizin eşi değil, aynı zamanda İslam'ın ilk destekçisi, ilk mücahidesidir. Onun maddi ve manevi desteği olmasaydı, İslam'ın ilk yılları çok daha zor geçerdi.</p>
+  </div>
+</div>
+
+<!-- 5. İLK VAHİY -->
+<div class="section">
+  <h3>📜 5. İlk Vahiy (610)</h3>
+  <div class="meaning">
+    <p><strong>📌 Vahiy Nedir?</strong></p>
+    <p>Vahiy, Allah'ın (c.c.) peygamberlerine, Cebrail (a.s.) vasıtasıyla bildirdiği ilahi mesajdır. Vahiy, peygamberliğin başlangıcıdır.</p>
+    <p><strong>📌 Hira Mağarası:</strong></p>
+    <p>Hz. Muhammed (s.a.v.), 40 yaşına yaklaştığında Mekke yakınlarındaki Nûr Dağı'ndaki Hira Mağarası'na çekilirdi. Orada günlerce kalır, tefekkür eder, Allah'ı düşünürdü.</p>
+    <p>Putperestliğin, haksızlığın, zulmün yaygın olduğu Mekke'de, o yalnız kalıp Rabbinin huzurunda düşünmeyi tercih ederdi.</p>
+    <p><strong>📌 İlk Vahyin Gelişi:</strong></p>
+    <p>610 yılı Ramazan ayının Kadir Gecesi'nde (veya 17 Ramazan'da), Hz. Muhammed (s.a.v.) yine Hira Mağarası'ndaydı. Cebrail (a.s.) ona göründü ve şöyle dedi:</p>
+    <p><strong>"Oku!"</strong></p>
+    <p>Hz. Muhammed (s.a.v.) titreyerek: <strong>"Ben okuma bilmem."</strong> dedi.</p>
+    <p>Cebrail (a.s.) onu üç kez sıktı ve her seferinde "Oku!" dedi. Sonunda şu ayetleri okudu:</p>
+    <p><strong>"Yaratan Rabbinin adıyla oku! O, insanı bir kan pıhtısından yarattı. Oku! Rabbin, en cömert olandır. O, kalemle yazmayı öğretendir. İnsana bilmediğini öğretendir."</strong> (Alak Sûresi, 1-5)</p>
+    <p><strong>📌 İlk Vahyin Ardından:</strong></p>
+    <p>Hz. Muhammed (s.a.v.) büyük bir heyecan ve korku içinde eve döndü. Hz. Hatice'ye (r.a.): <strong>"Beni örtün, beni örtün!"</strong> dedi.</p>
+    <p>Hz. Hatice (r.a.) onu örttü ve sakinleştirdi. Olanları anlattı. Hz. Hatice (r.a.) şöyle dedi:</p>
+    <p><strong>"Allah'a yemin ederim ki, Allah seni asla utandırmaz. Çünkü sen akrabalarına iyi davranırsın, doğru sözlüsün, yükü çekersin, misafiri ağırlarsın, haksızlığa karşı yardım edersin."</strong> (Buhârî, Müslim)</p>
+    <p><strong>📌 Hz. Hatice'nin Desteği:</strong></p>
+    <p>Hz. Hatice (r.a.), onu amcasının oğlu Varaka bin Nevfel'e götürdü. Varaka, Hristiyanlığı ve Tevrat'ı bilen yaşlı bir bilgindi. Olanları dinleyince şöyle dedi:</p>
+    <p><strong>"Bu, Hz. Mûsâ'ya gelen Namus (Cebrail)'tur. Keşke genç olsaydım da, kavmin seni çıkaracağı zaman sana yardım edebilseydim."</strong> (Buhârî)</p>
+    <p>Böylece Hz. Muhammed (s.a.v.), peygamberliğini ilan etmeden önce ilk müjdeyi aldı.</p>
+    <p><strong>📌 İlk Vahyin Önemi:</strong></p>
+    <p>• İlk vahiy, "oku" emriyle başladı. İslam, ilme ve okumaya büyük önem verir.</p>
+    <p>• İlk vahiy, Kadir Gecesi'nde geldi. Kadir Gecesi, bin aydan hayırlıdır.</p>
+    <p>• İlk vahiy, Hira Mağarası'nda geldi. Bu mağara, İslam tarihinde önemli bir yerdir.</p>
+    <p>• İlk vahiy, Hz. Muhammed'in (s.a.v.) peygamberliğinin başlangıcıdır.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Hz. Muhammed (s.a.v.), 40 yaşında peygamber oldu. Vahiy 23 yıl boyunca devam etti. İlk vahiyle birlikte İslam dini doğdu ve insanlığa son ilahi mesaj ulaştırılmaya başlandı.</p>
+  </div>
+</div>
+
+<!-- 6. GİZLİ DAVET -->
+<div class="section">
+  <h3>🤫 6. Gizli Davet Dönemi (610-613)</h3>
+  <div class="meaning">
+    <p><strong>📌 Gizli Davet Nedir?</strong></p>
+    <p>İlk vahiy geldikten sonra, Hz. Muhammed (s.a.v.) 3 yıl boyunca insanları gizlice İslam'a davet etti. Buna "Gizli Davet Dönemi" denir.</p>
+    <p><strong>📌 Neden Gizli?</strong></p>
+    <p>Mekke'de putperestlik çok yaygındı. Müşrikler, İslam'a karşı çok sert tepki gösterirdi. Bu yüzden Peygamberimiz, ilk Müslümanları korumak için gizli davet yolunu seçti.</p>
+    <p>Ayrıca, insanları İslam'a ısındırmak ve kalplerini hazırlamak için gizlilik dönemi gerekliydi.</p>
+    <p><strong>📌 İlk Müslümanlar:</strong></p>
+    <p>İslam'ı ilk kabul edenler şunlardır:</p>
+    <p>1. <strong>Hz. Hatice (r.a.)</strong> — İlk Müslüman, Peygamberimizin eşi.</p>
+    <p>2. <strong>Hz. Ebû Bekir (r.a.)</strong> — İlk Müslüman erkeklerden, Peygamberimizin en yakın dostu.</p>
+    <p>3. <strong>Hz. Ali (r.a.)</strong> — İlk Müslüman çocuk, Peygamberimizin amcasının oğlu.</p>
+    <p>4. <strong>Hz. Zeyd bin Hârise (r.a.)</strong> — Peygamberimizin azatlı kölesi ve evlatlığı.</p>
+    <p><strong>📌 Hz. Ebû Bekir'in Katkısı:</strong></p>
+    <p>Hz. Ebû Bekir (r.a.), İslam'ı kabul ettikten sonra büyük bir gayretle insanları İslam'a davet etti. Onun vesilesiyle birçok kişi Müslüman oldu:</p>
+    <p>• Hz. Osman bin Affân (r.a.)</p>
+    <p>• Hz. Talha bin Ubeydullah (r.a.)</p>
+    <p>• Hz. Zübeyr bin Avvâm (r.a.)</p>
+    <p>• Hz. Abdurrahman bin Avf (r.a.)</p>
+    <p>• Hz. Sa'd bin Ebî Vakkâs (r.a.)</p>
+    <p>Bu kişiler, İslam'ın ilk yıllarında çok önemli hizmetler yaptılar.</p>
+    <p><strong>📌 Dâr-ı Erkam (Erkam'ın Evi):</strong></p>
+    <p>Gizli davet döneminde, Peygamberimiz ve ilk Müslümanlar, Hz. Erkam bin Ebî'l-Erkam'ın (r.a.) evinde toplanırlardı. Bu eve "Dâr-ı Erkam" denir.</p>
+    <p>Burada Kur'an okunur, namaz kılınır, İslam öğretilirdi. Burası, İslam'ın ilk eğitim ve ibadet merkeziydi.</p>
+    <p>Dâr-ı Erkam, Mekke'nin Safâ tepesinin yakınındaydı. Peygamberimiz, burada insanları gizlice İslam'a davet ederdi.</p>
+    <p><strong>📌 Gizli Davetin Önemi:</strong></p>
+    <p>• İlk Müslümanlar yetiştirildi.</p>
+    <p>• Kur'an ayetleri ezberlendi.</p>
+    <p>• İslam'ın temel esasları öğretildi.</p>
+    <p>• Müşriklerin tepkisinden korunuldu.</p>
+    <p>• Sağlam bir Müslüman kadrosu oluşturuldu.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Gizli davet dönemi, İslam'ın temellerinin atıldığı dönemdir. Bu dönemde yetişen ilk Müslümanlar, İslam'ın yayılmasında çok büyük rol oynadılar. Özellikle Hz. Ebû Bekir, Hz. Ömer, Hz. Osman ve Hz. Ali gibi sahabeler, İslam tarihinin en önemli şahsiyetleri oldular.</p>
+  </div>
+</div>
+
+<!-- 7. AÇIK DAVET -->
+<div class="section">
+  <h3>📢 7. Açık Davet Dönemi (613-615)</h3>
+  <div class="meaning">
+    <p><strong>📌 Açık Davet Nedir?</strong></p>
+    <p>Gizli davet döneminin ardından, Yüce Allah (c.c.) Peygamberimize artık insanları açıkça İslam'a davet etmesini emretti.</p>
+    <p>Bu emir üzerine nazil olan ayetler şunlardır:</p>
+    <p><strong>"Ey örtüsüne bürünen! Kalk ve uyar! Rabbinin büyüklüğünü dile getir."</strong> (Müddessir Sûresi, 1-3)</p>
+    <p><strong>"(Öncelikle) En yakın akrabanı uyar!"</strong> (Şuarâ Sûresi, 214)</p>
+    <p><strong>📌 İlk Açık Davet:</strong></p>
+    <p>Peygamberimiz (s.a.v.), Şuarâ Sûresi'nin 214. ayeti gelince, önce kendi ailesini ve akrabalarını uyarmaya başladı. Safâ Tepesi'ne çıkıp Kureyş kabilesini topladı ve onlara şöyle seslendi:</p>
+    <p><strong>"Ey Kureyş topluluğu! Size şunu söylüyorum: Ben, sizi büyük bir azaptan önce uyaran bir uyarıcıyım. Allah'tan başka ilâh yoktur. O'na kulluk edin ve putları bırakın."</strong></p>
+    <p><strong>📌 Mekke Müşriklerinin Tepkisi:</strong></p>
+    <p>Peygamberimizin açık daveti, Mekke müşriklerini çok rahatsız etti. Çünkü:</p>
+    <p>• Putperestlik onların geçim kaynağıydı.</p>
+    <p>• Kâbe'nin bekçiliği, onlara büyük itibar kazandırıyordu.</p>
+    <p>• İslam, onların atalarının dinini reddediyordu.</p>
+    <p>• Eşitlik ve adalet fikri, onların çıkarlarına ters düşüyordu.</p>
+    <p>Bu yüzden Peygamberimize ve Müslümanlara karşı çok sert tepki gösterdiler.</p>
+    <p><strong>📌 Müşriklerin Yaptığı Zulümler:</strong></p>
+    <p>Mekke müşrikleri, Müslümanlara karşı birçok zulüm yaptı:</p>
+    <p>• <strong>Hakaret ve alay:</strong> Peygamberimizle ve Müslümanlarla alay ettiler.</p>
+    <p>• <strong>İşkence:</strong> Zayıf ve kimsesiz Müslümanlara işkence ettiler.</p>
+    <p>• <strong>Boykot:</strong> Müslümanlarla alışverişi yasakladılar.</p>
+    <p>• <strong>Sosyal baskı:</strong> Müslümanları toplumdan dışladılar.</p>
+    <p><strong>📌 İşkence Gören Sahabeler:</strong></p>
+    <p>Birçok sahabe, İslam'ı kabul ettiği için ağır işkencelere maruz kaldı:</p>
+    <p>• <strong>Hz. Bilâl-i Habeşî (r.a.):</strong> Kızgın kumlara yatırıldı, üzerine kayalar konuldu. Ama o, "Ehad! Ehad!" (Bir! Bir!) diyerek imanından vazgeçmedi.</p>
+    <p>• <strong>Hz. Sümeyye (r.a.):</strong> İslam'ın ilk şehidi olan kadın sahabe. Ebu Cehil tarafından şehit edildi.</p>
+    <p>• <strong>Hz. Yâsir (r.a.):</strong> Sümeyye'nin eşi, işkence altında şehit oldu.</p>
+    <p>• <strong>Hz. Ammâr bin Yâsir (r.a.):</strong> Ailesi şehit edildi, kendisi de işkence gördü.</p>
+    <p>• <strong>Hz. Habbâb bin Eret (r.a.):</strong> Kızgın ateş üzerinde işkence gördü.</p>
+    <p><strong>📌 Peygamberimize Yapılan Saldırılar:</strong></p>
+    <p>Müşrikler, Peygamberimize de birçok saldırıda bulundular:</p>
+    <p>• <strong>Ebû Leheb ve karısı:</strong> Peygamberimize hakaret ettiler, yoluna pislik attılar.</p>
+    <p>• <strong>Ebû Cehil:</strong> Peygamberimizi öldürmeye çalıştı.</p>
+    <p>• <strong>Ukbe bin Ebî Muayt:</strong> Namaz kılarken Peygamberimizin üzerine deve işkembesi attı.</p>
+    <p>• <strong>Mekke'nin ileri gelenleri:</strong> Peygamberimizi öldürmek için planlar yaptılar.</p>
+    <p><strong>📌 Peygamberimizin Sabrı:</strong></p>
+    <p>Tüm bu zulümlere rağmen Peygamberimiz (s.a.v.), sabırla ve kararlılıkla davetine devam etti. Kendisine yapılan hakaretlere aldırmadı, kimseye beddua etmedi.</p>
+    <p>Bir gün Taif'te kendisini taşlayanlara karşı, melekler "İstersen onları helâk edelim" dediklerinde, Peygamberimiz şöyle buyurdu:</p>
+    <p><strong>"Hayır! Ben onların helâk olmasını değil, nesillerinden Allah'a kulluk edecek kimselerin gelmesini isterim."</strong> (Buhârî, Müslim)</p>
+    <p><strong>📌 Amcası Ebû Tâlib'in Desteği:</strong></p>
+    <p>Peygamberimizin amcası Ebû Tâlib, Müslüman olmamasına rağmen, yeğenini canı pahasına korudu. Ona yapılan saldırılara karşı çıktı ve Kureyş'e karşı onu savundu.</p>
+    <p>Ebû Tâlib, Kureyş'in tüm baskılarına rağmen yeğenini korumaktan vazgeçmedi. Bu desteği, İslam'ın ilk yıllarında çok önemliydi.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Açık davet dönemi, İslam'ın zorlu bir sınavdan geçtiği dönemdir. Müşriklerin tüm zulümlerine rağmen, İslam yayılmaya devam etti. Çünkü Müslümanlar, imanlarını hiçbir dünyevi çıkara değişmediler. Hz. Bilâl'in "Ehad! Ehad!" nidası, bu imanın en güzel sembolüdür.</p>
+  </div>
+</div>
+
+<!-- 8. HABEŞİSTAN HİCRETİ -->
+<div class="section">
+  <h3>🌍 8. Habeşistan Hicreti (615-616)</h3>
+  <div class="meaning">
+    <p><strong>📌 Habeşistan Hicreti Nedir?</strong></p>
+    <p>Mekke müşriklerinin işkenceleri dayanılmaz hale gelince, Peygamberimiz (s.a.v.) Müslümanlara Habeşistan'a hicret etmelerini tavsiye etti. Habeşistan, o dönemde adil bir kral olan Necâşî tarafından yönetiliyordu.</p>
+    <p>Peygamberimiz şöyle buyurdu:</p>
+    <p><strong>"Orada (Habeşistan'da) adaletli bir kral var. Onun ülkesine gidin. Orada kimseye zulmedilmez."</strong></p>
+    <p><strong>📌 İlk Hicret (615):</strong></p>
+    <p>İlk kafile, 11 erkek ve 4 kadından oluşuyordu. Başlarında Hz. Osman bin Affân (r.a.) vardı. Bu kafilede Hz. Osman'ın eşi Hz. Rukiyye (Peygamberimizin kızı) da vardı.</p>
+    <p>Müslümanlar, gizlice Mekke'den ayrıldılar. Kızıldeniz'i geçerek Habeşistan'a ulaştılar. Necâşî onları iyi karşıladı ve koruması altına aldı.</p>
+    <p><strong>📌 İkinci Hicret (616):</strong></p>
+    <p>Bir yıl sonra, daha kalabalık bir Müslüman topluluğu (yaklaşık 83 erkek ve 18 kadın) Habeşistan'a hicret etti. Başlarında Hz. Ca'fer bin Ebû Tâlib (r.a.) vardı.</p>
+    <p><strong>📌 Müşriklerin Tepkisi:</strong></p>
+    <p>Mekke müşrikleri, Habeşistan'a hicret eden Müslümanları geri getirmek için Necâşî'ye elçiler gönderdiler. Elçiler, Necâşî'ye hediyeler götürdüler ve Müslümanları "kendilerine uyan, dinlerini terk eden kimseler" olarak tanıttılar.</p>
+    <p>Ancak Necâşî, Müslümanları dinledikten sonra onları korumaya karar verdi.</p>
+    <p><strong>📌 Hz. Ca'fer'in Konuşması:</strong></p>
+    <p>Necâşî, Müslümanları huzuruna çağırdı ve dinlerini sordu. Hz. Ca'fer bin Ebû Tâlib (r.a.) şöyle konuştu:</p>
+    <p><strong>"Ey Kral! Biz, cahiliye döneminde putlara tapardık, ölü hayvan eti yerdik, ahlaksızlık yapardık, akrabalık bağlarını koparırdık, komşularımıza kötülük ederdik. Güçlüler zayıfları ezerdi. Sonra Allah bize bir peygamber gönderdi. Onun soyunu, doğruluğunu, güvenilirliğini ve iffetini biliyoruz. O bizi Allah'a inanmaya, O'na kulluk etmeye davet etti. Bize namaz kılmayı, oruç tutmayı, zekât vermeyi emretti. Bize doğru sözlü olmayı, emaneti korumayı, akrabalık bağlarını gözetmeyi, komşuya iyi davranmayı, haramdan ve kan dökmekten kaçınmayı emretti."</strong></p>
+    <p>Sonra Hz. Ca'fer, Meryem Sûresi'nden ayetler okudu. Necâşî ve yanındakiler ağladılar.</p>
+    <p><strong>📌 Necâşî'nin Kararı:</strong></p>
+    <p>Necâşî, Müslümanları koruyacağını ilan etti ve Mekke müşriklerinin elçilerini geri gönderdi. Müslümanlar, Habeşistan'da güven içinde yaşadılar.</p>
+    <p>Necâşî daha sonra Müslüman oldu. Peygamberimiz, onun vefat haberini aldığında gıyabi cenaze namazı kıldı.</p>
+    <p><strong>📌 Habeşistan Hicretinin Önemi:</strong></p>
+    <p>• Müslümanlar, Mekke müşriklerinin işkencelerinden kurtuldu.</p>
+    <p>• İslam, ilk kez Mekke dışında yayıldı.</p>
+    <p>• Habeşistan, Müslümanlar için güvenli bir sığınak oldu.</p>
+    <p>• Necâşî, İslam'ı ve Müslümanları korudu.</p>
+    <p>• Habeşistan hicreti, ilk Müslüman göçüdür.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Habeşistan hicreti, İslam'ın ilk yıllarında Müslümanların çektiği zulümlerin bir göstergesidir. Ancak aynı zamanda, İslam'ın sadece Mekke'de kalmayıp, farklı coğrafyalara yayıldığının da göstergesidir. Necâşî'nin adaleti ve Müslümanlara desteği, İslam tarihinde önemli bir yer tutar.</p>
+  </div>
+</div>
+
+<!-- 9. BOYKOT YILLARI -->
+<div class="section">
+  <h3>🚫 9. Boykot Yılları (616-619)</h3>
+  <div class="meaning">
+    <p><strong>📌 Boykot Nedir?</strong></p>
+    <p>Mekke müşrikleri, Müslümanları tamamen yok etmek için yeni bir yol denediler. Hâşimoğulları ve Muttaliboğulları kabilelerine karşı ekonomik ve sosyal bir boykot ilan ettiler.</p>
+    <p>Bu boykot, yaklaşık 3 yıl sürdü. Müslümanlar ve onları koruyan akrabaları, Mekke'nin dışındaki bir vadide (Şi'b-i Ebû Tâlib) mahsur kaldılar.</p>
+    <p><strong>📌 Boykotun Şartları:</strong></p>
+    <p>Müşrikler, Kâbe'nin duvarına bir antlaşma astılar. Bu antlaşmada şunlar yazıyordu:</p>
+    <p>• Hâşimoğulları ve Muttaliboğulları ile konuşulmayacak.</p>
+    <p>• Onlarla alışveriş yapılmayacak.</p>
+    <p>• Kız alıp verilmeyecek.</p>
+    <p>• Onlara yiyecek ve içecek satılmayacak.</p>
+    <p>• Onlara selam verilmeyecek.</p>
+    <p>• Onlarla oturulup kalkılmayacak.</p>
+    <p><strong>📌 Boykot Yıllarında Yaşananlar:</strong></p>
+    <p>Müslümanlar ve Hâşimoğulları, 3 yıl boyunca büyük sıkıntılar çektiler:</p>
+    <p>• <strong>Açlık:</strong> Yiyecek bulmakta çok zorlandılar. Açlıktan ağaç yapraklarını yediler.</p>
+    <p>• <strong>Susuzluk:</strong> Su bulmakta zorluk çektiler.</p>
+    <p>• <strong>Hastalık:</strong> Açlık ve olumsuz şartlar nedeniyle birçok kişi hastalandı.</p>
+    <p>• <strong>Ölüm:</strong> Bazı Müslümanlar ve Hâşimoğulları açlıktan vefat ettiler.</p>
+    <p>• <strong>Çocuklar:</strong> Özellikle çocuklar ve yaşlılar çok acı çektiler.</p>
+    <p>Hz. Hatice (r.a.), bu dönemde bütün servetini harcadı. Hz. Ebû Tâlib, kabilesini korumak için büyük çaba sarf etti.</p>
+    <p><strong>📌 Boykotun Sonu:</strong></p>
+    <p>Müşriklerin ileri gelenlerinden bazıları, bu boykotun çok zalimce olduğunu düşündüler. Özellikle Hişâm bin Amr, Zübeyr bin Ebû Ümeyye, Mut'im bin Adî gibi kişiler, boykotu kaldırmak için çaba gösterdiler.</p>
+    <p>Sonunda, Kâbe'ye asılan boykot antlaşmasının, güveler tarafından yenildiği ve sadece "Bismikellâhümme" yazısının kaldığı görüldü. Bu, Peygamberimizin bir mucizesi olarak kabul edildi.</p>
+    <p>Peygamberimiz, bu durumu amcası Ebû Tâlib'e haber verdi. Ebû Tâlib ve diğerleri Kâbe'ye gittiler. Antlaşmayı kontrol ettiklerinde, gerçekten de sadece "Bismikellâhümme" yazısının kaldığını gördüler.</p>
+    <p>Böylece boykot kaldırıldı. Müslümanlar, 3 yıl sonra tekrar Mekke'ye döndüler.</p>
+    <p><strong>📌 Boykot Yıllarının Önemi:</strong></p>
+    <p>• Müslümanlar, sabır ve dayanıklılık sınavından geçtiler.</p>
+    <p>• İslam'a olan bağlılıkları daha da arttı.</p>
+    <p>• Müşriklerin zulmü, bütün Mekke'de duyuldu.</p>
+    <p>• Bazı kişiler, Müslümanların sabrına hayran kalıp Müslüman oldular.</p>
+    <p>• Boykot, İslam tarihinin en zorlu dönemlerinden biridir.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Boykot yılları, Müslümanların ne kadar zor şartlar altında İslam'ı yaşamaya çalıştıklarını gösterir. Bu dönemde gösterdikleri sabır ve metanet, bütün Müslümanlara örnek olmuştur. Özellikle Hz. Hatice'nin (r.a.) fedakârlığı ve Hz. Ebû Tâlib'in koruması, İslam tarihinde önemli bir yer tutar.</p>
+  </div>
+</div>
+
+<!-- 10. HÜZÜN YILI -->
+<div class="section">
+  <h3>💔 10. Hüzün Yılı (619)</h3>
+  <div class="meaning">
+    <p><strong>📌 Hüzün Yılı Nedir?</strong></p>
+    <p>Peygamberimizin (s.a.v.) hayatında çok önemli iki kaybı yaşadığı yıla "Hüzün Yılı" (Senetü'l-Hüzün) denir. Bu yıl, hem amcası Ebû Tâlib'i hem de eşi Hz. Hatice'yi (r.a.) kaybettiği yıldır.</p>
+    <p>Peygamberimiz bu yıla "Hüzün Yılı" adını vermiştir. Çünkü bu iki kayıp, onu çok derinden etkilemiştir.</p>
+    <p><strong>📌 Amcası Ebû Tâlib'in Vefatı:</strong></p>
+    <p>Ebû Tâlib, Peygamberimizin en büyük destekçisiydi. Müslüman olmamasına rağmen, yeğenini canı pahasına korudu. Kureyş'in bütün baskılarına göğüs gerdi.</p>
+    <p>Boykot yıllarının sonunda, Ebû Tâlib hastalandı ve vefat etti. Vefatından önce, Peygamberimiz ona Kelime-i Şehadet söylemesini tavsiye etti. Ancak Ebû Tâlib, Kureyş'in baskısı nedeniyle söyleyemedi. (Bazı rivayetlerde son anında iman ettiği söylenir.)</p>
+    <p>Ebû Tâlib'in vefatı, Peygamberimiz için büyük bir kayıptı. Çünkü hem amcasını hem de en büyük koruyucusunu kaybetmişti.</p>
+    <p><strong>📌 Hz. Hatice'nin Vefatı:</strong></p>
+    <p>Hz. Hatice (r.a.), Peygamberimizin ilk eşi, ilk Müslüman ve en büyük destekçisiydi. 25 yıl boyunca Peygamberimizin yanında oldu. Bütün servetini İslam için harcadı.</p>
+    <p>Boykot yıllarının zorlukları, Hz. Hatice'nin (r.a.) sağlığını bozdu. Ebû Tâlib'in vefatından kısa bir süre sonra, o da vefat etti. Peygamberimiz, onu kendi elleriyle defnetti.</p>
+    <p>Hz. Hatice'nin (r.a.) vefatı, Peygamberimizi çok üzdü. Çünkü o, sadece eşi değil, aynı zamanda en yakın dostu, en büyük destekçisiydi. Peygamberimiz, onun vefatından sonra uzun süre üzüntü duydu.</p>
+    <p><strong>📌 Hüzün Yılının Peygamberimize Etkisi:</strong></p>
+    <p>Peygamberimiz, bu iki kayıptan sonra çok zor günler geçirdi:</p>
+    <p>• <strong>Manevi yalnızlık:</strong> En yakın destekçilerini kaybetti.</p>
+    <p>• <strong>Fiziksel zorluk:</strong> Müşriklerin baskıları arttı.</p>
+    <p>• <strong>Üzüntü:</strong> Sürekli üzüntü ve keder içindeydi.</p>
+    <p>• <strong>Yalnızlık:</strong> Kendisini yalnız hissetti.</p>
+    <p>Ancak Peygamberimiz, bu zorluklara rağmen davetinden vazgeçmedi. Sabırla ve kararlılıkla İslam'ı yaymaya devam etti.</p>
+    <p><strong>📌 Taif Yolculuğu:</strong></p>
+    <p>Hüzün Yılı'nda, Peygamberimiz (s.a.v.) Mekke'de İslam'ı yayamayacağını anlayınca, Taif'e gitti. Taif halkını İslam'a davet etmek istedi. Ancak Taif halkı, onu taşladılar ve kovdular.</p>
+    <p>Peygamberimiz, Taif'ten yorgun ve üzgün bir şekilde döndü. Ancak yine de Taif halkına beddua etmedi. Aksine, onların neslinden Müslüman olacak kimselerin gelmesini diledi.</p>
+    <p><strong>📌 Miraç Hadisesi (621):</strong></p>
+    <p>Hüzün Yılı'ndan sonra, Peygamberimize büyük bir teselli geldi: İsra ve Mirac hadisesi. Bu olay, Peygamberimizin en büyük mucizelerinden biridir. (Detaylı anlatım 11. bölümde.)</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Hüzün Yılı, Peygamberimizin (s.a.v.) hayatındaki en zor yıllardan biridir. Ancak bu zorluklar, onun sabrını, kararlılığını ve teslimiyetini daha da güçlendirdi. Peygamberimiz, bu zorluklara rağmen davasından asla vazgeçmedi. Bu, bütün Müslümanlara örnek olmalıdır.</p>
+  </div>
+</div>
+
+<!-- 11. İSRA VE MİRAC -->
+<div class="section">
+  <h3>🌌 11. İsra ve Mirac (621)</h3>
+  <div class="meaning">
+    <p><strong>📌 İsra Nedir?</strong></p>
+    <p>İsra, Peygamberimizin (s.a.v.) bir gece Mekke'deki Mescid-i Harâm'dan Kudüs'teki Mescid-i Aksâ'ya götürülmesidir. Bu yolculuk, Cebrail (a.s.) ile birlikte, Burak adlı bir binek üzerinde gerçekleşmiştir.</p>
+    <p>İsra, "gece yürüyüşü" anlamına gelir. Kur'an-ı Kerim'de şöyle buyurulur:</p>
+    <p><strong>"Kendisine âyetlerimizden bir kısmını gösterelim diye kulunu (Muhammed'i) bir gece Mescid-i Harâm'dan çevresini bereketlendirdiğimiz Mescid-i Aksâ'ya götüren Allah'ın şanı yücedir. Hiç şüphesiz O, hakkıyla işitendir, hakkıyla görendir."</strong> (İsrâ Sûresi, 1)</p>
+    <p><strong>📌 Mirac Nedir?</strong></p>
+    <p>Mirac, Peygamberimizin (s.a.v.) Mescid-i Aksâ'dan göklere yükseltilmesidir. Bu yolculukta Peygamberimiz, yedi kat göğü geçti. Sırasıyla:</p>
+    <p>• Hz. Âdem (a.s.) ile karşılaştı.</p>
+    <p>• Hz. Îsâ (a.s.) ve Hz. Yahyâ (a.s.) ile karşılaştı.</p>
+    <p>• Hz. Yûsuf (a.s.) ile karşılaştı.</p>
+    <p>• Hz. İdrîs (a.s.) ile karşılaştı.</p>
+    <p>• Hz. Hârûn (a.s.) ile karşılaştı.</p>
+    <p>• Hz. Mûsâ (a.s.) ile karşılaştı.</p>
+    <p>• Hz. İbrâhîm (a.s.) ile karşılaştı.</p>
+    <p>Sonra Sidretü'l-Müntehâ'ya ulaştı. Orada Cebrail (a.s.) durdu ve "Benim buradan öteye geçme iznim yok" dedi.</p>
+    <p><strong>📌 Peygamberimizin Allah ile Görüşmesi:</strong></p>
+    <p>Peygamberimiz, Mirac'ta Allah (c.c.) ile görüştü. Bu görüşmede:</p>
+    <p>• Allah, Peygamberimize "Beş vakit namaz" farz kıldı.</p>
+    <p>• Namazın fazileti ve önemi bildirildi.</p>
+    <p>• "Âmener Rasûlü" ayetleri (Bakara 285-286) indirildi.</p>
+    <p>• Peygamberimize şefaat hakkı verildi.</p>
+    <p><strong>📌 Beş Vakit Namazın Farz Kılınması:</strong></p>
+    <p>Mirac'ta, beş vakit namaz farz kılındı. Başlangıçta 50 vakit olarak farz kılınmıştı. Ancak Peygamberimiz, Hz. Mûsâ'nın (a.s.) tavsiyesiyle Allah'a yalvardı ve namaz 5 vakte indirildi.</p>
+    <p>Peygamberimiz buyurdu:</p>
+    <p><strong>"Namaz, Mirac'ta farz kılındı. Beş vakit namaz, elli vakit namazın sevabına denktir."</strong> (Buhârî, Müslim)</p>
+    <p><strong>📌 Mirac'ın Müşrikler Tarafından Reddedilmesi:</strong></p>
+    <p>Peygamberimiz, Mirac hadisesini anlattığında, Mekke müşrikleri buna inanmadılar. Hatta bazı Müslümanlar bile şüpheye düştüler. Ancak Hz. Ebû Bekir (r.a.), hiç tereddüt etmeden inandı ve "O doğru söylüyorsa, bu doğrudur" dedi. Bu olaydan sonra Hz. Ebû Bekir'e "Sıddîk" (çok doğru sözlü) lakabı verildi.</p>
+    <p><strong>📌 Mirac'ın Önemi:</strong></p>
+    <p>• Peygamberimizin en büyük mucizelerinden biridir.</p>
+    <p>• Beş vakit namaz, Mirac'ta farz kılınmıştır.</p>
+    <p>• Peygamberimiz, Allah ile doğrudan görüşmüştür.</p>
+    <p>• Mirac, Peygamberimizin manevi yükselişidir.</p>
+    <p>• Mirac, Hüzün Yılı'ndan sonra Peygamberimize büyük bir teselli olmuştur.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Mirac hadisesi, İslam'ın en önemli mucizelerinden biridir. Bu olay, Peygamberimizin (s.a.v.) Allah katındaki değerini ve yüceliğini gösterir. Beş vakit namaz da bu olayda farz kılınmıştır. Bu yüzden namaz, Müslümanlar için çok önemlidir. Namaz, Mirac'ın bir hediyesidir.</p>
+  </div>
+</div>
+
+<!-- 12. AKABE BİATLARI -->
+<div class="section">
+  <h3>🤝 12. Akabe Biatları (621-622)</h3>
+  <div class="meaning">
+    <p><strong>📌 Akabe Biatları Nedir?</strong></p>
+    <p>Akabe Biatları, Peygamberimizin (s.a.v.) Medine'den gelen Müslümanlarla yaptığı iki antlaşmadır. Bu antlaşmalar, İslam tarihinin en önemli dönüm noktalarından biridir.</p>
+    <p>Akabe, Mekke ile Mina arasında bir yerdir. Hac mevsiminde Medine'den gelen Müslümanlar, Peygamberimizle burada buluşup biat ettiler.</p>
+    <p><strong>📌 Birinci Akabe Biatı (621):</strong></p>
+    <p>Medine'den gelen 12 kişilik bir grup, Peygamberimizle Akabe'de buluştu. Bu grup, Peygamberimize şu konularda biat etti:</p>
+    <p>1. Allah'a hiçbir şeyi ortak koşmayacaklar.</p>
+    <p>2. Hırsızlık yapmayacaklar.</p>
+    <p>3. Zina etmeyecekler.</p>
+    <p>4. Çocuklarını öldürmeyecekler.</p>
+    <p>5. Kimseye iftira etmeyecekler.</p>
+    <p>6. Peygamberimize itaat edecekler.</p>
+    <p>Bu biattan sonra, Peygamberimiz onlara İslam'ı öğretmek için Mus'ab bin Umeyr'i (r.a.) Medine'ye gönderdi. Mus'ab, Medine'de İslam'ı yaymakta çok başarılı oldu.</p>
+    <p><strong>📌 İkinci Akabe Biatı (622):</strong></p>
+    <p>Bir yıl sonra, Medine'den 75 kişilik bir grup (73 erkek, 2 kadın) Akabe'ye geldi. Bu grup, Peygamberimizle daha kapsamlı bir biat yaptı.</p>
+    <p>Bu biatta, Medineliler Peygamberimizi koruyacaklarına söz verdiler. Peygamberimiz de onlara şu konularda biat etti:</p>
+    <p>• Kendisini ve Müslümanları Medine'de koruyacaklar.</p>
+    <p>• Peygamberimizi canları gibi koruyacaklar.</p>
+    <p>• İslam'ı yaymak için çalışacaklar.</p>
+    <p>Bu biat, İslam tarihinde "Akabe Biatı" olarak bilinir. Bu biattan sonra, Müslümanların Medine'ye hicreti başladı.</p>
+    <p><strong>📌 Mus'ab bin Umeyr'in (r.a.) Rolü:</strong></p>
+    <p>Mus'ab bin Umeyr (r.a.), Medine'ye gönderilen ilk İslam öğretmenidir. O, Medine'de İslam'ı yaymak için büyük çaba sarf etti. Bir yıl içinde Medine'de İslam büyük ölçüde yayıldı.</p>
+    <p>Mus'ab, Medine'de birçok kişinin Müslüman olmasına vesile oldu. Özellikle Medine'nin ileri gelenlerinden Sa'd bin Muâz ve Üseyd bin Hudayr'ın Müslüman olması, İslam'ın Medine'de hızla yayılmasını sağladı.</p>
+    <p><strong>📌 Akabe Biatlarının Önemi:</strong></p>
+    <p>• İslam, Mekke dışında yayılmaya başladı.</p>
+    <p>• Medine, Müslümanlar için yeni bir yurt oldu.</p>
+    <p>• Hicret'in zeminini hazırladı.</p>
+    <p>• Müslümanlar, güvenli bir sığınak buldular.</p>
+    <p>• İslam devletinin temelleri atıldı.</p>
+    <p><strong>📌 Hz. Peygamberimizin Medine'ye Hicret Kararı:</strong></p>
+    <p>Akabe Biatları'ndan sonra, Peygamberimiz (s.a.v.) Müslümanlara Medine'ye hicret etmelerini emretti. Müslümanlar, gizlice Mekke'den ayrılıp Medine'ye gitmeye başladılar. Bu hicret, İslam tarihinin en önemli olaylarından biridir.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Akabe Biatları, İslam'ın yayılmasında ve Müslümanların güvenli bir yurt bulmasında çok önemli bir rol oynamıştır. Bu biatlar sayesinde, İslam Medine'de güçlü bir şekilde yayılmış ve İslam devletinin temelleri atılmıştır. Bu olay, Peygamberimizin (s.a.v.) ne kadar ileri görüşlü ve stratejik bir lider olduğunu gösterir.</p>
+  </div>
+</div>
+
+<!-- 13. HİCRET -->
+<div class="section">
+  <h3>🐫 13. Hicret (622)</h3>
+  <div class="meaning">
+    <p><strong>📌 Hicret Nedir?</strong></p>
+    <p>Hicret, Peygamberimizin (s.a.v.) ve Mekkeli Müslümanların, Mekke'den Medine'ye göç etmesidir. Bu olay, İslam tarihinin en önemli dönüm noktalarından biridir. Hicri takvimin başlangıcıdır.</p>
+    <p><strong>📌 Hicretin Sebepleri:</strong></p>
+    <p>• Mekke müşriklerinin işkenceleri dayanılmaz hale gelmişti.</p>
+    <p>• Akabe Biatları ile Medine'de İslam yayılmıştı.</p>
+    <p>• Medineliler, Peygamberimizi ve Müslümanları koruyacaklarına söz vermişlerdi.</p>
+    <p>• Müşrikler, Peygamberimizi öldürmeyi planlıyorlardı.</p>
+    <p>• İslam'ın yayılması için yeni bir merkeze ihtiyaç vardı.</p>
+    <p><strong>📌 Mekke Müşriklerinin Suikast Planı:</strong></p>
+    <p>Mekke müşrikleri, Peygamberimizin İslam'ı yaymasını engellemek için son çare olarak onu öldürmeye karar verdiler. Her kabileden birer genç seçtiler. Bu gençler, hep birlikte Peygamberimize saldıracak ve onu öldüreceklerdi. Böylece kan davası çıkmayacak ve cinayet tüm kabilelere dağıtılacaktı.</p>
+    <p>Ancak Yüce Allah (c.c.), Peygamberimize bu planı haber verdi ve ona hicret iznini verdi.</p>
+    <p><strong>📌 Peygamberimizin Hicret Hazırlığı:</strong></p>
+    <p>Peygamberimiz (s.a.v.), Hz. Ebû Bekir'e (r.a.) hicret edeceklerini söyledi. Hz. Ebû Bekir, büyük bir sevinçle bu teklifi kabul etti. İki dost, birlikte hicret etmeye karar verdiler.</p>
+    <p>Peygamberimiz, hicret gecesi:</p>
+    <p>• Hz. Ali'yi (r.a.) yatağına yatırdı.</p>
+    <p>• Emanetleri sahiplerine teslim etmesi için Hz. Ali'ye bıraktı.</p>
+    <p>• Hz. Ebû Bekir ile birlikte gizlice Mekke'den ayrıldı.</p>
+    <p><strong>📌 Sevr Mağarası:</strong></p>
+    <p>Peygamberimiz ve Hz. Ebû Bekir, Mekke'nin güneyinde bulunan Sevr Mağarası'na sığındılar. Orada 3 gün kaldılar.</p>
+    <p>Bu sırada, Mekke müşrikleri onları aramaya başladılar. Hatta bir ödül koydular: Peygamberimizi sağ veya ölü getirene 100 deve ödül vereceklerdi.</p>
+    <p>Müşrikler, Sevr Mağarası'nın önüne kadar geldiler. Ancak Hz. Ebû Bekir'in korkması üzerine Peygamberimiz şöyle buyurdu:</p>
+    <p><strong>"Üzülme! Allah bizimle beraberdir."</strong> (Tevbe Sûresi, 40)</p>
+    <p>Allah'ın izniyle, mağaranın önündeki örümcek ağını ördü, güvercin yumurtladı ve bir ağaç dallarını uzattı. Müşrikler, bu işaretleri görünce mağarada kimsenin olmadığını düşündüler ve geri döndüler.</p>
+    <p><strong>📌 Medine'ye Yolculuk:</strong></p>
+    <p>3 gün sonra, Peygamberimiz ve Hz. Ebû Bekir, Medine'ye doğru yola çıktılar. Yol boyunca birçok zorlukla karşılaştılar. Ancak Allah'ın izniyle sağ salim Medine'ye ulaştılar.</p>
+    <p>Yolda, Peygamberimizi öldürmek isteyen müşriklerden biri olan Süraka bin Mâlik, onları yakalamak istedi. Ancak atı kuma saplandı ve Peygamberimizden yardım istemek zorunda kaldı. Peygamberimiz onu affetti ve ona İran'ın fethini müjdeledi.</p>
+    <p><strong>📌 Medine'ye Varış:</strong></p>
+    <p>Peygamberimiz (s.a.v.), 622 yılında Medine'ye ulaştı. Medineliler, onu büyük bir sevinçle karşıladılar. Çocuklar, "Talaa'l-Bedru aleynâ" (Ay doğdu üzerimize) diye ilahiler söylediler.</p>
+    <p>Peygamberimiz, Medine'de ilk olarak:</p>
+    <p>• <strong>Mescid-i Nebevî'yi</strong> inşa etti.</p>
+    <p>• <strong>Muhacirler ile Ensar arasında kardeşlik</strong> kurdu.</p>
+    <p>• <strong>Medine Vesikası'nı</strong> yazarak şehirde barışı sağladı.</p>
+    <p>• <strong>İslam devletinin temellerini</strong> attı.</p>
+    <p><strong>📌 Hicretin Önemi:</strong></p>
+    <p>• İslam tarihinin dönüm noktasıdır.</p>
+    <p>• Hicri takvimin başlangıcıdır.</p>
+    <p>• İslam devletinin kuruluşudur.</p>
+    <p>• Müslümanlar, güvenli bir yurda kavuştu.</p>
+    <p>• İslam, hızla yayılmaya başladı.</p>
+    <p>• Peygamberimizin liderliği ve stratejisi ortaya çıktı.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Hicret, sadece bir göç değil, aynı zamanda bir diriliş ve yeni bir başlangıçtır. Peygamberimizin (s.a.v.) liderliğinde, Müslümanlar Medine'de güçlü bir toplum oluşturdular. Hicret, İslam'ın yayılmasında ve güçlenmesinde çok önemli bir rol oynamıştır. Bu olay, Müslümanlar için her zaman bir ibret ve ders kaynağı olmuştur.</p>
+  </div>
+</div>
+
+<!-- 14. BEDİR SAVAŞI -->
+<div class="section">
+  <h3>⚔️ 14. Bedir Savaşı (624)</h3>
+  <div class="meaning">
+    <p><strong>📌 Bedir Savaşı Nedir?</strong></p>
+    <p>Bedir Savaşı, Müslümanlar ile Mekke müşrikleri arasında yapılan ilk büyük savaştır. Hicretin 2. yılında (624) Bedir kuyusu civarında gerçekleşmiştir.</p>
+    <p><strong>📌 Savaşın Sebepleri:</strong></p>
+    <p>• Mekke müşrikleri, Müslümanların Medine'de güçlenmesini engellemek istiyorlardı.</p>
+    <p>• Müşrikler, Müslümanların ticaret kervanlarını engelliyorlardı.</p>
+    <p>• Müslümanlar, hicret ederken Mekke'de bıraktıkları mallarını geri almak istiyorlardı.</p>
+    <p>• Ebû Süfyan'ın yönettiği büyük bir ticaret kervanını korumak için müşrikler harekete geçtiler.</p>
+    <p>• Müslümanlar, bu kervanı ele geçirmek için yola çıktılar.</p>
+    <p><strong>📌 Savaş Öncesi Durum:</strong></p>
+    <p>Müslümanların sayısı 313 kişiydi. Bunların çoğu piyadeydi. Sadece 2 at ve 70 deve vardı.</p>
+    <p>Mekke müşriklerinin sayısı ise 1000 kişiydi. 100 at ve 700 develeri vardı. Ayrıca tam teçhizatlıydılar.</p>
+    <p>Yani Müslümanlar, sayıca ve teçhizatça müşriklerden çok zayıftı. Ancak imanları ve Allah'a olan güvenleri tamdı.</p>
+    <p><strong>📌 Savaşın Yapılışı:</strong></p>
+    <p>Savaş, 17 Ramazan 2 (13 Mart 624) tarihinde yapıldı. Peygamberimiz (s.a.v.), savaş öncesi Müslümanlara şöyle hitap etti:</p>
+    <p><strong>"Allah'a yemin ederim ki, bugün Allah'ın yardımı bizimle olacaktır."</strong></p>
+    <p>Peygamberimiz, savaşta:</p>
+    <p>• Bir çadırda dua etti.</p>
+    <p>• Allah'a yalvardı.</p>
+    <p>• Müslümanlara cesaret verdi.</p>
+    <p>• Savaş planını yaptı.</p>
+    <p><strong>📌 Savaşın Kazanılması:</strong></p>
+    <p>Allah'ın izniyle, Müslümanlar Bedir Savaşı'nı kazandılar. Bu savaşta:</p>
+    <p>• Müşriklerden 70 kişi öldü, 70 kişi esir alındı.</p>
+    <p>• Müslümanlardan 14 kişi şehit oldu.</p>
+    <p>• Müşriklerin ileri gelenlerinden Ebû Cehil, Ümeyye bin Halef gibi kişiler öldürüldü.</p>
+    <p>• Müslümanlar büyük ganimet elde ettiler.</p>
+    <p><strong>📌 Bedir Savaşı'nın Önemi:</strong></p>
+    <p>• Müslümanların ilk büyük zaferidir.</p>
+    <p>• Müşriklerin gücü kırıldı.</p>
+    <p>• Müslümanların moral ve özgüveni arttı.</p>
+    <p>• İslam devleti güçlendi.</p>
+    <p>• Müslümanlar, Arap Yarımadası'nda saygın bir konuma geldi.</p>
+    <p>• Kur'an-ı Kerim'de "Yevmü'l-Furkân" (Hak ile batılın ayrıldığı gün) olarak anılır.</p>
+    <p><strong>📌 Esirlere Yapılan Muamele:</strong></p>
+    <p>Peygamberimiz (s.a.v.), Bedir Savaşı'nda esir alınan müşriklere çok iyi davrandı. Onlara:</p>
+    <p>• İyi muamele edilmesini emretti.</p>
+    <p>• Okuma yazma bilenlerin, Müslüman çocuklara okuma yazma öğretmeleri karşılığında serbest bırakılmalarını sağladı.</p>
+    <p>• Fakir esirleri, karşılıksız serbest bıraktı.</p>
+    <p>• Zengin esirlerden fidye aldı.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Bedir Savaşı, İslam tarihinin en önemli savaşlarından biridir. Bu savaşta Müslümanlar, sayıca ve teçhizatça çok zayıf olmalarına rağmen, Allah'ın yardımıyla büyük bir zafer kazandılar. Bu zafer, İslam'ın yayılmasında ve güçlenmesinde çok önemli bir rol oynamıştır. Bu savaş, imanın ve Allah'a güvenmenin ne kadar önemli olduğunu gösterir.</p>
+  </div>
+</div>
+
+<!-- 15. UHUD SAVAŞI -->
+<div class="section">
+  <h3>⚔️ 15. Uhud Savaşı (625)</h3>
+  <div class="meaning">
+    <p><strong>📌 Uhud Savaşı Nedir?</strong></p>
+    <p>Uhud Savaşı, Müslümanlar ile Mekke müşrikleri arasında yapılan ikinci büyük savaştır. Hicretin 3. yılında (625) Uhud Dağı civarında gerçekleşmiştir.</p>
+    <p><strong>📌 Savaşın Sebepleri:</strong></p>
+    <p>• Mekke müşrikleri, Bedir Savaşı'nın intikamını almak istiyorlardı.</p>
+    <p>• Müşrikler, Müslümanların güçlenmesini engellemek istiyorlardı.</p>
+    <p>• Ebû Süfyan, 3000 kişilik bir ordu hazırladı.</p>
+    <p>• Müşrikler, Medine'ye doğru yola çıktılar.</p>
+    <p><strong>📌 Savaş Öncesi Durum:</strong></p>
+    <p>Müslümanların sayısı 700 kişiydi. 50 okçu, bir tepeye (Ayneyn Tepesi) yerleştirildi.</p>
+    <p>Mekke müşriklerinin sayısı ise 3000 kişiydi. 200 at, 700 deve ve tam teçhizatları vardı.</p>
+    <p>Peygamberimiz (s.a.v.), savaş öncesi okçulara şöyle emretti:</p>
+    <p><strong>"Ne olursa olsun, bu tepeden ayrılmayın. Kuşların bile bizi götürdüğünü görseniz, yerinizden ayrılmayın."</strong></p>
+    <p><strong>📌 Savaşın Başlangıcı:</strong></p>
+    <p>Savaş başladığında, Müslümanlar üstünlük sağladılar. Müşrikler geri çekilmeye başladılar. Müslümanlar, ganimet toplamaya yöneldiler.</p>
+    <p>Ancak okçular, ganimet toplamak için tepeden ayrıldılar. Sadece 10 okçu yerinde kaldı.</p>
+    <p>Bunu gören müşrik süvari komutanı Hâlid bin Velîd (henüz Müslüman değildi), ordusuyla Ayneyn Tepesi'nin arkasından saldırdı. Müslümanlar, arkadan kuşatıldılar.</p>
+    <p><strong>📌 Savaşın Sonucu:</strong></p>
+    <p>Bu ani saldırı, Müslümanlar arasında büyük bir panik yarattı. Birçok Müslüman şehit oldu. Aralarında:</p>
+    <p>• <strong>Hz. Hamza (r.a.):</strong> Peygamberimizin amcası, "Şehitlerin Efendisi"</p>
+    <p>• <strong>Hz. Mus'ab bin Umeyr (r.a.):</strong> İslam'ın ilk öğretmeni</p>
+    <p>• <strong>Hz. Enes bin Nadr (r.a.):</strong> Peygamberimizi korumak için şehit oldu</p>
+    <p>• <strong>Hz. Sa'd bin Rebî' (r.a.):</strong> Son nefesinde bile Peygamberimizi sordu</p>
+    <p>Toplam 70 Müslüman şehit oldu.</p>
+    <p>Peygamberimiz (s.a.v.) de bu savaşta yaralandı. Yüzüne miğferin halkaları battı, dişi kırıldı.</p>
+    <p><strong>📌 Savaşın Sonu:</strong></p>
+    <p>Müslümanlar, büyük kayıplar verdikten sonra toparlandılar. Müşrikler, kesin bir zafer kazanamadılar. Ancak Müslümanlar da Bedir'deki gibi bir zafer elde edemediler.</p>
+    <p>Bu savaş, Müslümanlar için büyük bir ders oldu. Peygamberimizin emrine itaatin ne kadar önemli olduğu anlaşıldı.</p>
+    <p><strong>📌 Uhud Savaşı'nın Önemi:</strong></p>
+    <p>• Müslümanlar, büyük bir ders aldılar.</p>
+    <p>• Peygamberimizin emrine itaatin önemi anlaşıldı.</p>
+    <p>• Müslümanlar, sabrın ve tevekkülün önemini öğrendiler.</p>
+    <p>• Hz. Hamza gibi büyük sahabeler şehit oldu.</p>
+    <p>• Kur'an-ı Kerim'de Uhud Savaşı ile ilgili ayetler indi (Âl-i İmrân Sûresi).</p>
+    <p><strong>📌 Kur'an-ı Kerim'de Uhud:</strong></p>
+    <p>Yüce Allah (c.c.), Uhud Savaşı ile ilgili şöyle buyurdu:</p>
+    <p><strong>"Andolsun, sizden öncekilerin başına gelenler gibi, sizin de başınıza gelmeden cennete gireceğinizi mi sandınız?"</strong> (Âl-i İmrân, 142)</p>
+    <p><strong>"Allah, iman edenleri arındırmak ve kâfirleri helâk etmek için size böyle bir imtihan verdi."</strong> (Âl-i İmrân, 141)</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Uhud Savaşı, Müslümanlar için acı bir tecrübe olmuştur. Ancak bu savaş, Müslümanların daha da olgunlaşmasını ve güçlenmesini sağlamıştır. Peygamberimizin (s.a.v.) emrine itaatin ne kadar önemli olduğu, bu savaşta açıkça görülmüştür. Bu savaş, bütün Müslümanlara bir ders olmuştur.</p>
+  </div>
+</div>
+
+<!-- 16. HENDEK SAVAŞI -->
+<div class="section">
+  <h3>⚔️ 16. Hendek Savaşı (627)</h3>
+  <div class="meaning">
+    <p><strong>📌 Hendek Savaşı Nedir?</strong></p>
+    <p>Hendek Savaşı, Müslümanlar ile Mekke müşrikleri ve onların müttefikleri arasında yapılan üçüncü büyük savaştır. Hicretin 5. yılında (627) Medine'de gerçekleşmiştir. "Ahzâb Savaşı" (Gruplar Savaşı) olarak da bilinir.</p>
+    <p><strong>📌 Savaşın Sebepleri:</strong></p>
+    <p>• Mekke müşrikleri, Müslümanları tamamen yok etmek istiyorlardı.</p>
+    <p>• Yahudi kabilelerinden Nadîroğulları, müşrikleri Müslümanlara karşı kışkırttılar.</p>
+    <p>• Müşrikler, birçok Arap kabilesini ve Yahudi kabilesini yanlarına alarak büyük bir ordu hazırladılar.</p>
+    <p>• 10.000 kişilik bir ordu ile Medine'ye doğru yola çıktılar.</p>
+    <p><strong>📌 Savaş Öncesi Durum:</strong></p>
+    <p>Müslümanların sayısı sadece 3000 kişiydi. Medine'nin etrafı açıktı ve savunmasızdı.</p>
+    <p>Peygamberimiz (s.a.v.), ashâbıyla istişare etti. Hz. Selmân-ı Fârisî'nin (r.a.) teklifiyle, Medine'nin etrafına hendekler kazılmasına karar verildi.</p>
+    <p><strong>📌 Hendeklerin Kazılması:</strong></p>
+    <p>Müslümanlar, 6 gün içinde Medine'nin açık olan yerlerine hendekler kazdılar. Hendekler, düşmanın atlı birliklerinin geçemeyeceği kadar geniş ve derindi.</p>
+    <p>Peygamberimiz de bizzat hendek kazma işine katıldı. Müslümanlar, büyük bir gayretle çalıştılar. Kazma sırasında birçok mucize gerçekleşti.</p>
+    <p><strong>📌 Savaşın Yapılışı:</strong></p>
+    <p>Müşrik ordusu, Medine'ye ulaştığında hendeklerle karşılaştı. Atlı birlikleri hendeği geçemedi. Bu yüzden savaş, uzun bir kuşatmaya dönüştü.</p>
+    <p>Kuşatma, yaklaşık 1 ay sürdü. Müşrikler, hendeği geçmek için birçok yol denediler. Ancak başarılı olamadılar.</p>
+    <p>Bu sırada, Müslümanlar arasında da bazı zorluklar yaşandı. Münafıklar, Müslümanları korkutmaya çalıştılar. Ancak Peygamberimiz, sabırla ve kararlılıkla Müslümanları yönetti.</p>
+    <p><strong>📌 Savaşın Sonucu:</strong></p>
+    <p>Yüce Allah (c.c.), Müslümanlara büyük bir yardım gönderdi. Şiddetli bir fırtına çıktı. Müşriklerin çadırları uçtu, atları kaçtı, yiyecekleri bozuldu.</p>
+    <p>Müşrikler, büyük bir panik içinde geri çekildiler. Kuşatma başarısız oldu. Müslümanlar, büyük bir zafer kazandılar.</p>
+    <p>Kur'an-ı Kerim'de şöyle buyurulur:</p>
+    <p><strong>"Allah, inkâr edenleri hiçbir hayra ulaşmaksızın öfke içinde geri çevirdi. Allah, mü'minlere savaşta yeterli oldu. Allah, çok güçlüdür, mutlak galiptir."</strong> (Ahzâb Sûresi, 25)</p>
+    <p><strong>📌 Hendek Savaşı'nın Önemi:</strong></p>
+    <p>• Müslümanların savunma savaşıdır.</p>
+    <p>• Hendek taktiği, ilk kez bu savaşta uygulanmıştır.</p>
+    <p>• Hz. Selmân-ı Fârisî'nin (r.a.) zekâsı ve tecrübesi ortaya çıkmıştır.</p>
+    <p>• Müşriklerin son büyük saldırısıdır.</p>
+    <p>• Bu savaştan sonra müşrikler, bir daha Medine'ye saldıramadılar.</p>
+    <p>• İslam devleti, bölgede saygın bir konuma geldi.</p>
+    <p><strong>📌 Kur'an-ı Kerim'de Hendek:</strong></p>
+    <p>Yüce Allah (c.c.), Hendek Savaşı ile ilgili Ahzâb Sûresi'nde şöyle buyurdu:</p>
+    <p><strong>"Hani onlar, size hem üstünüzden hem de alt tarafınızdan gelmişlerdi. Gözler kaymış, yürekler ağızlara gelmişti. Siz de Allah hakkında türlü türlü zanlarda bulunuyordunuz."</strong> (Ahzâb Sûresi, 10)</p>
+    <p><strong>"İşte orada mü'minler imtihan edilmiş ve şiddetli bir sarsıntı geçirmişlerdi."</strong> (Ahzâb Sûresi, 11)</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Hendek Savaşı, Müslümanların en zorlu savaşlarından biridir. Ancak bu savaşta Müslümanlar, sabır, tevekkül ve akıllı strateji sayesinde büyük bir zafer kazandılar. Bu savaş, Müslümanların artık Medine'de güçlü bir toplum olduğunu ve düşmanlarına karşı koyabileceğini gösterdi. Ayrıca bu savaş, İslam'ın yayılmasında ve güçlenmesinde önemli bir dönüm noktası olmuştur.</p>
+  </div>
+</div>
+
+<!-- 17. MEKKE'NİN FETHİ -->
+<div class="section">
+  <h3>🏛️ 17. Mekke'nin Fethi (630)</h3>
+  <div class="meaning">
+    <p><strong>📌 Mekke'nin Fethi Nedir?</strong></p>
+    <p>Mekke'nin Fethi, Müslümanların 8. yılda (630) Mekke'yi fethetmesidir. Bu olay, İslam tarihinin en önemli zaferlerinden biridir. Mekke, putperestliğin merkeziydi ve İslam'ın doğduğu şehirdi.</p>
+    <p><strong>📌 Fetih Öncesi Durum:</strong></p>
+    <p>Müslümanlar ile Mekke müşrikleri arasında Hudeybiye Antlaşması yapılmıştı (628). Bu antlaşmaya göre:</p>
+    <p>• 10 yıl savaş yapılmayacaktı.</p>
+    <p>• Kabileler istedikleri tarafla ittifak yapabileceklerdi.</p>
+    <p>Ancak Kureyş'e bağlı Benî Bekir kabilesi, Müslümanlarla ittifak yapan Huzaa kabilesine saldırdı. Kureyş, Benî Bekir'e yardım etti. Böylece Hudeybiye Antlaşması bozuldu.</p>
+    <p>Kureyş, antlaşmayı yenilemek için Ebû Süfyan'ı Medine'ye gönderdi. Ancak Peygamberimiz, teklifi kabul etmedi.</p>
+    <p><strong>📌 Fetih Hazırlığı:</strong></p>
+    <p>Peygamberimiz (s.a.v.), 10.000 kişilik bir orduyla Mekke'ye doğru yola çıktı. Bu hazırlık, çok gizli tutuldu. Amaç, Mekke'yi kansız fethetmekti.</p>
+    <p>Ordu, Mekke yakınlarına geldiğinde konakladı. Müslümanlar, çok sayıda ateş yaktılar. Bu ateşler, Mekkelileri korkuttu.</p>
+    <p><strong>📌 Mekke'nin Fethi:</strong></p>
+    <p>Peygamberimiz, Mekke'ye girdiğinde:</p>
+    <p>• <strong>Kâbe'ye yöneldi.</strong></p>
+    <p>• <strong>Kâbe'nin anahtarını istedi.</strong></p>
+    <p>• <strong>Kâbe'nin içindeki putları kırdı.</strong></p>
+    <p>• <strong>"Hak geldi, batıl yıkıldı. Şüphesiz batıl yıkılmaya mahkûmdur."</strong> (İsrâ, 81) ayetini okudu.</p>
+    <p>• <strong>Kâbe'yi temizlettirdi.</strong></p>
+    <p><strong>📌 Genel Af İlanı:</strong></p>
+    <p>Peygamberimiz (s.a.v.), Mekke'yi fethettiğinde Mekkelilere büyük bir af ilan etti. Şöyle buyurdu:</p>
+    <p><strong>"Bugün sizin için kınama yok. Gidin, hepiniz serbestsiniz."</strong></p>
+    <p>Bu af, İslam'ın ne kadar merhametli bir din olduğunu gösterdi. Birçok Mekkeli, bu af sayesinde Müslüman oldu.</p>
+    <p><strong>📌 Fethin Sonuçları:</strong></p>
+    <p>• Mekke, putperestlikten temizlendi.</p>
+    <p>• Kâbe, İslam'ın merkezi oldu.</p>
+    <p>• Birçok Mekkeli Müslüman oldu.</p>
+    <p>• İslam, Arap Yarımadası'nda hızla yayıldı.</p>
+    <p>• Müslümanların gücü ve itibarı arttı.</p>
+    <p>• İslam devleti, büyük bir güç haline geldi.</p>
+    <p><strong>📌 Peygamberimizin Affı:</strong></p>
+    <p>Peygamberimiz, kendisine yıllarca düşmanlık yapan, kendisini öldürmeye çalışan, Müslümanlara işkence eden Mekkelilere bile af ilan etti. Bu, onun ne kadar büyük bir ahlaka sahip olduğunu gösterir.</p>
+    <p>Peygamberimiz, fethin ardından:</p>
+    <p>• <strong>Ebû Süfyan ve karısı Hind'i</strong> affetti.</p>
+    <p>• <strong>Vahşî'yi</strong> (Hz. Hamza'yı şehit eden kişiyi) affetti.</p>
+    <p>• <strong>İkrime bin Ebû Cehil'i</strong> affetti.</p>
+    <p>• <strong>Safvan bin Ümeyye'yi</strong> affetti.</p>
+    <p><strong>📌 Kur'an-ı Kerim'de Fetih:</strong></p>
+    <p>Yüce Allah (c.c.), Mekke'nin Fethi ile ilgili şöyle buyurdu:</p>
+    <p><strong>"Şüphesiz Biz, sana apaçık bir fetih verdik."</strong> (Fetih Sûresi, 1)</p>
+    <p><strong>"Andolsun, Allah, Peygamberinin rüyasını doğru çıkardı. Allah dilerse, siz mutlaka Mescid-i Harâm'a, güven içinde, başlarınızı kazımış veya saçlarınızı kısaltmış olarak gireceksiniz."</strong> (Fetih Sûresi, 27)</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Mekke'nin Fethi, İslam tarihinin en büyük zaferidir. Bu fetih, İslam'ın yayılmasında ve güçlenmesinde çok önemli bir rol oynamıştır. Peygamberimizin (s.a.v.) gösterdiği büyük af ve merhamet, İslam'ın evrensel mesajının en güzel örneklerinden biridir. Bu fetih, bütün Müslümanlara, affetmenin ve merhametin ne kadar önemli olduğunu gösterir.</p>
+  </div>
+</div>
+
+<!-- 18. VEDA HACCI VE VEFATI -->
+<div class="section">
+  <h3>🕋 18. Veda Haccı ve Vefatı (632)</h3>
+  <div class="meaning">
+    <p><strong>📌 Veda Haccı Nedir?</strong></p>
+    <p>Veda Haccı, Peygamberimizin (s.a.v.) hayatında yaptığı tek hacdır. Hicretin 10. yılında (632) yapılmıştır. Peygamberimiz, bu hacda Müslümanlara veda etmiş ve önemli mesajlar vermiştir.</p>
+    <p><strong>📌 Veda Hutbesi:</strong></p>
+    <p>Peygamberimiz, Veda Haccı'nda Arafat'ta 100.000'den fazla Müslümana hitaben bir hutbe okudu. Bu hutbe, İslam tarihinin en önemli hutbesidir. Veda Hutbesi'nde şu mesajlar verildi:</p>
+    <p><strong>1. Can ve mal güvenliği:</strong></p>
+    <p>"Ey insanlar! Bugünleriniz nasıl mukaddes bir gün ise, bu aylarınız nasıl mukaddes bir ay ise, bu şehriniz (Mekke) nasıl mukaddes bir şehir ise, canlarınız, mallarınız, ırzlarınız da öyle mukaddestir. Her türlü tecavüzden korunmuştur."</p>
+    <p><strong>2. Faizin kaldırılması:</strong></p>
+    <p>"Cahiliye devrinde güdülen kan davaları da tamamen kaldırılmıştır. Kaldırılan ilk kan davası, Abdülmuttaliboğullarından Rebîa'nın oğlu İbrahim'in kan davasıdır. Cahiliye devrindeki faiz de tamamen kaldırılmıştır. Kaldırılan ilk faiz, amcam Abbas bin Abdülmuttalib'in faizidir."</p>
+    <p><strong>3. Kadın hakları:</strong></p>
+    <p>"Ey insanlar! Kadınların haklarını gözetmenizi ve bu hususta Allah'tan korkmanızı tavsiye ederim. Siz kadınları, Allah'ın emaneti olarak aldınız ve onların namusunu kendinize Allah'ın emriyle helâl kıldınız."</p>
+    <p><strong>4. Emanet:</strong></p>
+    <p>"Size iki emanet bırakıyorum. Onlara sımsıkı sarıldığınız sürece yolunuzu şaşırmayacaksınız. Bunlar: Allah'ın Kitabı (Kur'an) ve Peygamberinin Sünneti'dir."</p>
+    <p><strong>5. Eşitlik:</strong></p>
+    <p>"Ey insanlar! Rabbiniz birdir. Babanız da birdir. Hepiniz Âdem'in çocuklarısınız, Âdem ise topraktandır. Arabın Arap olmayana, Arap olmayanın da Arap'a; beyazın siyaha, siyahın da beyaza karşı bir üstünlüğü yoktur. Üstünlük ancak takvâ iledir."</p>
+    <p><strong>6. Tebliğ:</strong></p>
+    <p>"Burada bulunanlar, bulunmayanlara tebliğ etsin. Kim bilir, belki de birçok defa kendisinden daha iyi anlayacak birine tebliğ eder."</p>
+    <p><strong>7. Şahitlik:</strong></p>
+    <p>"Allah'ım! Tebliğ ettim mi? Allah'ım! Şahit ol!"</p>
+    <p><strong>📌 Veda Haccı Sonrası:</strong></p>
+    <p>Veda Haccı'ndan sonra, Peygamberimize şu ayet indi:</p>
+    <p><strong>"Bugün sizin için dininizi kemale erdirdim. Size nimetimi tamamladım ve sizin için din olarak İslam'ı seçtim."</strong> (Mâide Sûresi, 3)</p>
+    <p>Bu ayet, İslam dininin tamamlandığını ve Peygamberimizin görevinin sona erdiğini gösteriyordu.</p>
+    <p><strong>📌 Peygamberimizin Vefatı:</strong></p>
+    <p>Peygamberimiz (s.a.v.), Veda Haccı'ndan birkaç ay sonra, hicretin 11. yılında (632) Medine'de vefat etti. Vefat ettiğinde 63 yaşındaydı.</p>
+    <p>Vefat etmeden önce:</p>
+    <p>• <strong>Hastalığı ağırlaştı.</strong></p>
+    <p>• <strong>Hz. Ebû Bekir'e namaz kıldırmasını emretti.</strong></p>
+    <p>• <strong>Ashâbına vasiyetlerde bulundu.</strong></p>
+    <p>• <strong>"Namaza ve emriniz altındakilere dikkat edin" buyurdu.</strong></p>
+    <p>• <strong>Son olarak "Allah'ım! Refîk-i A'lâ'ya (en yüce dosta)" dedi.</strong></p>
+    <p><strong>📌 Vefatı Sonrası:</strong></p>
+    <p>Peygamberimizin vefatı, bütün Müslümanları derinden üzdü. Hz. Ebû Bekir (r.a.), Müslümanları teselli etti ve şöyle dedi:</p>
+    <p><strong>"Ey insanlar! Kim Muhammed'e kulluk ediyorsa, bilsin ki o vefat etmiştir. Kim de Allah'a kulluk ediyorsa, bilsin ki Allah diridir, asla ölmez."</strong></p>
+    <p><strong>📌 Peygamberimizin Vefatı ve Sonrası:</strong></p>
+    <p>Peygamberimiz, Medine'de Hz. Âişe'nin (r.a.) odasında vefat etti. Vefat ettiği yere defnedildi. Kabri, Mescid-i Nebevî'nin içindedir.</p>
+    <p>Peygamberimizin vefatından sonra, Hz. Ebû Bekir (r.a.) halife seçildi. İslam devleti, onun liderliğinde büyümeye devam etti.</p>
+    <p><strong>📌 Peygamberimizin Vefatının Önemi:</strong></p>
+    <p>• Peygamberimiz, görevini tamamlamış olarak vefat etti.</p>
+    <p>• İslam dini, kemale ermişti.</p>
+    <p>• Müslümanlara iki emanet bıraktı: Kur'an ve Sünnet.</p>
+    <p>• Vefatı, Müslümanlar için büyük bir kayıptı.</p>
+    <p>• Ancak İslam, onun vefatından sonra da yayılmaya devam etti.</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) vefatı, İslam tarihinin en hüzünlü olayıdır. Ancak o, bize iki büyük emanet bıraktı: Kur'an-ı Kerim ve Sünneti. Bu iki emanete sımsıkı sarıldığımız sürece, onun gösterdiği yoldan ayrılmayız. Peygamberimiz, hayatı boyunca insanları Allah'a davet etti, güzel ahlakı öğretti ve İslam'ı tebliğ etti. Onun vefatı, İslam'ın sonu değil, aksine yeni bir dönemin başlangıcıdır.</p>
+  </div>
+</div>
+
+<!-- 19. AHLÂKI: DOĞRULUĞU (SIDK) -->
+<div class="section">
+  <h3>✅ 19. Peygamberimizin Ahlakı: Doğruluğu (Sıdk)</h3>
+  <div class="meaning">
+    <p><strong>📌 Doğruluk Nedir?</strong></p>
+    <p>Doğruluk (Sıdk), sözde, işte ve niyette dürüst olmak demektir. Peygamberimiz (s.a.v.), doğruluğu ile tanınmıştır. Hayatı boyunca bir kez olsun yalan söylememiştir.</p>
+    <p><strong>📌 Peygamberimizin Doğruluğu:</strong></p>
+    <p>• <strong>Peygamberlikten önce:</strong> Mekkeliler ona "El-Emîn" (güvenilir) derlerdi. Onun sözü senetti. Ticarette hiç yalan söylemedi.</p>
+    <p>• <strong>Peygamberlikten sonra:</strong> Kendisine en ağır işkenceler yapıldığında bile yalandan uzak durdu. Düşmanları bile onun doğruluğunu kabul ettiler.</p>
+    <p>• <strong>Ebû Süfyan'ın şahitliği:</strong> Ebû Süfyan, henüz Müslüman değilken, Bizans İmparatoru Herakleios'a şöyle demişti:</p>
+    <p><strong>"Muhammed, bize namaz kılmayı, doğru sözlü olmayı, iffetli olmayı, akrabalık bağlarını gözetmeyi ve emaneti korumayı emrediyor. Biz onun hiç yalan söylediğini görmedik."</strong> (Buhârî, Müslim)</p>
+    <p><strong>📌 Kur'an'da Doğruluk:</strong></p>
+    <p>Yüce Allah (c.c.), Peygamberimizi şöyle övmüştür:</p>
+    <p><strong>"Andolsun, size kendi içinizden öyle bir peygamber gelmiştir ki, sizin sıkıntıya düşmeniz ona çok ağır gelir. O, size çok düşkün, mü'minlere karşı çok şefkatli ve merhametlidir."</strong> (Tevbe Sûresi, 128)</p>
+    <p><strong>"O, kendisine vahyedilenden başkasını söylemez. O, ancak bir vahiydir."</strong> (Necm Sûresi, 3-4)</p>
+    <p><strong>📌 Hadislerde Doğruluk:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"Doğruluk iyiliğe götürür. İyilik de cennete götürür. Kişi doğru söyleye söyleye Allah katında sıddîk (doğru sözlü) olarak yazılır. Yalan ise kötülüğe götürür. Kötülük de cehenneme götürür. Kişi yalan söyleye söyleye Allah katında kezzâb (yalancı) olarak yazılır."</strong> (Buhârî, Müslim)</p>
+    <p><strong>"Mü'min, her türlü kötülükten uzak olabilir. Ancak yalan ve hıyanetten uzak olamaz."</strong> (Ahmed bin Hanbel)</p>
+    <p><strong>📌 Peygamberimizin Doğruluğuna Örnekler:</strong></p>
+    <p>• <strong>Hicret sırasında:</strong> Mekke müşrikleri, Peygamberimizin doğruluğuna o kadar güvenirlerdi ki, en değerli emanetlerini ona bırakırlardı. Hicret ederken bile, Hz. Ali'ye emanetleri sahiplerine teslim etmesini emretti.</p>
+    <p>• <strong>Savaşlarda:</strong> Savaş hilelerinde bile yalandan uzak durdu. Ahitlerine her zaman sadık kaldı.</p>
+    <p>• <strong>Aile hayatında:</strong> Eşlerine hiç yalan söylemedi. Her zaman dürüst davrandı.</p>
+    <p>• <strong>Ticarette:</strong> Gençliğinde ticaretle uğraşırken, hiçbir zaman malı olduğundan fazla göstermedi, kusurları gizlemedi.</p>
+    <p><strong>📌 Doğruluğun Önemi:</strong></p>
+    <p>• Doğruluk, imanın bir göstergesidir.</p>
+    <p>• Doğruluk, güveni kazandırır.</p>
+    <p>• Doğruluk, toplumda huzuru sağlar.</p>
+    <p>• Doğruluk, ahirette kurtuluşa vesiledir.</p>
+    <p>• Doğruluk, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p><strong>📌 Peygamberimizin Doğruluk Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Allâhümme innî es'elüke's-sıdk."</strong></p>
+    <p><em>Anlamı: Allah'ım! Senden doğruluk dilerim.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) doğruluğu, onun en büyük mucizelerinden biridir. Çünkü o, 40 yıl boyunca yalan söylememiş, sonra peygamberlik iddiasında bulunmuştur. Düşmanları bile onun doğruluğunu kabul etmişlerdir. Bu, onun peygamberliğinin en büyük delillerinden biridir. Biz de Müslüman olarak, Peygamberimizin doğruluğunu örnek almalı, her zaman doğru sözlü olmalıyız.</p>
+  </div>
+</div>
+
+<!-- 20. AHLÂKI: GÜVENİLİRLİĞİ (EMÂNET) -->
+<div class="section">
+  <h3>🛡️ 20. Peygamberimizin Ahlakı: Güvenilirliği (Emânet)</h3>
+  <div class="meaning">
+    <p><strong>📌 Emânet Nedir?</strong></p>
+    <p>Emânet, kendisine bırakılan bir şeyi korumak, ona ihanet etmemek ve sahibine zamanı geldiğinde eksiksiz teslim etmektir. Peygamberimiz (s.a.v.), hayatı boyunca emânete son derece bağlı kalmıştır.</p>
+    <p><strong>📌 "El-Emîn" Lakabı:</strong></p>
+    <p>Mekkeliler, Peygamberimize "El-Emîn" (güvenilir) derlerdi. Bu lakabı ona, daha peygamberlik gelmeden önce vermişlerdi. Çünkü o, gençliğinden itibaren her konuda güvenilirdi.</p>
+    <p><strong>📌 Peygamberimizin Emânete Bağlılığı:</strong></p>
+    <p>• <strong>Mekke dönemi:</strong> Mekkeliler, en değerli eşyalarını, altınlarını, mücevherlerini Peygamberimize emanet ederlerdi. Çünkü ona güvenirlerdi.</p>
+    <p>• <strong>Hicret sırasında:</strong> Peygamberimiz, hicret ederken bile Hz. Ali'yi (r.a.) Mekke'de bıraktı. Ona, kendisine emanet edilen eşyaları sahiplerine teslim etmesini emretti. Kendisine düşmanlık yapanların bile emanetlerini korudu.</p>
+    <p>• <strong>Savaşlarda:</strong> Savaş ganimetlerini asla kendine ayırmadı. Ganimetlerin tamamını İslam'ın emrettiği şekilde dağıttı.</p>
+    <p>• <strong>Antlaşmalarda:</strong> Yaptığı antlaşmalara her zaman sadık kaldı. Hudeybiye Antlaşması'nda Müslümanların aleyhine gibi görünen maddeler olsa bile, o antlaşmaya sadık kaldı.</p>
+    <p><strong>📌 Kur'an'da Emânet:</strong></p>
+    <p>Yüce Allah (c.c.) şöyle buyurmuştur:</p>
+    <p><strong>"Ey iman edenler! Emanetleri sahiplerine verin."</strong> (Nisâ Sûresi, 58)</p>
+    <p><strong>"Şüphesiz Allah, size emanetleri ehline vermenizi ve insanlar arasında hükmettiğinizde adaletle hükmetmenizi emrediyor."</strong> (Nisâ Sûresi, 58)</p>
+    <p><strong>"Ey iman edenler! Allah'a ve Peygamber'e hainlik etmeyin. Bile bile kendi emanetlerinize de hainlik yapmayın."</strong> (Enfâl Sûresi, 27)</p>
+    <p><strong>📌 Hadislerde Emânet:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"Emaneti olmayanın imanı yoktur."</strong> (Ahmed bin Hanbel)</p>
+    <p><strong>"Münafığın alâmeti üçtür: Konuştuğunda yalan söyler, söz verdiğinde sözünde durmaz, kendisine bir şey emanet edildiğinde ihanet eder."</strong> (Buhârî, Müslim)</p>
+    <p><strong>"Kişi, emanete ihanet ettiği sürece mü'min olamaz."</strong></p>
+    <p><strong>📌 Peygamberimizin Emânetine Örnekler:</strong></p>
+    <p>• <strong>Hz. Hatice ile evliliği:</strong> Hz. Hatice (r.a.), ticaret kervanını Peygamberimize teslim ettiğinde, ona güvendiği için teslim etti. Peygamberimiz, kervanı büyük bir kârla geri getirdi. Bu, onun emânetine olan güvenin göstergesiydi.</p>
+    <p>• <strong>Kâbe'nin tamiri:</strong> Kureyş kabilesi, Hacerü'l-Esved'i yerine koyma şerefi için tartıştığında, Peygamberimizin hakemliğine razı oldular. Çünkü onun adaletli ve güvenilir olduğunu biliyorlardı.</p>
+    <p>• <strong>Savaş sonrası:</strong> Bedir Savaşı'nda esir alınan müşriklerin emanetlerini korudu. Onlara iyi davrandı.</p>
+    <p><strong>📌 Emânetin Önemi:</strong></p>
+    <p>• Emânet, imanın göstergesidir.</p>
+    <p>• Emânet, toplumda güveni sağlar.</p>
+    <p>• Emânet, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p>• Emânet, Müslümanın şerefidir.</p>
+    <p>• Emânete ihanet, münafıklık alâmetidir.</p>
+    <p><strong>📌 Peygamberimizin Emânet Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Allâhümme innî eûzü bike minel hıyâneti."</strong></p>
+    <p><em>Anlamı: Allah'ım! Emanete ihanet etmekten Sana sığınırım.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) güvenilirliği, onun en büyük özelliklerinden biridir. Düşmanları bile ona güvenirlerdi. Bu, onun ne kadar yüce bir ahlaka sahip olduğunu gösterir. Biz de Müslüman olarak, Peygamberimizin emânetine örnek almalı, bize bırakılan her şeye sahip çıkmalıyız.</p>
+  </div>
+</div>
+
+<!-- 21. AHLÂKI: MERHAMETLİLİĞİ -->
+<div class="section">
+  <h3>💗 21. Peygamberimizin Ahlakı: Merhametliliği</h3>
+  <div class="meaning">
+    <p><strong>📌 Merhamet Nedir?</strong></p>
+    <p>Merhamet, bir kimsenin karşılaştığı kötü durumdan dolayı üzüntü duymak, ona şefkat göstermek ve yardım etmektir. Peygamberimiz (s.a.v.), merhametin en güzel örneğidir.</p>
+    <p><strong>📌 Kur'an'da Peygamberimizin Merhameti:</strong></p>
+    <p>Yüce Allah (c.c.) şöyle buyurmuştur:</p>
+    <p><strong>"Andolsun, size kendi içinizden öyle bir peygamber gelmiştir ki, sizin sıkıntıya düşmeniz ona çok ağır gelir. O, size çok düşkün, mü'minlere karşı çok şefkatli ve merhametlidir."</strong> (Tevbe Sûresi, 128)</p>
+    <p><strong>"Biz seni ancak âlemlere rahmet olarak gönderdik."</strong> (Enbiyâ Sûresi, 107)</p>
+    <p>Bu ayet, Peygamberimizin (s.a.v.) sadece Müslümanlara değil, bütün insanlığa ve hatta bütün canlılara merhametli olduğunu gösterir.</p>
+    <p><strong>📌 Peygamberimizin Merhametine Örnekler:</strong></p>
+    <p><strong>1. Çocuklara Merhameti:</strong></p>
+    <p>Peygamberimiz, çocukları çok severdi. Onlarla şakalaşır, onları kucaklar, başlarını okşardı. Torunları Hz. Hasan ve Hz. Hüseyin'e çok düşkündü. Namaz kılarken bile torunları sırtına çıktığında, secdeyi uzatırdı.</p>
+    <p>Bir gün Peygamberimiz, torunu Hz. Hasan'ı öperken, yanında bulunan Akra bin Hâbis: "Benim 10 çocuğum var, hiçbirini öpmedim" dedi. Peygamberimiz şöyle buyurdu:</p>
+    <p><strong>"Merhamet etmeyene merhamet edilmez."</strong> (Buhârî, Müslim)</p>
+    <p><strong>2. Yetimlere Merhameti:</strong></p>
+    <p>Peygamberimiz, yetimlere çok merhamet ederdi. Kendisi de yetim olarak büyümüştü. Bu yüzden yetimlerin acısını iyi bilirdi. Yetimlere sahip çıkmayı, onları korumayı emrederdi.</p>
+    <p><strong>"Ben ve yetimi koruyan kişi, cennette şöyle (iki parmağını birleştirerek) beraber olacağız."</strong> (Buhârî)</p>
+    <p><strong>3. Kadınlara Merhameti:</strong></p>
+    <p>Peygamberimiz, kadınlara karşı son derece merhametliydi. Kadınların haklarını korur, onlara iyi davranılmasını emrederdi. Veda Hutbesi'nde kadın haklarına özel vurgu yapmıştı.</p>
+    <p><strong>"Kadınlara hayır tavsiye edin."</strong> (Buhârî, Müslim)</p>
+    <p><strong>4. Hayvanlara Merhameti:</strong></p>
+    <p>Peygamberimiz, hayvanlara da merhamet ederdi. Onların aç bırakılmasını, dövülmesini, eziyet edilmesini yasakladı. Bir kediyi aç bırakarak ölümüne sebep olan bir kadının cehenneme gittiğini, susuz bir köpeğe su veren bir kişinin ise cennete gideceğini bildirdi.</p>
+    <p><strong>"Merhamet edenlere Rahmân merhamet eder. Siz yeryüzündekilere merhamet edin ki, göktekiler de size merhamet etsin."</strong> (Ebû Dâvûd, Tirmizî)</p>
+    <p><strong>5. Düşmanlarına Merhameti:</strong></p>
+    <p>Peygamberimiz, kendisine düşmanlık yapanlara bile merhamet ederdi. Mekke'nin Fethi'nde, yıllarca kendisine işkence eden Mekkelilere bile af ilan etti:</p>
+    <p><strong>"Bugün sizin için kınama yok. Gidin, hepiniz serbestsiniz."</strong></p>
+    <p>Taif'te kendisini taşlayanlara bile beddua etmedi, aksine onların hidayeti için dua etti.</p>
+    <p><strong>6. Mü'minlere Merhameti:</strong></p>
+    <p>Peygamberimiz, Müslümanlara karşı çok şefkatli ve merhametliydi. Onların sıkıntılarını paylaşır, dertleriyle ilgilenir, ihtiyaçlarını karşılardı. Bir sahabe hastalandığında onu ziyaret eder, birinin bir sorunu olduğunda yardım ederdi.</p>
+    <p><strong>📌 Merhametin Önemi:</strong></p>
+    <p>• Merhamet, imanın göstergesidir.</p>
+    <p>• Merhamet, toplumda sevgi ve barışı sağlar.</p>
+    <p>• Merhamet, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p>• Merhamet, cennete götüren bir yoldur.</p>
+    <p>• Merhamet, Allah'ın da merhamet etmesine vesiledir.</p>
+    <p><strong>📌 Peygamberimizin Merhamet Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Allâhümme innî es'elüke'l-merhamete."</strong></p>
+    <p><em>Anlamı: Allah'ım! Senden merhamet dilerim.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) merhameti, onun en büyük mucizelerinden biridir. O, bütün insanlığa, bütün canlılara, hatta düşmanlarına bile merhamet etmiştir. Bu yüzden Yüce Allah (c.c.) onu "âlemlere rahmet" olarak nitelendirmiştir. Biz de Müslüman olarak, Peygamberimizin merhametini örnek almalı, bütün canlılara merhamet etmeliyiz.</p>
+  </div>
+</div>
+
+<!-- 22. AHLÂKI: ADALETİ -->
+<div class="section">
+  <h3>⚖️ 22. Peygamberimizin Ahlakı: Adaleti</h3>
+  <div class="meaning">
+    <p><strong>📌 Adalet Nedir?</strong></p>
+    <p>Adalet, herkese hakkını vermek, hiç kimseye haksızlık yapmamak, tarafsız ve dürüst olmaktır. Peygamberimiz (s.a.v.), adaletin en güzel örneğidir.</p>
+    <p><strong>📌 Kur'an'da Adalet:</strong></p>
+    <p>Yüce Allah (c.c.) şöyle buyurmuştur:</p>
+    <p><strong>"Ey iman edenler! Kendiniz, ana-babanız ve yakınlarınız aleyhine bile olsa, Allah için şahitlik eden kimseler olarak adaleti ayakta tutun."</strong> (Nisâ Sûresi, 135)</p>
+    <p><strong>"Bir topluma olan kininiz, sakın ha sizi adaletsizliğe itmesin. Adil olun. Bu, Allah'a karşı gelmekten sakınmaya daha yakındır."</strong> (Mâide Sûresi, 8)</p>
+    <p><strong>"Şüphesiz Allah, adaleti, iyilik yapmayı ve yakınlara bakmayı emreder."</strong> (Nahl Sûresi, 90)</p>
+    <p><strong>📌 Peygamberimizin Adaletine Örnekler:</strong></p>
+    <p><strong>1. Kâbe'nin Tamiri (605):</strong></p>
+    <p>Kureyş kabilesi, Kâbe'nin tamiri sırasında Hacerü'l-Esved'i yerine koyma şerefi için tartıştı. Her kabile bu şerefi kendisi istiyordu. Kan davası çıkmak üzereydi. Sonunda Peygamberimizin hakemliğine razı oldular. Peygamberimiz, bir örtü üzerine Hacerü'l-Esved'i koydu ve her kabilenin reisinin örtünün bir ucundan tutmasını sağladı. Böylece adaletle bir kan davasını önledi.</p>
+    <p><strong>2. Hırsızlık Yapan Kadın:</strong></p>
+    <p>Peygamberimizin zamanında, Mahzûm kabilesinden bir kadın hırsızlık yaptı. Kureyş, kadının cezalandırılmaması için Peygamberimize aracı göndermek istedi. Peygamberimizin çok sevdiği Üsâme bin Zeyd'i aracı yaptılar. Peygamberimiz şöyle buyurdu:</p>
+    <p><strong>"Ey Üsâme! Allah'ın cezalarından birinin uygulanmaması için mi aracılık yapıyorsun? Allah'a yemin ederim ki, Muhammed'in kızı Fâtıma da hırsızlık yapsaydı, onun da elini keserdim."</strong> (Buhârî, Müslim)</p>
+    <p><strong>3. Zeyd'in Oğlu Üsâme ve Kureyşli:</strong></p>
+    <p>Bir keresinde Peygamberimiz, Üsâme bin Zeyd ile bir Kureyşli arasında bir anlaşmazlıkta adaletle hüküm verdi. Üsâme, "Ey Allah'ın Resûlü! O Kureyşli'ye karşı bana yardım et" dedi. Peygamberimiz şöyle buyurdu:</p>
+    <p><strong>"Ey Üsâme! İki kişi arasında adaletle hükmetmek, onların birine haksızlık yapmaktan hayırlıdır."</strong></p>
+    <p><strong>4. Akrabalık Ayrımı Yapmaması:</strong></p>
+    <p>Peygamberimiz, hiçbir zaman akrabalık veya yakınlık nedeniyle adaletsizlik yapmadı. Herkese eşit davrandı. Bir gün kendisine bir anlaşmazlık getirildiğinde, haklı olan taraf kim olursa olsun, adaletle hükmetti.</p>
+    <p><strong>5. Düşmanlarına Bile Adaletli Davranması:</strong></p>
+    <p>Peygamberimiz, düşmanlarına bile adaletli davrandı. Hudeybiye Antlaşması'nda Müslümanların aleyhine gibi görünen maddeler olsa bile, o antlaşmaya sadık kaldı. Sözünde durdu.</p>
+    <p><strong>6. Savaşlarda Adaleti:</strong></p>
+    <p>Peygamberimiz, savaşlarda bile adaletten ayrılmadı. Esirlere iyi davrandı, kadınlara ve çocuklara zarar verilmesini yasakladı, ağaçların kesilmesini, hayvanların öldürülmesini yasakladı.</p>
+    <p><strong>📌 Hadislerde Adalet:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"Müslümanların idarecileri, insanlar arasında adaletle hükmedenler, kıyamet günü Allah'ın yanında nurdan minberler üzerinde olacaklardır."</strong> (Müslim)</p>
+    <p><strong>"Adaletli devlet başkanı, kıyamet günü Allah'ın arşının gölgesinde olacaktır."</strong></p>
+    <p><strong>"Haksız yere bir karış toprak alan kimse, kıyamet günü yedi kat yerin dibine batırılacaktır."</strong> (Buhârî, Müslim)</p>
+    <p><strong>📌 Adaletin Önemi:</strong></p>
+    <p>• Adalet, toplumun temelidir.</p>
+    <p>• Adalet, huzur ve güveni sağlar.</p>
+    <p>• Adalet, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p>• Adalet, Allah'ın emridir.</p>
+    <p>• Adaletsizlik, zulümdür ve toplumu yıkar.</p>
+    <p><strong>📌 Peygamberimizin Adalet Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Allâhümme innî es'elüke'l-adl."</strong></p>
+    <p><em>Anlamı: Allah'ım! Senden adalet dilerim.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) adaleti, onun en büyük özelliklerinden biridir. O, hiçbir zaman akrabalık, dostluk veya düşmanlık nedeniyle adaletsizlik yapmadı. Her zaman haklı olanın yanında oldu. Düşmanları bile onun adaletini kabul ettiler. Biz de Müslüman olarak, Peygamberimizin adaletini örnek almalı, her zaman adaletli olmalıyız.</p>
+  </div>
+</div>
+
+<!-- 23. AHLÂKI: SABRI -->
+<div class="section">
+  <h3>🕊️ 23. Peygamberimizin Ahlakı: Sabrı</h3>
+  <div class="meaning">
+    <p><strong>📌 Sabır Nedir?</strong></p>
+    <p>Sabır, zorluklara, sıkıntılara, musibetlere karşı dayanmak, isyan etmemek, Allah'a sığınmak ve O'ndan yardım dilemektir. Peygamberimiz (s.a.v.), sabrın en güzel örneğidir.</p>
+    <p><strong>📌 Kur'an'da Sabır:</strong></p>
+    <p>Yüce Allah (c.c.) şöyle buyurmuştur:</p>
+    <p><strong>"Ey iman edenler! Sabrederek ve namaz kılarak Allah'tan yardım dileyin. Şüphesiz Allah sabredenlerle beraberdir."</strong> (Bakara Sûresi, 153)</p>
+    <p><strong>"Andolsun, sizi biraz korku, açlık, mallardan, canlardan ve ürünlerden eksiltmekle imtihan edeceğiz. Sabredenleri müjdele!"</strong> (Bakara Sûresi, 155)</p>
+    <p><strong>"Sabredenlere mükâfatları hesapsız verilecektir."</strong> (Zümer Sûresi, 10)</p>
+    <p><strong>📌 Peygamberimizin Sabrına Örnekler:</strong></p>
+    <p><strong>1. İlk Vahiyden Sonra:</strong></p>
+    <p>İlk vahiy geldiğinde Peygamberimiz çok korkmuş ve heyecanlanmıştı. Ancak Hz. Hatice'nin (r.a.) desteğiyle sakinleşti ve sabırla görevini yerine getirmeye başladı.</p>
+    <p><strong>2. Mekke Dönemi Zulümleri:</strong></p>
+    <p>Mekke müşrikleri, Peygamberimize ve Müslümanlara yıllarca işkence ettiler. Ancak Peygamberimiz, hiçbir zaman isyan etmedi, sabırla davetine devam etti.</p>
+    <p>Ebû Leheb ve karısı, Peygamberimizin yoluna pislik attılar, ona hakaret ettiler. Peygamberimiz, sabırla karşılık verdi.</p>
+    <p>Ebû Cehil, Peygamberimizi öldürmeye çalıştı. Peygamberimiz, ona bile beddua etmedi.</p>
+    <p><strong>3. Boykot Yılları:</strong></p>
+    <p>Müslümanlar, 3 yıl boyunca Mekke'nin dışındaki bir vadide mahsur kaldılar. Açlık, susuzluk ve hastalıkla mücadele ettiler. Peygamberimiz de bu zorluklara sabırla göğüs gerdi.</p>
+    <p><strong>4. Hüzün Yılı:</strong></p>
+    <p>Peygamberimiz, aynı yıl hem amcası Ebû Tâlib'i hem de eşi Hz. Hatice'yi kaybetti. Bu iki kayıp, onu çok üzdü. Ancak o, sabırla ve tevekkülle Rabbine sığındı.</p>
+    <p><strong>5. Taif Yolculuğu:</strong></p>
+    <p>Peygamberimiz, Taif'te kendisini taşlayanlara bile beddua etmedi. Onların hidayeti için dua etti. Bu, onun ne kadar büyük bir sabra sahip olduğunu gösterir.</p>
+    <p><strong>6. Uhud Savaşı:</strong></p>
+    <p>Uhud Savaşı'nda Peygamberimiz yaralandı, dişi kırıldı, amcası Hz. Hamza şehit oldu. Ancak o, yine de sabırla ve metanetle Müslümanları toparladı.</p>
+    <p><strong>7. Çocuklarının Vefatı:</strong></p>
+    <p>Peygamberimiz, birçok çocuğunu küçük yaşta kaybetti. Özellikle oğlu İbrahim'in vefatı onu çok üzdü. Ancak o, sabırla "Allah'ın verdiği, Allah'ın aldığıdır" dedi.</p>
+    <p><strong>8. Açlık ve Yoksulluk:</strong></p>
+    <p>Peygamberimiz, hayatı boyunca sade bir hayat yaşadı. Çoğu zaman aç kalırdı. Ancak hiçbir zaman şikâyet etmedi. Kendisine gelen yiyecekleri önce başkalarına dağıtırdı.</p>
+    <p><strong>📌 Hadislerde Sabır:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"Sabır, imanın yarısıdır."</strong></p>
+    <p><strong>"Hiç kimseye sabırdan daha hayırlı ve daha geniş bir nimet verilmemiştir."</strong> (Buhârî, Müslim)</p>
+    <p><strong>"Allah, sabreden kullarını sever."</strong></p>
+    <p><strong>"Mü'minin durumu ne güzeldir! Her hali onun için hayırlıdır. Bu, sadece mü'mine mahsustur. Ona bir iyilik isabet etse şükreder, bu onun için hayır olur. Bir kötülük isabet etse sabreder, bu da onun için hayır olur."</strong> (Müslim)</p>
+    <p><strong>📌 Sabrın Çeşitleri:</strong></p>
+    <p>• <strong>Musibetlere sabır:</strong> Hastalık, ölüm, kayıp gibi zorluklara dayanmak.</p>
+    <p>• <strong>İbadetlere sabır:</strong> Namaz, oruç gibi ibadetleri düzenli yapmak.</p>
+    <p>• <strong>Günahlara sabır:</strong> Haramlardan uzak durmak.</p>
+    <p>• <strong>İtaate sabır:</strong> Allah'ın emirlerini yerine getirmek.</p>
+    <p><strong>📌 Sabrın Önemi:</strong></p>
+    <p>• Sabır, imanın göstergesidir.</p>
+    <p>• Sabır, Allah'ın sevdiği bir özelliktir.</p>
+    <p>• Sabır, cennete götüren bir yoldur.</p>
+    <p>• Sabır, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p>• Sabır, sıkıntıların üstesinden gelmenin anahtarıdır.</p>
+    <p><strong>📌 Peygamberimizin Sabır Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Allâhümme innî es'elüke's-sabre."</strong></p>
+    <p><em>Anlamı: Allah'ım! Senden sabır dilerim.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) sabrı, onun en büyük özelliklerinden biridir. O, hayatı boyunca birçok zorlukla karşılaştı, ancak hiçbir zaman isyan etmedi. Her zaman Allah'a sığındı, sabretti ve tevekkül etti. Biz de Müslüman olarak, Peygamberimizin sabrını örnek almalı, zorluklara sabırla göğüs germeliyiz.</p>
+  </div>
+</div>
+
+<!-- 24. AHLÂKI: CÖMERTLİĞİ -->
+<div class="section">
+  <h3>🤲 24. Peygamberimizin Ahlakı: Cömertliği</h3>
+  <div class="meaning">
+    <p><strong>📌 Cömertlik Nedir?</strong></p>
+    <p>Cömertlik, sahip olduğu malı, mülkü, parayı Allah rızası için başkalarıyla paylaşmak, ihtiyaç sahiplerine yardım etmek, kimseyi eli boş çevirmemektir. Peygamberimiz (s.a.v.), cömertliğin en güzel örneğidir.</p>
+    <p><strong>📌 Kur'an'da Cömertlik:</strong></p>
+    <p>Yüce Allah (c.c.) şöyle buyurmuştur:</p>
+    <p><strong>"Sevdiğiniz şeylerden Allah yolunda harcamadıkça iyiliğe asla erişemezsiniz. Her ne harcarsanız Allah onu hakkıyla bilir."</strong> (Âl-i İmrân Sûresi, 92)</p>
+    <p><strong>"Mallarını Allah yolunda harcayanların örneği, yedi başak bitiren ve her başakta yüz tane bulunan bir tohum gibidir. Allah dilediğine kat kat verir. Allah lütfu geniş olandır, hakkıyla bilendir."</strong> (Bakara Sûresi, 261)</p>
+    <p><strong>"Mallarını gece gündüz, gizli ve açık Allah yolunda harcayanlar var ya, onların Rableri katında mükâfatları vardır."</strong> (Bakara Sûresi, 274)</p>
+    <p><strong>📌 Peygamberimizin Cömertliğine Örnekler:</strong></p>
+    <p><strong>1. Hz. Hatice'nin Malını İslam İçin Harcaması:</strong></p>
+    <p>Peygamberimizin eşi Hz. Hatice (r.a.), bütün servetini İslam için harcadı. Peygamberimiz de kendi malını her zaman başkalarıyla paylaşırdı.</p>
+    <p><strong>2. "O, Rüzgârdan Daha Cömertti":</strong></p>
+    <p>Peygamberimizin (s.a.v.) cömertliği, bütün Mekke ve Medine'de dillere destandı. Hz. Âişe (r.a.) onu şöyle anlatırdı:</p>
+    <p><strong>"Peygamberimiz, rüzgârdan daha cömertti."</strong> (Buhârî, Müslim)</p>
+    <p>Yani onun cömertliği, rüzgârın esişi gibi sürekli ve engellenemezdi.</p>
+    <p><strong>3. Kendisi Aç Kalır, Başkasına Verirdi:</strong></p>
+    <p>Peygamberimiz, çoğu zaman kendisi aç kalır, elindeki yiyeceği başkalarına verirdi. Bir gün bir sahabe ona bir koyun hediye etti. Peygamberimiz, onu komşularıyla paylaştı. Kendisine sadece küçük bir parça kaldı.</p>
+    <p><strong>4. Ganimetleri Dağıtması:</strong></p>
+    <p>Savaşlarda elde edilen ganimetleri, hiçbir zaman kendisi için ayırmadı. Tamamını İslam'ın emrettiği şekilde dağıttı. Kendisine düşen payı da ihtiyaç sahiplerine verirdi.</p>
+    <p><strong>5. Hediye Kabul Etmesi ve Karşılık Vermesi:</strong></p>
+    <p>Peygamberimiz, kendisine gelen hediyeleri kabul eder, ama karşılığında daha fazlasını verirdi. Böylece insanları cömertliğe teşvik ederdi.</p>
+    <p><strong>6. Borç İsteyenleri Geri Çevirmemesi:</strong></p>
+    <p>Peygamberimize kim borç istese, onu geri çevirmezdi. Eğer elinde yoksa, başkasından borç alıp yine de verirdi.</p>
+    <p>Bir gün bir adam Peygamberimizden borç istedi. Peygamberimizde o anda bir şey yoktu. Bir sahabeye "Ona şu kadar borç ver" dedi. Sahabe: "Ya Resûlallah, senin adına mı?" dedi. Peygamberimiz: "Evet, benim adıma. Ben onu ödeyeceğim" buyurdu.</p>
+    <p><strong>7. Hz. Ali'nin Anlattığı Bir Olay:</strong></p>
+    <p>Hz. Ali (r.a.) anlatır: "Bir gün Peygamberimizin yanına geldim, açtım. Peygamberimiz de açtı. Bir yemek bulduk, ama azdı. Peygamberimiz: 'Buyur ye' dedi. Ben: 'Sen buyur ye' dedim. Peygamberimiz: 'Ben senin yediklerini yiyorum' buyurdu. Yani Peygamberimiz, önce başkasına verir, sonra kendisi yerdi."</p>
+    <p><strong>8. Fakirlere ve Yetimlere Yardımı:</strong></p>
+    <p>Peygamberimiz, fakirlere, yetimlere, dullara, yolculara her zaman yardım ederdi. Onları kendi evine davet eder, onlarla yemek yerdi.</p>
+    <p><strong>📌 Hadislerde Cömertlik:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"Cömert kişi, Allah'a yakındır, insanlara yakındır, cennete yakındır ve cehennemden uzaktır."</strong> (Tirmizî)</p>
+    <p><strong>"Cimri kişi, Allah'tan uzaktır, insanlardan uzaktır, cennetten uzaktır ve cehenneme yakındır."</strong> (Tirmizî)</p>
+    <p><strong>"Her sabah iki melek iner. Biri: 'Allah'ım! Cömert olanlara karşılığını ver' der. Diğeri: 'Allah'ım! Cimri olanların malını helâk et' der."</strong> (Buhârî, Müslim)</p>
+    <p><strong>"Sadaka vermek, malı eksiltmez."</strong> (Müslim)</p>
+    <p><strong>📌 Cömertliğin Önemi:</strong></p>
+    <p>• Cömertlik, imanın göstergesidir.</p>
+    <p>• Cömertlik, malı bereketlendirir.</p>
+    <p>• Cömertlik, toplumda sevgi ve kardeşliği sağlar.</p>
+    <p>• Cömertlik, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p>• Cömertlik, cennete götüren bir yoldur.</p>
+    <p><strong>📌 Peygamberimizin Cömertlik Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Allâhümme innî es'elüke'l-cûde ve'l-kerem."</strong></p>
+    <p><em>Anlamı: Allah'ım! Senden cömertlik ve kerem dilerim.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) cömertliği, onun en büyük özelliklerinden biridir. O, hiçbir zaman mal biriktirmedi, elindekini hep başkalarıyla paylaştı. Onun cömertliği, bütün insanlığa örnek olmuştur. Biz de Müslüman olarak, Peygamberimizin cömertliğini örnek almalı, elimizdekini ihtiyaç sahipleriyle paylaşmalıyız.</p>
+  </div>
+</div>
+
+<!-- 25. AHLÂKI: TEVEKKÜLÜ -->
+<div class="section">
+  <h3>🤲 25. Peygamberimizin Ahlakı: Tevekkülü</h3>
+  <div class="meaning">
+    <p><strong>📌 Tevekkül Nedir?</strong></p>
+    <p>Tevekkül, bir iş için gerekli bütün sebeplere sarıldıktan sonra, sonucu Allah'a bırakmak, O'na güvenmek ve O'ndan yardım dilemektir. Yani "tedbir bizden, takdir Allah'tan" demektir.</p>
+    <p>Peygamberimiz (s.a.v.), tevekkülün en güzel örneğidir. O, her işte önce gerekli tedbirleri alır, sonra Allah'a güvenir ve sonucu O'na bırakırdı.</p>
+    <p><strong>📌 Kur'an'da Tevekkül:</strong></p>
+    <p>Yüce Allah (c.c.) şöyle buyurmuştur:</p>
+    <p><strong>"...Tevekkül edecekler, yalnız Allah'a tevekkül etsinler."</strong> (İbrâhîm Sûresi, 12)</p>
+    <p><strong>"Allah'a tevekkül edene Allah kâfîdir."</strong> (Talâk Sûresi, 3)</p>
+    <p><strong>"Mü'minler yalnız Allah'a tevekkül etsinler."</strong> (Âl-i İmrân Sûresi, 122)</p>
+    <p><strong>📌 Peygamberimizin Tevekkülüne Örnekler:</strong></p>
+    <p><strong>1. Hicret Sırasında:</strong></p>
+    <p>Peygamberimiz, hicret ederken gerekli bütün tedbirleri aldı:</p>
+    <p>• Hz. Ali'yi yatağına yatırdı (tedbir).</p>
+    <p>• Hz. Ebû Bekir ile birlikte gizlice yola çıktı (tedbir).</p>
+    <p>• Sevr Mağarası'na sığındı (tedbir).</p>
+    <p>• Yol güzergâhını iyi bilen bir kılavuz tuttu (tedbir).</p>
+    <p>Ancak bütün bunları yaptıktan sonra, tamamen Allah'a güvendi ve tevekkül etti. Mağarada müşrikler yaklaştığında, Hz. Ebû Bekir'in korkması üzerine şöyle buyurdu:</p>
+    <p><strong>"Üzülme! Allah bizimle beraberdir."</strong> (Tevbe Sûresi, 40)</p>
+    <p><strong>2. Bedir Savaşı'nda:</strong></p>
+    <p>Peygamberimiz, Bedir Savaşı öncesi gerekli bütün tedbirleri aldı:</p>
+    <p>• Orduyu düzenledi (tedbir).</p>
+    <p>• Su kaynaklarını kontrol etti (tedbir).</p>
+    <p>• Savaş planını yaptı (tedbir).</p>
+    <p>Sonra bir çadıra çekildi ve ellerini açıp Allah'a yalvardı:</p>
+    <p><strong>"Allah'ım! Bu İslam ordusu azdır. Eğer bugün helâk olursa, yeryüzünde Sana kulluk edecek kimse kalmaz. Bize yardım et!"</strong></p>
+    <p>Allah da ona yardım etti ve Müslümanlar büyük bir zafer kazandılar.</p>
+    <p><strong>3. Hendek Savaşı'nda:</strong></p>
+    <p>Peygamberimiz, Medine'nin etrafına hendekler kazdırdı (tedbir). Sonra tamamen Allah'a güvendi ve tevekkül etti. Allah da şiddetli bir fırtına göndererek müşrikleri bozguna uğrattı.</p>
+    <p><strong>4. Hastalığında:</strong></p>
+    <p>Peygamberimiz, hastalığı ağırlaştığında bile tedavi olmaya devam etti. Ancak şifa Allah'tandı. O, son anına kadar tevekkül ve teslimiyet içindeydi.</p>
+    <p><strong>5. "Deveyi Bağla Sonra Tevekkül Et":</strong></p>
+    <p>Bir gün bir adam Peygamberimize geldi ve "Ya Resûlallah! Devemi salıvereyim mi, yoksa bağlayayım mı?" diye sordu. Peygamberimiz şöyle buyurdu:</p>
+    <p><strong>"Deveyi bağla, sonra Allah'a tevekkül et."</strong> (Tirmizî)</p>
+    <p>Bu hadis, tevekkülün ne demek olduğunu çok güzel açıklar: Önce tedbir al, sonra Allah'a güven.</p>
+    <p><strong>6. "Kalpleri Ters Çeviren Allah'tır":</strong></p>
+    <p>Peygamberimiz, her konuda Allah'a güvenir ve şöyle dua ederdi:</p>
+    <p><strong>"Yâ Mukallibel kulûb! Sebbit kalbî alâ dînik."</strong></p>
+    <p><em>Anlamı: Ey kalpleri çeviren Allah'ım! Kalbimi dinin üzerinde sabit kıl.</em></p>
+    <p><strong>📌 Hadislerde Tevekkül:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"Siz Allah'a hakkıyla tevekkül etseydiniz, kuşların rızıklandığı gibi rızıklanırdınız. Kuşlar sabah aç çıkar, akşam tok dönerler."</strong> (Tirmizî, İbn Mâce)</p>
+    <p><strong>"Kim Allah'a tevekkül ederse, Allah ona kâfîdir."</strong></p>
+    <p><strong>"Allah'ım! Senden hidayet, takvâ, iffet ve gönül zenginliği dilerim."</strong> (Müslim)</p>
+    <p><strong>📌 Tevekkülün Önemi:</strong></p>
+    <p>• Tevekkül, imanın göstergesidir.</p>
+    <p>• Tevekkül, kalbe huzur verir.</p>
+    <p>• Tevekkül, kişiyi kaygı ve stresten kurtarır.</p>
+    <p>• Tevekkül, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p>• Tevekkül, Allah'ın yardımına vesiledir.</p>
+    <p><strong>📌 Peygamberimizin Tevekkül Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Hasbünallâhü ve ni'mel vekîl."</strong></p>
+    <p><em>Anlamı: Allah bize yeter. O ne güzel vekildir.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) tevekkülü, onun en büyük özelliklerinden biridir. O, her işte önce gerekli tedbirleri alır, sonra tamamen Allah'a güvenir ve sonucu O'na bırakırdı. Onun bu özelliği, bütün Müslümanlara örnek olmuştur. Biz de Müslüman olarak, Peygamberimizin tevekkülünü örnek almalı, her işte önce tedbir almalı, sonra Allah'a güvenmeliyiz.</p>
+  </div>
+</div>
+
+<!-- 26. AHLÂKI: İSTİŞARESİ (DANIŞMASI) -->
+<div class="section">
+  <h3>🤝 26. Peygamberimizin Ahlakı: İstişaresi (Danışması)</h3>
+  <div class="meaning">
+    <p><strong>📌 İstişare Nedir?</strong></p>
+    <p>İstişare, bir konuda karar vermeden önce, güvenilir ve bilgili kişilerin görüşlerini almak, onlarla istişare etmek demektir. Peygamberimiz (s.a.v.), önemli konularda ashâbıyla istişare ederdi.</p>
+    <p><strong>📌 Kur'an'da İstişare:</strong></p>
+    <p>Yüce Allah (c.c.) şöyle buyurmuştur:</p>
+    <p><strong>"...İş konusunda onlarla müşavere et. Bir kere de karar verip azmettin mi, artık Allah'a tevekkül et."</strong> (Âl-i İmrân Sûresi, 159)</p>
+    <p><strong>"Mü'minler, işlerini aralarında istişare ile yaparlar."</strong> (Şûrâ Sûresi, 38)</p>
+    <p>Bu ayetler, istişarenin ne kadar önemli olduğunu gösterir.</p>
+    <p><strong>📌 Peygamberimizin İstişaresine Örnekler:</strong></p>
+    <p><strong>1. Bedir Savaşı Öncesi:</strong></p>
+    <p>Peygamberimiz, Bedir Savaşı öncesi ashâbıyla istişare etti. Savaşın nasıl yapılacağını, ordunun nereye konuşlanacağını istişare ile kararlaştırdı.</p>
+    <p>Hz. Hubâb bin Münzir (r.a.), "Ya Resûlallah, burası Allah'ın emrettiği bir yer mi, yoksa senin görüşün mü?" diye sordu. Peygamberimiz: "Benim görüşüm" deyince, Hubâb: "O zaman daha ileride, su kaynaklarının yanında konlanalım" dedi. Peygamberimiz bu görüşü kabul etti.</p>
+    <p><strong>2. Hendek Savaşı Öncesi:</strong></p>
+    <p>Peygamberimiz, Hendek Savaşı öncesi ashâbıyla istişare etti. Nasıl savunma yapılacağını tartıştılar. Hz. Selmân-ı Fârisî (r.a.) "Ya Resûlallah, biz İran'da şehirlerin etrafına hendek kazardık. Bu yöntemle düşmanı durdurabiliriz" dedi. Peygamberimiz bu görüşü kabul etti ve hendekler kazıldı.</p>
+    <p><strong>3. Hudeybiye Antlaşması:</strong></p>
+    <p>Peygamberimiz, Hudeybiye Antlaşması'nda Müslümanların aleyhine gibi görünen maddeler karşısında, Hz. Ebû Bekir ve Hz. Ömer (r.a.) ile istişare etti. Onların görüşlerini aldı.</p>
+    <p><strong>4. Hz. Hatice'nin Görüşü:</strong></p>
+    <p>İlk vahiy geldiğinde, Peygamberimiz büyük bir heyecan ve korku içindeydi. Hz. Hatice'ye (r.a.) olanları anlattı. Hz. Hatice, onu sakinleştirdi ve şöyle dedi:</p>
+    <p><strong>"Allah'a yemin ederim ki, Allah seni asla utandırmaz."</strong></p>
+    <p>Bu söz, Peygamberimizin sakinleşmesine vesile oldu. Peygamberimiz, Hz. Hatice'nin görüşüne güvendi.</p>
+    <p><strong>5. Hz. Ebû Bekir'in Görüşü:</strong></p>
+    <p>Peygamberimiz, önemli konularda Hz. Ebû Bekir'in (r.a.) görüşüne çok değer verirdi. Hz. Ebû Bekir, Peygamberimizin en yakın dostu ve istişare arkadaşıydı.</p>
+    <p><strong>6. Kadın Sahabelerle İstişare:</strong></p>
+    <p>Peygamberimiz, sadece erkek sahabelerle değil, kadın sahabelerle de istişare ederdi. Hz. Hatice, Hz. Âişe, Hz. Ümmü Seleme gibi hanım sahabelerin görüşlerine değer verirdi.</p>
+    <p><strong>📌 İstişarenin Önemi:</strong></p>
+    <p>• İstişare, doğru karar vermeyi sağlar.</p>
+    <p>• İstişare, hataları azaltır.</p>
+    <p>• İstişare, toplumda birlik ve beraberliği sağlar.</p>
+    <p>• İstişare, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p>• İstişare, İslam'ın emridir.</p>
+    <p><strong>📌 Hadislerde İstişare:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"İstişare eden pişman olmaz."</strong></p>
+    <p><strong>"Akıl danışan, doğru yolu bulur."</strong></p>
+    <p><strong>"Bir işi istişare ile yapan, pişman olmaz."</strong></p>
+    <p><strong>📌 İstişarenin Şartları:</strong></p>
+    <p>• İstişare edilecek kişi, güvenilir ve bilgili olmalı.</p>
+    <p>• İstişare eden kişi, görüşlere açık olmalı.</p>
+    <p>• İstişare sonucu, ortak kararla uygulanmalı.</p>
+    <p>• İstişare, samimiyetle yapılmalı.</p>
+    <p><strong>📌 Peygamberimizin İstişare Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Allâhümme innî es'elüke'l-hayra ve'l-istikâme."</strong></p>
+    <p><em>Anlamı: Allah'ım! Senden hayır ve istikamet dilerim.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) istişaresi, onun en büyük özelliklerinden biridir. O, her önemli konuda ashâbıyla istişare eder, onların görüşlerini alırdı. Bu, onun ne kadar demokratik ve mütevazı bir lider olduğunu gösterir. Biz de Müslüman olarak, Peygamberimizin istişaresini örnek almalı, önemli konularda bilenlere danışmalıyız.</p>
+  </div>
+</div>
+
+<!-- 27. AHLÂKI: ÇOCUKLARA VE HAYVANLARA ŞEFKATİ -->
+<div class="section">
+  <h3>🐦 27. Peygamberimizin Ahlakı: Çocuklara ve Hayvanlara Şefkati</h3>
+  <div class="meaning">
+    <p><strong>📌 Şefkat Nedir?</strong></p>
+    <p>Şefkat, bir kimseye veya bir canlıya karşı duyulan acıma, merhamet ve sevgi duygusudur. Peygamberimiz (s.a.v.), çocuklara ve hayvanlara karşı çok şefkatliydi.</p>
+    <p><strong>📌 Peygamberimizin Çocuklara Şefkati:</strong></p>
+    <p>Peygamberimiz, çocukları çok severdi. Onlarla şakalaşır, onları kucaklar, başlarını okşardı. Onların seviyesine iner, onlarla oyun oynardı.</p>
+    <p><strong>1. Torunlarına Şefkati:</strong></p>
+    <p>Peygamberimiz, torunları Hz. Hasan ve Hz. Hüseyin'e çok düşkündü. Namaz kılarken bile torunları sırtına çıktığında, secdeyi uzatırdı. Onların hatırı için secdeyi uzatırdı.</p>
+    <p>Bir gün Peygamberimiz, torunu Hz. Hasan'ı öperken, yanında bulunan Akra bin Hâbis: "Benim 10 çocuğum var, hiçbirini öpmedim" dedi. Peygamberimiz şöyle buyurdu:</p>
+    <p><strong>"Merhamet etmeyene merhamet edilmez."</strong> (Buhârî, Müslim)</p>
+    <p><strong>2. Çocuklarla Şakalaşması:</strong></p>
+    <p>Peygamberimiz, çocuklarla şakalaşırdı. Bir gün bir çocuğa "Ey Ebû Umeyr! Nugayr (kuşun) ne oldu?" diye sordu. Çocuk, kuşunun öldüğünü söyledi. Peygamberimiz onunla şakalaşarak teselli etti. (Buhârî)</p>
+    <p><strong>3. Çocuklara Selam Vermesi:</strong></p>
+    <p>Peygamberimiz, çocuklara selam verirdi. Onlara değer verir, onları önemserdi. Bir gün çocuklardan oluşan bir grubun yanından geçerken onlara selam verdi.</p>
+    <p><strong>4. Çocukların Hatalarına Karşı Sabrı:</strong></p>
+    <p>Peygamberimiz, çocukların hatalarına karşı çok sabırlıydı. Onlara kızmaz, onları azarlamazdı. Onlara sevgiyle yaklaşır, onları eğitirdi.</p>
+    <p>Bir gün bir çocuk, Peygamberimizin elbisesini çekti. Peygamberimiz ona kızmadı, aksine ona şefkatle davrandı.</p>
+    <p><strong>📌 Peygamberimizin Hayvanlara Şefkati:</strong></p>
+    <p>Peygamberimiz, hayvanlara da çok şefkatliydi. Onların aç bırakılmasını, dövülmesini, eziyet edilmesini yasakladı.</p>
+    <p><strong>1. "Kediyi Aç Bırakan Kadın":</strong></p>
+    <p>Peygamberimiz şöyle anlatmıştır: "Bir kadın, bir kediyi eve hapsetti. Kediyi bağlamadı, yiyecek de vermedi. Kedi açlıktan öldü. Bu yüzden kadın cehenneme girdi." (Buhârî, Müslim)</p>
+    <p><strong>2. "Susuz Köpeğe Su Veren Adam":</strong></p>
+    <p>Peygamberimiz şöyle anlatmıştır: "Bir adam yolda giderken susuzluktan dilini çıkarıp soluyan bir köpek gördü. Ayakkabısını çıkarıp su doldurdu ve köpeğe içirdi. Bu yüzden Allah onu bağışladı." (Buhârî, Müslim)</p>
+    <p><strong>3. Hayvanların Dövülmesini Yasaklaması:</strong></p>
+    <p>Peygamberimiz, hayvanların dövülmesini, onlara eziyet edilmesini yasakladı. Onların da hakları olduğunu söyledi.</p>
+    <p><strong>"Allah, her konuda iyilik ve merhamet emretmiştir. Bir hayvanı öldürecekseniz bile, en güzel şekilde öldürün."</strong> (Müslim)</p>
+    <p><strong>4. Hayvanların Yüklerinin Ağır Olmaması:</strong></p>
+    <p>Peygamberimiz, hayvanlara ağır yük yüklenmesini yasakladı. Bir hayvanın taşıyamayacağı kadar yük yüklenmesine karşı çıktı.</p>
+    <p><strong>5. Hayvanlara İyi Davranılmasını Emretmesi:</strong></p>
+    <p>Peygamberimiz, hayvanlara iyi davranılmasını emrederdi. Bir sahabe, bir hayvana iyi davrandığında onu överdi.</p>
+    <p><strong>📌 Hadislerde Şefkat:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"Merhamet edenlere Rahman merhamet eder. Siz yeryüzündekilere merhamet edin ki, göktekiler de size merhamet etsin."</strong> (Ebû Dâvûd, Tirmizî)</p>
+    <p><strong>"İnsanlara merhamet etmeyene Allah merhamet etmez."</strong> (Buhârî, Müslim)</p>
+    <p><strong>"Her canlıya iyilik etmek sevaptır."</strong></p>
+    <p><strong>📌 Şefkatin Önemi:</strong></p>
+    <p>• Şefkat, imanın göstergesidir.</p>
+    <p>• Şefkat, toplumda sevgi ve barışı sağlar.</p>
+    <p>• Şefkat, çocukların sağlıklı büyümesini sağlar.</p>
+    <p>• Şefkat, hayvanların korunmasını sağlar.</p>
+    <p>• Şefkat, Peygamberimizin en belirgin özelliklerindendir.</p>
+    <p>• Şefkat, Allah'ın merhametine vesiledir.</p>
+    <p><strong>📌 Peygamberimizin Şefkat Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Allâhümme innî es'elüke'r-rahmete."</strong></p>
+    <p><em>Anlamı: Allah'ım! Senden rahmet dilerim.</em></p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) çocuklara ve hayvanlara olan şefkati, onun ne kadar büyük bir kalbe sahip olduğunu gösterir. O, bütün canlılara sevgiyle yaklaşmış, hiçbir canlıya eziyet edilmesine izin vermemiştir. Biz de Müslüman olarak, Peygamberimizin şefkatini örnek almalı, çocuklara ve hayvanlara sevgiyle davranmalıyız.</p>
+  </div>
+</div>
+
+<!-- 28. AHLÂKI: AİLE HAYATI -->
+<div class="section">
+  <h3>🏡 28. Peygamberimizin Ahlakı: Aile Hayatı</h3>
+  <div class="meaning">
+    <p><strong>📌 Peygamberimizin Aile Hayatı:</strong></p>
+    <p>Peygamberimiz (s.a.v.), aile hayatında da en güzel örnektir. O, eşlerine karşı çok şefkatli, saygılı ve yardımcıydı. Ev işlerinde eşlerine yardım eder, onların görüşlerine değer verirdi.</p>
+    <p><strong>📌 Hz. Hatice ile Evliliği:</strong></p>
+    <p>Peygamberimizin ilk eşi Hz. Hatice (r.a.) ile 25 yıl süren evliliği, İslam tarihinin en güzel evliliklerinden biridir. Bu evlilik, sevgi, saygı ve sadakat üzerine kuruluydu.</p>
+    <p>Peygamberimiz, Hz. Hatice'yi hep hayırla anardı:</p>
+    <p><strong>"O, bana iman ettiği zaman herkes inkâr ediyordu. O, beni doğruladığı zaman herkes yalanlıyordu. O, bana destek verdiği zaman herkes beni yalnız bırakıyordu."</strong> (Ahmed bin Hanbel)</p>
+    <p><strong>📌 Peygamberimizin Eşlerine Davranışı:</strong></p>
+    <p><strong>1. Şefkat ve Sevgi:</strong></p>
+    <p>Peygamberimiz, eşlerine karşı çok şefkatliydi. Onlarla şakalaşır, onları sever, onlara iltifat ederdi. Hz. Âişe (r.a.) ile yarış yaparlardı.</p>
+    <p><strong>2. Saygı ve Değer:</strong></p>
+    <p>Peygamberimiz, eşlerinin görüşlerine değer verirdi. Önemli konularda onlarla istişare ederdi. Hz. Hatice, Hz. Ümmü Seleme gibi hanım sahabelerin görüşleri, önemli kararlarda etkili olurdu.</p>
+    <p><strong>3. Yardım ve Hizmet:</strong></p>
+    <p>Peygamberimiz, ev işlerinde eşlerine yardım ederdi. Hz. Âişe (r.a.) şöyle demiştir:</p>
+    <p><strong>"Peygamberimiz, ev işlerinde eşlerine yardım ederdi. Elbisesini yamar, ayakkabısını tamir eder, hayvanlarına bakardı."</strong> (Buhârî)</p>
+    <p><strong>4. Adalet:</strong></p>
+    <p>Peygamberimiz, eşleri arasında adaletli davranırdı. Bir eşine diğerinden fazla ilgi göstermezdi. Her birine eşit davranırdı.</p>
+    <p><strong>5. Sabır:</strong></p>
+    <p>Peygamberimiz, eşlerinin bazı hatalarına karşı sabırlıydı. Onları azarlamaz, onlara kızmazdı. Onları sevgiyle uyarırdı.</p>
+    <p><strong>📌 Peygamberimizin Çocuklarına Davranışı:</strong></p>
+    <p>Peygamberimiz, çocuklarına da çok şefkatliydi. Onları sever, onlarla ilgilenir, onlara dua ederdi.</p>
+    <p>Kızı Hz. Fâtıma'ya (r.a.) çok düşkündü. Onu her gördüğünde ayağa kalkar, onu öper, yanına oturturdu.</p>
+    <p>Oğlu Hz. İbrahim vefat ettiğinde, Peygamberimiz ağladı. Ancak "Allah'ın verdiği, Allah'ın aldığıdır" diyerek teslimiyet gösterdi.</p>
+    <p><strong>📌 Aile Hayatında Örnek Davranışları:</strong></p>
+    <p><strong>1. Selam Verme:</strong></p>
+    <p>Peygamberimiz, eve girdiğinde selam verirdi. Ev halkına "Esselâmü aleyküm" derdi. Bu, ailede huzur ve sevgiyi artırırdı.</p>
+    <p><strong>2. Yemek Yeme Adabı:</strong></p>
+    <p>Peygamberimiz, ailesiyle birlikte yemek yerdi. Yemeğe besmele ile başlar, sağ elle yer, yemekten sonra dua ederdi.</p>
+    <p><strong>3. İstişare:</strong></p>
+    <p>Peygamberimiz, ailevi konularda eşleriyle istişare ederdi. Onların görüşlerini alırdı.</p>
+    <p><strong>4. Hediyeleşme:</strong></p>
+    <p>Peygamberimiz, eşlerine ve çocuklarına hediye alırdı. Hediyeleşmenin sevgiyi artırdığını söylerdi.</p>
+    <p><strong>5. Şaka ve Mizah:</strong></p>
+    <p>Peygamberimiz, ailesiyle şakalaşırdı. Onlarla oyun oynar, onları güldürürdü. Ancak hiçbir zaman yalan söylemezdi.</p>
+    <p><strong>📌 Kur'an'da Aile:</strong></p>
+    <p>Yüce Allah (c.c.) şöyle buyurmuştur:</p>
+    <p><strong>"Onların (eşlerinizin) arasında sevgi ve merhamet var etmesi de O'nun varlığının delillerindendir."</strong> (Rûm Sûresi, 21)</p>
+    <p><strong>"Kendileriyle huzur bulasınız diye size kendi türünüzden eşler yaratması da O'nun varlığının delillerindendir."</strong> (Rûm Sûresi, 21)</p>
+    <p><strong>📌 Hadislerde Aile:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle buyurmuştur:</p>
+    <p><strong>"Sizin en hayırlınız, ailesine karşı en hayırlı olanınızdır."</strong> (Tirmizî)</p>
+    <p><strong>"Bir mü'min, Allah'a karşı gelmekten sakındıktan sonra, en çok hayırlı eşe sahip olmakla sevap kazanır."</strong> (Tirmizî)</p>
+    <p><strong>"Kadınlara hayır tavsiye edin."</strong> (Buhârî, Müslim)</p>
+    <p><strong>"Eşine hizmet eden kimseye Allah rahmet etsin."</strong></p>
+    <p><strong>📌 Aile Hayatının Önemi:</strong></p>
+    <p>• Aile, toplumun temelidir.</p>
+    <p>• Aile, huzur ve güven kaynağıdır.</p>
+    <p>• Aile, çocukların yetiştiği ilk yuvadır.</p>
+    <p>• Aile, sevgi ve saygı üzerine kurulmalıdır.</p>
+    <p>• Peygamberimizin aile hayatı, bütün Müslümanlara örnektir.</p>
+    <p><strong>📌 Peygamberimizin Aile Duası:</strong></p>
+    <p>Peygamberimiz (s.a.v.) şöyle dua ederdi:</p>
+    <p><strong>"Rabbenâ heb lenâ min ezvâcinâ ve zürriyyâtinâ kurrate a'yünin vec'alnâ lil müttekîne imâmâ."</strong></p>
+    <p><em>Anlamı: Rabbimiz! Bize eşlerimizden ve çocuklarımızdan gözümüzü aydınlatacak kimseler ver ve bizi takvâ sahiplerine önder eyle.</em> (Furkân Sûresi, 74)</p>
+    <p><strong>💡 Önemli Not:</strong></p>
+    <p>Peygamberimizin (s.a.v.) aile hayatı, bütün Müslümanlar için en güzel örnektir. O, eşlerine ve çocuklarına karşı çok şefkatli, saygılı ve yardımcıydı. Aile hayatında hiçbir zaman şiddete başvurmadı, kimseyi azarlamadı. Onun bu özellikleri, bütün Müslümanlara örnek olmuştur. Biz de Müslüman olarak, Peygamberimizin aile hayatını örnek almalı, ailemize sevgiyle ve saygıyla davranmalıyız.</p>
+  </div>
+</div>
+  </div>
+</div>
+<div id="page-favoriler" class="page">
+  <div class="sure-list" id="favoriList"></div>
+  <div id="favoriBos" style="display:none; text-align:center; padding:40px 20px; color:#c9c9a8;">
+    <p style="font-size:1.1rem; margin-bottom:10px;">⭐ Henüz favori eklenmedi</p>
+    <p style="font-size:0.9rem;">Sûre ve zikirlerin yanındaki yıldıza basarak favori ekleyebilirsiniz.</p>
+  </div>
+</div>
+<div id="page-esma" class="page">
+  <div class="sure-list" id="esmaList"></div>
+</div>
+
+<!-- ESMA-ÜL HÜSNA DETAY -->
+<div id="page-esmaDetay" class="page">
+  <button class="back-btn" onclick="showPage('esma')">← Geri</button>
+  <div class="sure-content" id="esmaContent"></div>
+</div>
+  <!-- 📿 ZİKİR SAYACI SAYFASI -->
+  <div id="page-sayac" class="page">
+    <div class="sure-content">
+      <h2 class="sure-title">📿 Zikir Sayacı</h2>
+
+    <div class="sayac-secim">
+  <label>Zikir Seç:</label>
+  <button id="sayacZikirButon" class="sayac-secim-buton" onclick="sayacZikirPencereAc()">
+    Lâ ilâhe illallâh <span class="ok">▼</span>
+  </button>
+</div>
+      <div class="sayac-ekran">
+        <div class="sayac-isim" id="sayacIsim">Lâ ilâhe illallâh</div>
+        <div class="sayac-rakam" id="sayacRakam">0</div>
+        <button class="sayac-btn" onclick="sayacArttir()">ZİKRET</button>
+        <div class="sayac-hedef" id="sayacHedef">Hedef: 100</div>
+      </div>
+
+      <div class="sayac-kontroller">
+        <button class="back-btn" onclick="sayacSifirla()">🔄 Sıfırla</button>
+        <button class="back-btn" onclick="sayacGeriAl()">↩️ Geri Al</button>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <p>Hûdâ Beşâir &copy; 2026 — Tüm hakları saklıdır.</p>
+  <p style="font-size:0.75rem; margin-top:8px; opacity:0.7;">Bu sitenin tasarımı, kodu ve içeriği Hûdâ Beşâir'e aittir. İzinsiz kopyalanamaz, çoğaltılamaz veya başka bir sitede yayınlanamaz.</p>
+  <p style="margin-top:10px;">Hayırla kalın 🤲</p>
+</footer>
+</div>
+<!-- 🔗 PAYLAŞIM MENÜSÜ -->
+<div class="paylas-menu" id="paylasMenu">
+  <div class="paylas-baslik">🔗 Bu sayfayı paylaş</div>
+
+  <a class="paylas-secenek" href="#" onclick="paylasWhatsApp(); return false;">
+    <span class="paylas-icon">💬</span> WhatsApp
+  </a>
+
+  <a class="paylas-secenek" href="#" onclick="paylasTelegram(); return false;">
+    <span class="paylas-icon">✈️</span> Telegram
+  </a>
+
+  <a class="paylas-secenek" href="#" onclick="paylasTwitter(); return false;">
+    <span class="paylas-icon">🐦</span> X (Twitter)
+  </a>
+
+  <a class="paylas-secenek" href="#" onclick="paylasFacebook(); return false;">
+    <span class="paylas-icon">📘</span> Facebook
+  </a>
+
+  <a class="paylas-secenek" href="#" onclick="paylasKopyala(); return false;">
+    <span class="paylas-icon">📋</span> Bağlantıyı Kopyala
+  </a>
+
+  <button class="paylas-kapat" onclick="paylasimKapat()">✕ Kapat</button>
+</div>
+<!-- 📿 ZİKİR SEÇİM PENCERESİ -->
+<div id="sayacZikirPencere" class="sayac-pencere">
+  <div class="sayac-pencere-icerik">
+    <div class="sayac-pencere-baslik">
+      <span>📿 Zikir Seç</span>
+      <button class="sayac-pencere-kapat" onclick="sayacZikirPencereKapat()">✕</button>
+    </div>
+    <div id="sayacZikirPencereListe" class="sayac-pencere-liste"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
